@@ -1,0 +1,171 @@
+/* ELEMENTS */
+  a {
+    text-decoration: none;
+    color:white;
+  }
+
+  body {
+    margin: 0;
+    background-color: black;
+    color:white;
+  }
+
+  button {
+    height:100%;
+    top:0px;
+    margin:0px;
+    padding:0px;
+    width:100%;
+    font-size: 2em;
+    background-color: #58782B ;
+    outline: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+    
+  img {
+      height:300px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+  }
+
+  
+  /* CLASSES */ 
+  .desc {
+    display:none;
+  }
+
+  .head {
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 10px;
+    font-size: larger;
+  }
+  
+  .head ul {
+    display: flex;
+    align-self: flex-start;
+  }
+
+  .search {
+    width:210px;
+  }
+    
+  .sidebar {
+    background-color: black;
+    float: left;
+    height: 100%;
+    padding: 10px;
+    width: 200px;
+    max-height: 100vh; /* Set a maximum height of the viewport height */
+    overflow-y: auto; /* Add vertical scrolling when content overflows */
+    /* Other styles for the sidebar element */
+  }
+
+  /* .sidebar b {
+    font-size: medium;
+  } */
+
+  .sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar li {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .sidebar a {
+    background-color: black;
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  /* .sidebar a:hover {
+    background-color: #6D5185;
+  } */
+  
+  .text {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    opacity: 0.8;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: right;
+    transition: .5s ease;
+  }
+
+  .topbar {
+    position: relative;
+    text-decoration: none;
+    cursor:pointer;
+  }
+  
+  .topbar li { 
+    font-size: larger;
+    color: white;
+    width: 19%;
+    text-align: center;
+    padding:14px;
+  }
+  
+  .topbar:hover {
+    color:white;
+  }
+
+  /*  */
+  .topbar::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%; /* Position the line in the middle of the link */
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    background-color: #58782B;
+    transform: translateX(-50%); /* Move the line to the left by half of its width */
+    transition: width 0.3s ease, transform 0.3s ease; /* Add transform transition */
+  }
+  
+  .topbar:hover::after {
+    width: 100%;
+    transform: translateX(-50%) scaleX(1); /* Scale the line from the middle */
+  }
+
+  /*  */
+  .video {
+    display: flex;
+    align-self: center;
+    flex-grow:1;
+    justify-content: center;
+    padding:50px;
+  }
+
+
+  /* IDS */
+  
+  #header {
+    height:50px;
+    padding: 10px;
+    z-index: +1; 
+  }
+

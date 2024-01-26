@@ -1,0 +1,104 @@
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top bar styles */
+.topbar {
+  background-color: #333;
+  color: white;
+  height: 50px;
+  padding: 10px;
+}
+
+.topbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topbar li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.topbar li:last-child {
+  margin-right: 0;
+}
+
+.topbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #f1f1f1;
+  float: left;
+  height: 100%;
+  padding: 10px;
+  width: 200px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  background-color: #ddd;
+  color: #333;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #ccc;
+}
+
+/* Main styles */
+.main {
+  float: left;
+  width: calc(100% - 200px);
+  padding: 10px;
+}
+
+/* Content styles */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.item:hover {
+  border-color: #333;
+}
+
+.item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* About styles */
+.about {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-top: 20px;
+}

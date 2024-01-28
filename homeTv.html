@@ -12,447 +12,386 @@
 
 <header id="header">
     <ul class="head">
-        <li style="color:white">adamflix</li>
-        <li><a href="homeMov.html" class="topbar" id="film">FILM</a></li>
-        <li><a href="homeTv.html" class="topbar" id="tv">TELEVISION</a></li>
-        <li><a href="homeFor.html" class="topbar" id="for">FOREIGN</a></li>
-        <li><a href="homeDoc.html" class="topbar" id="doc">DOCUMENTARY</a></li>
-        <li><a href="homeNew.html" class="topbar" id="new">RECENTLY ADDED</a></li>
-        <li>                
-            <div class="search">
-            <select id="selGenre" >
-                <option value="all">All</option>
-                <option value="ani">Animated</option>
-                <option value="haha">Comedy</option>
-                <option value="cook">Cooking</option>
-                <option value="crm">Crime</option>
-                <option value="dram">Drama</option>
-                <option value="hist">Fantasy</option>
-                <option value="scifi">Scifi</option>
-                <option value="thr">Thriller</option>
-                <option value="real">Reality</option>
-            </select>
-        </div>
+        <li style="color:white"><b style="color:#2B3F78">A</b><b style="color:#783A2B">D</b><b style="color:#F7DBD5">A</b><b style="color:#58782B">M</b>flix</li>
+        <li><a href="homeMov.html" class="topbar" id="film" style="color:#58782B">FILM</a></li>
+        <li><a href="homeTv.html" class="topbar" id="tv" style="color:#2B3F78">TELEVISION</a></li>
+        <li><a href="homeFor.html" class="topbar" id="for" style="color:#783A2B">FOREIGN</a></li>
+        <li><a href="homeDoc.html" class="topbar" id="doc" style="color:#F7DBD5">DOCUMENTARY</a></li>
+        <li><a href="homeNew.html" class="topbar" id="new" style="color:#B3CD8E">RECENTLY ADDED</a></li>
+        <li><a href="homeReq.html" class="topbar" id="req">REQUEST CONTENT</a></li>
+        <li></li>
     </ul>
 
+    <div class="sidenav">
+        <ul id="genreCat" class="category">
+            <li>By <b style="color:#2B3F78">Genre</b></li>
+            <li><button class="genre" onclick="filter('Comedy')">Comedy</button></li>
+            <li><button class="genre" onclick="filter('Crime')">Crime</button></li>
+            <li><button class="genre" onclick="filter('Drama')">Drama</button></li>
+            <li><button class="genre" onclick="filter('Family')">Family</button></li>
+            <li><button class="genre" onclick="filter('Fantasy')">Fantasy</button></li>
+            <li><button class="genre" onclick="filter('Scifi')">Scifi</button></li>
+        </ul>
+    </div>
 </header>      
 
     <body>
+        <div class="main">
 
-        <!-- Animated -->
-        <div id="Animated" class="desc">
-
-            <div class=contained> <div class="container">
-                <img src=content\tv\AdventureTime\img\titlecard.jpg>
-                <div class="overlay"></div></div>
-                <a href="content\tv\AdventureTime\content.html">
-                <div class="text">Check out <b> Adventure Time</b></div>
+            <div class=contained> 
+                <div class="container">
+                    <img src=content\AdventureTime.jpg>
+                    <div class="overlay">
+                    </div>
+                </div>
+                <a href="content\AdventureTime\content.html">
+                <div class="text"> <b> Adventure Time</b></div>
                 <p class="text">Seasons 1-10 & Distant Lands</p></a>
                  
             </div> 
 
             <div class=contained> <div class="container">
-                <img src=content\tv\Avatar\img\titlecard.jpg>
+                <img src=content\Avatar.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\Avatar\content.html">
-                <div class="text">Check out <b> Avatar: The Last Airbender</b></div>
+                <a href="content\Avatar\content.html">
+                <div class="text"> <b> Avatar: The Last Airbender</b></div>
                 <p class="text">Seasons 1-3</p></a>
                  
             </div> 
                         
             <div class=contained> <div class="container">
-                <img src=content\tv\KingoftheHill\img\titlecard.jpg>
+                <img src=content\KingoftheHill.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\KingoftheHill\content.html">
-                <div class="text">Check out <b> King of the Hill</b></div>
+                <a href="content\KingoftheHill\content.html">
+                <div class="text"> <b> King of the Hill</b></div>
                 <p class="text">Seasons 1-8</p></a>
                  
             </div> 
                         
             <div class=contained> <div class="container">
-                <img src=content\tv\Korra\img\titlecard.jpg>
+                <img src=content\Korra.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\Korra\content.html">
-                <div class="text">Check out <b> The Legend of Korra</b></div>
+                <a href="content\Korra\content.html">
+                <div class="text"> <b> The Legend of Korra</b></div>
                 <p class="text">Seasons 3-4</p></a>
                  
             </div> 
             
             <div class=contained> <div class="container">
-                <img src=content\tv\RickandMorty\img\titlecard.png>
+                <img src=content\RickandMorty.png>
                 <div class="overlay"></div></div>
-                <a href="content\tv\RickandMorty\content.html">
-                <div class="text">Check out <b> Rick and Morty</b></div>
+                <a href="content\RickandMorty\content.html">
+                <div class="text"> <b> Rick and Morty</b></div>
                 <p class="text">Seasons 1-6</p></a>
                  
             </div> 
 
             <div class=contained> <div class="container">
-                <img src=content\tv\SolarOpposites\img\titlecard.jpg>
+                <img src=content\SolarOpposites.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\SolarOpposites\content.html">
-                <div class="text">Check out <b> Solar Opposites</b></div>
+                <a href="content\SolarOpposites\content.html">
+                <div class="text"> <b> Solar Opposites</b></div>
                 <p class="text">Seasons 1-3</p></a>
                  
             </div> 
 
-        </div>
-
-        <!-- comedy -->
-        <div id="Comedy" class="desc">
-
             <div class=contained> <div class="container">
-                <img src=content\tv\Friends\img\titlecard.jpg>
+                <img src=content\Friends.jpg>
                 <div class="overlay"></div></div>
-                    <a href="content\tv\Friends\content.html">
-                    <div class="text">Check out <b> Friends</b></div><p class="text">Seasons 1-10</p></a>
+                    <a href="content\Friends\content.html">
+                    <div class="text"> <b> Friends</b></div><p class="text">Seasons 1-10</p></a>
                  
             </div> 
             
             <div class=contained> <div class="container">
-                <img src=content\tv\Barry\img\titlecard.jpg>
+                <img src=content\Barry.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\Barry\content.html">
-                <div class="text">Check out <b> Barry</b></div>
+                <a href="content\Barry\content.html">
+                <div class="text"> <b> Barry</b></div>
                 <p class="text">Seasons 1-2</p></a>
                  
             </div> 
 
                         
             <div class=contained> <div class="container">
-                <img src=content\tv\Brooklyn99\img\titlecard.jpg>
+                <img src=content\Brooklyn99.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\Brooklyn99\content.html">
-                <div class="text">Check out <b> Brooklyn Nine-Nine</b></div>
+                <a href="content\Brooklyn99\content.html">
+                <div class="text"> <b> Brooklyn Nine-Nine</b></div>
                 <p class="text">Season 1</p></a>
                  
             </div> 
 
                         
             <div class=contained> <div class="container">
-                <img src=content\tv\CheckItOut\img\titlecard.jpg>
+                <img src=content\CheckItOut.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\CheckItOut\content.html">
-                <div class="text">Check out <b> Check It Out</b></div>
+                <a href="content\CheckItOut\content.html">
+                <div class="text"> <b> Check It Out</b></div>
                 <p class="text">Seasons 1-2</p></a>
                  
             </div> 
 
             <div class=contained> <div class="container">
-                <img src=content\tv\Community\img\titlecard.jpg>
+                <img src=content\Community.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\Community\content.html">
-                <div class="text">Check out <b> Community</b></div>
+                <a href="content\Community\content.html">
+                <div class="text"> <b> Community</b></div>
                 <p class="text">Seasons 1-5</p></a>
                  
             </div> 
             
             <div class=contained> <div class="container">
-                <img src=content\tv\EricAndre\img\titlecard.jpg>
+                <img src=content\EricAndre.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\EricAndre\content.html">
-                <div class="text">Check out <b> The Eric Andre Show</b></div>
+                <a href="content\EricAndre\content.html">
+                <div class="text"> <b> The Eric Andre Show</b></div>
                 <p class="text">Seasons 1-3</p></a>
                  
             </div> 
             
             <div class=contained> <div class="container">
-                <img src=content\tv\JoePera\img\titlecard.jpg>
+                <img src=content\JoePera.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\joePera\content.html">
-                <div class="text">Check out <b> Joe Pera Talks With You</b></div>
+                <a href="content\joePera\content.html">
+                <div class="text"> <b> Joe Pera Talks With You</b></div>
                 <p class="text">Season 2</p></a>
                  
             </div> 
 
             <div class=contained> <div class="container">
-                <img src=content\tv\JohnWilson\img\titlecard.jpg>
+                <img src=content\JohnWilson.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\JohnWilson\content.html">
-                <div class="text">Check out <b> How to With John Wilson</b></div>
+                <a href="content\JohnWilson\content.html">
+                <div class="text"> <b> How to With John Wilson</b></div>
                 <p class="text">Seasons 1-2</p></a>
                  
             </div> 
                         
             <div class=contained> <div class="container">
-                <img src=content\tv\NathanForYou\img\titlecard.jpg>
+                <img src=content\NathanForYou.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\NathanForYou\content.html">
-                <div class="text">Check out <b> Nathan For You</b></div>
+                <a href="content\NathanForYou\content.html">
+                <div class="text"> <b> Nathan For You</b></div>
                 <p class="text">Seasons 1-4</p></a>
                  
             </div> 
 
             <div class=contained> <div class="container">
-                <img src=content\tv\Office\img\titlecard.jpg>
+                <img src=content\Office.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\Office\content.html">
-                <div class="text">Check out <b> The Office</b></div>
+                <a href="content\Office\content.html">
+                <div class="text"> <b> The Office</b></div>
                 <p class="text">Seasons 1-9</p></a>
                  
             </div>
             
             <div class=contained> <div class="container">
-                <img src=content\tv\ParksandRec\img\titlecard.jpg>
+                <img src=content\ParksandRec.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\ParksandRec\content.html">
-                <div class="text">Check out <b> Parks and Recreation</b></div>
+                <a href="content\ParksandRec\content.html">
+                <div class="text"> <b> Parks and Recreation</b></div>
                 <p class="text">Seasons 1-7</p></a>
                  
             </div>  
             
             <div class=contained> <div class="container">
-                <img src=content\tv\SchittsCreek\img\titlecard.jpg>
+                <img src=content\SchittsCreek.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\SchittsCreek\content.html">
-                <div class="text">Check out <b> Schitts Creek</b></div>
+                <a href="content\SchittsCreek\content.html">
+                <div class="text"> <b> Schitts Creek</b></div>
                 <p class="text">Seasons 1-6</p></a>
                  
             </div> 
             
             <div class=contained> <div class="container">
-                <img src=content\tv\TimandEric\img\titlecard.jpg>
+                <img src=content\TimandEric.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\TimandEric\content.html">
-                <div class="text">Check out <b> Tim and Eric</b></div>
+                <a href="content\TimandEric\content.html">
+                <div class="text"> <b> Tim and Eric</b></div>
                 <p class="text">Seasons 1-5</p></a>
                  
             </div> 
                         
             <div class=contained> <div class="container">
-                <img src=content\tv\WhoisAmerica\img\titlecard.jpg>
+                <img src=content\WhoisAmerica.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\WhoisAmerica\content.html">
-                <div class="text">Check out <b> Who is America</b></div>
+                <a href="content\WhoisAmerica\content.html">
+                <div class="text"> <b> Who is America</b></div>
                 <p class="text">Season 1</p></a>
                  
             </div> 
 
-        </div>
-
-        <!-- cooking -->
-        <div id="Cooking" class="desc">
-
-
             <div class=contained> <div class="container">
-                <img src=content\tv\Masterchef\img\titlecard.jpg>
+                <img src=content\Masterchef.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\Masterchef\content.html">
-                <div class="text">Check out <b> Masterchef (US)</b></div>
+                <a href="content\Masterchef\content.html">
+                <div class="text"> <b> Masterchef (US)</b></div>
                 <p class="text">Season 1</p></a>
                  
             </div> 
                         
             <div class=contained> <div class="container">
-                <img src=content\tv\PartsUnknown\img\titlecard.jpg>
+                <img src=content\PartsUnknown.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\PartsUnknown\content.html">
-                <div class="text">Check out <b> Parts Unknown</b></div>
+                <a href="content\PartsUnknown\content.html">
+                <div class="text"> <b> Parts Unknown</b></div>
                 <p class="text">Seasons 1-2</p></a>
                  
             </div> 
 
-        </div>
-
-        <!-- crime -->
-        <div id="Crime" class="desc">
-
-
             <div class=contained> <div class="container">
-                <img src=content\tv\BetterCallSaul\img\titlecard.jpg>
+                <img src=content\BetterCallSaul.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\BetterCallSaul\content.html">
-                <div class="text">Check out <b> Better Call Saul</b></div>
+                <a href="content\BetterCallSaul\content.html">
+                <div class="text"> <b> Better Call Saul</b></div>
                 <p class="text">Seasons 1-4</p></a>
                  
             </div> 
 
             
             <div class=contained> <div class="container">
-                <img src=content\tv\BreakingBad\img\titlecard.jpg>
+                <img src=content\BreakingBad.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\BreakingBad\content.html">
-                <div class="text">Check out <b> Breaking Bad</b></div>
+                <a href="content\BreakingBad\content.html">
+                <div class="text"> <b> Breaking Bad</b></div>
                 <p class="text">Seasons 1-5</p></a>
                  
             </div> 
                         
             <div class=contained> <div class="container">
-                <img src=content\tv\Sopranos\img\titlecard.jpg>
+                <img src=content\Sopranos.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\Sopranos\content.html">
-                <div class="text">Check out <b> The Sopranos</b></div>
+                <a href="content\Sopranos\content.html">
+                <div class="text"> <b> The Sopranos</b></div>
                 <p class="text">Seasons 1-6</p></a>
                  
             </div> 
             
             <div class=contained> <div class="container">
-                <img src=content\tv\TrueDetective\img\titlecard.png>
+                <img src=content\TrueDetective.png>
                 <div class="overlay"></div></div>
-                <a href="content\tv\TrueDetective\content.html">
-                <div class="text">Check out <b> True Detective</b></div>
+                <a href="content\TrueDetective\content.html">
+                <div class="text"> <b> True Detective</b></div>
                 <p class="text">Seasons 1-3</p></a>
                  
             </div> 
                         
             <div class=contained> <div class="container">
-                <img src=content\tv\Watchmen\img\titlecard.jpg>
+                <img src=content\Watchmen.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\Watchmen\content.html">
-                <div class="text">Check out <b> Watchmen</b></div>
+                <a href="content\Watchmen\content.html">
+                <div class="text"> <b> Watchmen</b></div>
                 <p class="text">Season 1</p></a>
                  
             </div> 
-        </div>
-       
-        <!-- drama -->
-        <div id="Drama" class="desc">
 
             <div class=contained> <div class="container">
-                <img src=content\tv\Atlanta\img\titlecard.png>
+                <img src=content\Atlanta.png>
                 <div class="overlay"></div></div>
-                <a href="content\tv\Atlanta\content.html">
-                <div class="text">Check out <b> Atlanta</b></div>
+                <a href="content\Atlanta\content.html">
+                <div class="text"> <b> Atlanta</b></div>
                 <p class="text">Seasons 1-3</p></a>
                  
             </div> 
 
             <div class=contained> <div class="container">
-                <img src=content\tv\Chernobyl\img\titlecard.jpg>
+                <img src=content\Chernobyl.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\Chernobyl\content.html">
-                <div class="text">Check out <b> Chernobyl</b></div>
+                <a href="content\Chernobyl\content.html">
+                <div class="text"> <b> Chernobyl</b></div>
                 <p class="text">Season 1</p></a>
                  
             </div> 
 
             <div class=contained> <div class="container">
-                <img src=content\tv\OneTreeHill\img\titlecard.jpg>
+                <img src=content\OneTreeHill.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\OneTreeHill\content.html">
-                <div class="text">Check out <b> One Tree Hill</b></div>
+                <a href="content\OneTreeHill\content.html">
+                <div class="text"> <b> One Tree Hill</b></div>
                 <p class="text">Seasons 1-2</p></a>
                  
             </div> 
 
-        </div>
-
-        <!-- fantasy -->
-        <div id="Fantasy" class="desc">
-
             <div class=contained> <div class="container">
-                <img src=content\tv\GameofThrones\img\titlecard.jpg>
+                <img src=content\GameofThrones.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\GameofThrones\content.html">
-                <div class="text">Check out <b> Game of Thrones</b></div>
+                <a href="content\GameofThrones\content.html">
+                <div class="text"> <b> Game of Thrones</b></div>
                 <p class="text">Seasons 1-8</p></a>
                  
             </div> 
 
             <div class=contained> <div class="container">
-                <img src=content\tv\Outlander\img\titlecard.jpg>
+                <img src=content\Outlander.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\Outlander\content.html">
-                <div class="text">Check out <b> Outlander</b></div>
+                <a href="content\Outlander\content.html">
+                <div class="text"> <b> Outlander</b></div>
                 <p class="text">Seasons 3-6</p></a>
                  
             </div> 
             
             <div class=contained> <div class="container">
-                <img src=content\tv\Witcher\img\titlecard.jpg>
+                <img src=content\Witcher.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\Witcher\content.html">
-                <div class="text">Check out <b> The Witcher</b></div>
+                <a href="content\Witcher\content.html">
+                <div class="text"> <b> The Witcher</b></div>
                 <p class="text">Seasons 1-2</p></a>
                  
             </div> 
 
-        </div>
-
-        <!-- scifi -->
-        <div id="Scifi" class="desc">
-
             <div class=contained> <div class="container">
-                <img src=content\tv\StarTrekVoyager\img\titlecard.jpg>
+                <img src=content\StarTrekVoyager.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\StarTrekVoyager\startrekvoyager.html">
-                <div class="text">Check out <b> Star Trek Voyager</b></div>
+                <a href="content\StarTrekVoyager\startrekvoyager.html">
+                <div class="text"> <b> Star Trek Voyager</b></div>
                 <p class="text">TBD</p></a>
                  
             </div>
 
             <div class=contained> <div class="container">
-                <img src=content\tv\StarTrekPicard\img\titlecard.jpg>
+                <img src=content\StarTrekPicard.jpg>
                 <div class="overlay"></div></div>
-                <a href="content\tv\StarTrekPicard\content.html">
-                <div class="text">Check out <b> Star Trek Picard</b></div>
+                <a href="content\StarTrekPicard\content.html">
+                <div class="text"> <b> Star Trek Picard</b></div>
                 <p class="text">TBD</p></a>
                  
             </div>
 
             <div class=contained> <div class="container">
-                <img src=content\tv\StarTrekNextGen\img\titlecard.jpg>
+                <img src=content\StarTrekNextGen.jpg>
                 <div class="overlay"></div></div>
-                    <a href="content\tv\StarTrekNextGen\startrekNextGen.html">
-                    <div class="text">Check out <b> Star Trek Next Generation</b></div><p class="text">Seasons 1-4</p></a>
+                    <a href="content\StarTrekNextGen\startrekNextGen.html">
+                    <div class="text"> <b> Star Trek Next Generation</b></div><p class="text">Seasons 1-4</p></a>
                  
             </div> 
 
             <div class=contained> <div class="container">
-                <img src=content\tv\StarTrekStrangeNew\img\titlecard.jpg>
+                <img src=content\StarTrekStrangeNew.jpg>
                 <div class="overlay"></div></div>
-                    <a href="content\tv\StarTrekStrangeNew\startrekNextGen.html">
-                    <div class="text">Check out <b> Star Trek Strange New Worlds</b></div><p class="text">TBD</p></a>
+                    <a href="content\StarTrekStrangeNew\startrekNextGen.html">
+                    <div class="text"> <b> Star Trek Strange New Worlds</b></div><p class="text">TBD</p></a>
                  
             </div> 
 
             
         <div class=contained> <div class="container">
-            <img src=content\tv\StarTrekEnterprise\img\titlecard.jpg>
+            <img src=content\StarTrekEnterprise.jpg>
             <div class="overlay"></div></div>
-                <a href="content\tv\StarTrekStrangeNew\startrekNextGen.html">
-                <div class="text">Check out <b> Star Trek Enterprise</b></div><p class="text">TBD</p></a>
+                <a href="content\StarTrekStrangeNew\startrekNextGen.html">
+                <div class="text"> <b> Star Trek Enterprise</b></div><p class="text">TBD</p></a>
              
         </div> 
 
         <div class=contained> <div class="container">
-            <img src=content\tv\StarTrekDeepSpace\img\titlecard.png>
+            <img src=content\StarTrekDeepSpace.png>
             <div class="overlay"></div></div>
-                <a href="content\tv\StarTrekDeepSpace\startrekNextGen.html">
-                <div class="text">Check out <b> Star Trek Deep Space Nine</b></div><p class="text">TBD</p></a>
+                <a href="content\StarTrekDeepSpace\startrekNextGen.html">
+                <div class="text"> <b> Star Trek Deep Space Nine</b></div><p class="text">TBD</p></a>
              
         </div> 
 
-        </div>
-
-        <!-- thriller -->
-        <div id="Thriller" class="desc">
-
-
-            <div class=contained> <div class="container">
-                <img src=content\tv\BlackMirror\img\titlecard.jpg>
-                <div class="overlay"></div></div>
-                <a href="content\tv\BlackMirror\content.html">
-                <div class="text">Check out <b> Black Mirror</b></div>
-                <p class="text">Seasons 1-4</p></a>
-                 
-            </div> 
-
-        </div>
-
-        <!-- reality -->
-        <div id="Reality" class="desc">
-
-            <div class=contained> <div class="container">
-                <img src=content\tv\ManvsWild\img\titlecard.jpg>
-                <div class="overlay"></div></div>
-                <a href="content\tv\ManvsWild\content.html">
-                <div class="text">Check out <b> Man vs Wild</b></div>
-                <p class="text">Seasons 1-5</p></a>
-                 
-            </div> 
-
-        </div>
+    </div>
 
     </body>
 </html>

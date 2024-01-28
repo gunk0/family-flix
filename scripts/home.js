@@ -1,6 +1,25 @@
 "use strict;";
+
+$(document).ready(function() {
+  $('.genre').on('click', function() {
+      $('html, body').animate({scrollTop: 0}, 600);
+  });
+});
+
 function filter(className) {
   var divs = document.querySelectorAll('#mov');
+  divs.forEach(function(div) {
+    console.log(divs.classList)
+      if (div.classList.contains(className)) {
+          div.style.display = 'block';
+      } else {
+          div.style.display = 'none';
+      }
+  });
+}
+
+function filterTV(className) {
+  var divs = document.querySelectorAll('#tv');
   divs.forEach(function(div) {
     console.log(divs.classList)
       if (div.classList.contains(className)) {

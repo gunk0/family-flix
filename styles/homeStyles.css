@@ -57,15 +57,12 @@ select {
 }
 
 .category {
-  display:flex;
   justify-content: space-between;
-  list-style: none;
   margin-top: 10px;
   font-size: larger;
 }
 
 .category li {
-  position:sticky;
   color:whitesmoke;
 }
 
@@ -101,9 +98,6 @@ select {
   transition: 1.2s ease;
 }
 
-.desc {
-  display:none;
-}
 
 .head {
   display:flex;
@@ -192,19 +186,6 @@ select {
   transform: translateX(-50%) scaleX(1); /* Scale the line from the middle */
 }
 
-
-.vid {
-  position: relative;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: left;
-}
-
-
 /* IDS */
 
 #header {
@@ -217,11 +198,67 @@ select {
   background-color: rgb(0, 0, 0);
 }
 
+#mov {
+  display:none;
+}
+
 #selGenre {
   color:  whitesmoke;
   background-color: rgba(0, 0, 0, 0);
   text-shadow: 0 0 15px #58782B;
 }
 
-/*  */
+/* sidenav  */
 
+.sidenav {
+  height: 90%; /* Full-height */
+  width: 200px; /* Set the width of the side navigation */
+  position: fixed; /* Fixed position - stay in place */
+  z-index: 1; /* Stay on top */
+  top: 60px; /* Stay at the top */
+  left: 0;
+  padding-top: 5px; /* Place content 60px from the top */
+}
+
+/* Style the main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .sidenav {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+  .sidenav a {
+      float: left;
+      width: 100%;
+  }
+  .main {
+      margin-left: 0;
+  }
+}
+
+.sidenav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sidenav li {
+  display: block;
+}
+
+.genre {
+  background-color: rgba(0, 0, 0, 0);
+  color:whitesmoke;
+  font-size: medium;
+  text-align: left;
+  border:none;
+}
+
+.genre:hover {
+  border: 1px solid whitesmoke;
+}

@@ -19,56 +19,53 @@
         <li><a href="homeDoc.html" class="topbar" id="doc">DOCUMENTARY</a></li>
         <li><a href="homeNew.html" class="topbar" id="new">RECENTLY ADDED</a></li>
         <li><a href="homeReq.html" class="topbar" id="req">REQUEST CONTENT</a></li>
-               
-            <div class="search">
-                <select id="selGenre" >
-                    <option value="all">All</option>
-                    <option value="act">Action</option>
-                    <option value="ani">Adventure</option>
-                    <option value="ani">Animated</option>
-                    <option value="bio">Biography</option>
-                    <option value="xmas">Christmas</option>
-                    <option value="haha">Comedy</option>
-                    <option value="crm">Crime</option>
-                    <option value="dram">Drama</option>
-                    <option value="fam">Family</option>
-                    <option value="fant">Fantasy</option>
-                    <option value="his">Historical/Epics</option>
-                    <option value="mys">Mystery/Suspense</option>
-                    <option value="rom-com">Rom-Com</option>
-                    <option value="rom">Romance</option>
-                    <option value="scifi">Scifi</option>
-                    <option value="sup">Superhero</option>
-                    <option value="thr">Thriller</option>
-                </select>
-            </div>
     </ul>
-    <ul class="category">
-        <li class="topbar"><b class="genre" onclick="filter('Action')">Action</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Adventure')">Adventure</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Animated')">Animated</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Biography')">Biography</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Comedy')">Comedy</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Crime')">Crime</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Drama')">Drama</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Family')">Family</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Fantasy')">Fantasy</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Historical')">Historical</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Epics')">Epics</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Mystery')">Mystery</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Suspense')">Suspense</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Rom-Com')">Rom-Com</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Romance')">Romance</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Scifi')">Scifi</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Suspense')">Suspense</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Superhero')">Superhero</b></li>
-        <li class="topbar"><b class="genre" onclick="filter('Thriller')">Thriller</b></li>
-    </ul>
+
 </header> 
 
     <body>
+        <div class="sidenav">
+            <ul>
+                <li><button class="genre" onclick="updateSide('genre')">By <b>Genre</b></button></li>
+            </ul>
+            <ul id="genreCat" class="category">
+                <li><button class="genre" onclick="filter('Action')">Action</button></li>
+                <li><button class="genre" onclick="filter('Adventure')">Adventure</button></li>
+                <li><button class="genre" onclick="filter('Animated')">Animated</button></li>
+                <li><button class="genre" onclick="filter('Biography')">Biography</button></li>
+                <li><button class="genre" onclick="filter('Comedy')">Comedy</button></li>
+                <li><button class="genre" onclick="filter('Crime')">Crime</button></li>
+                <li><button class="genre" onclick="filter('Drama')">Drama</button></li>
+                <li><button class="genre" onclick="filter('Family')">Family</button></li>
+                <li><button class="genre" onclick="filter('Fantasy')">Fantasy</button></li>
+                <li><button class="genre" onclick="filter('Historical')">Historical</button></li>
+                <li><button class="genre" onclick="filter('Epics')">Epics</button></li>
+                <li><button class="genre" onclick="filter('Mystery')">Mystery</button></li>
+                <li><button class="genre" onclick="filter('Suspense')">Suspense</button></li>
+                <li><button class="genre" onclick="filter('Rom-Com')">Rom-Com</button></li>
+                <li><button class="genre" onclick="filter('Romance')">Romance</button></li>
+                <li><button class="genre" onclick="filter('Scifi')">Scifi</button></li>
+                <li><button class="genre" onclick="filter('Suspense')">Suspense</button></li>
+                <li><button class="genre" onclick="filter('Superhero')">Superhero</button></li>
+                <li><button class="genre" onclick="filter('Thriller')">Thriller</button></li>
+            </ul>
+            <ul id="decadeCat" class="category">
+                <li><button class="genre" onclick="filter('90s')">90s</button></li>
+                <li><button class="genre" onclick="filter('80s')">80s</button></li>
+                <li><button class="genre" onclick="filter('80s')">Based on Books</button></li>
+                <li><button class="genre" onclick="filter('80s')">Award Winners</button></li>
+                <li><button class="genre" onclick="filter('80s')">Pixar</button></li>
+                <li><button class="genre" onclick="filter('80s')">Studio Ghibli</button></li>
+                <li><button class="genre" onclick="filter('80s')">Adam's Favourites</button></li>
+                <li><button class="genre" onclick="filter('80s')">Canadian Director</button></li>
+                <li><button class="genre" onclick="filter('80s')">Brand-Spanking New</button></li>
+            </ul>
+        </div>
+        
+        <!-- Page content -->
+        <div class="main">
                 <!-- Action -->
-                <div id="mov" class="Action">
+                <div id="mov" class="Action Cop 80s">
                     <div class=contained>
                         <div class=container>
                             <img src=content\Beverly-Hills-Cop.jpg>
@@ -95,6 +92,7 @@
                         <div class="bio">A New York City police officer tries to save his estranged wife and several others taken hostage by terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles.</div>
                    </div>
                 </div>
+            </div>
 <!--                    
                    <div class=contained>
                         <div class=container>
@@ -1574,7 +1572,7 @@
                     <div class="bio">bio</div>
                </div>
                
-               <!-- <div class=contained>
+             <div class=contained>
                     <div class=container>
                         <img src=content\Body-Double.jpg>
                         <div class="overlay"></div>
@@ -1609,7 +1607,7 @@
                         </a>
                     <div class="bio">bio</div>
                </div> -->
-               
+<!--                
                <div class=contained>
                     <div class=container>
                         <img src=content\Fargo.jpg>
@@ -1633,8 +1631,6 @@
                         </a>
                     <div class="bio">bio</div>
                </div>
-
-               <!-- goodtime -->
                
                <div class=contained>
                     <div class=container>
@@ -1731,10 +1727,10 @@
                                 <p class="text"> Directed by H. Franklin (1990)</p>
                             </a>
                         <div class="bio">bio</div>
-                   </div>
+                   </div> -->
 
                    <!-- raising arizona -->
-                   
+                   <!--
                    <div class=contained>
                         <div class=container>
                             <img src=content\Reservoir-Dogs.jpg>
@@ -1793,7 +1789,7 @@
                                 <p class="text"> Directed by B. Singer (1995)</p>
                             </a>
                         <div class="bio">bio</div>
-                   </div>
+                   </div> -->
 
                    <!-- three billboards outside ebbing -->
 
@@ -1801,7 +1797,7 @@
 
                    <!-- wild at heart -->
  
-                </div> -->
+                </div>
             
                 <!-- drama -->
                 <!-- <div id="Drama" class="desc">

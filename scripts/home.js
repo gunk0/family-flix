@@ -1,60 +1,84 @@
 "use strict;";
-$(function(){
-  $('#selGenre').change(function(){
-    var selected = $(this).find(':selected').text();
-    console.log(selected)
-    if (selected=="All"){
-      $(".desc").show();
-      $("html, body").animate({
-        scrollTop: 0
-    }, 600);
-    } else {
-      $(".desc").hide();
-      $('#' + selected).show();
-      $("html, body").animate({
-        scrollTop: 0
-    }, 600);
-    }
-  }).change()
-
-});
-
-$(function(){
-  $('#selSeason').change(function(){
-    var selected = $(this).find(':selected').text();
-    console.log(selected)
-    if (selected=="All"){
-      $(".desc").show();
-      $("html, body, .sidebar").animate({
-        scrollTop: 0
-    }, 600);
-    } else {
-      $(".desc").hide();
-      $('#' + selected).show();
-      $("html, body, .sidebar").animate({
-        scrollTop: 0
-    }, 600);
-    }
-  }).change()
-
-});
-
-
-function filter(name) {
-  const genre = document.getElementById(name)
-  // if (genre.id=="All"){
-  //   $(".desc").show();
-  //   $("html, body, .sidebar").animate({
-  //     scrollTop: 0
-  // }, 600);
-  // } else {
-    $("#mov").hide();
-    $('.' + genre.id).show();
-    $("html, body, .sidebar").animate({
-      scrollTop: 0
-  }, 600);
-  console.log(genre.id)
+function filter(className) {
+  var divs = document.querySelectorAll('#mov');
+  divs.forEach(function(div) {
+    console.log(divs.classList)
+      if (div.classList.contains(className)) {
+          div.style.display = 'block';
+      } else {
+          div.style.display = 'none';
+      }
+  });
 }
+
+
+// update side nav with genres, etc
+// function updateSide(u) {
+//   var uls = document.querySelectorAll(".category");
+//   uls.forEach(function(ul) {
+
+//     if (ul.)
+//   }
+  
+//   )
+// }
+
+// $(function(){
+//   $('#selGenre').change(function(){
+//     var selected = $(this).find(':selected').text();
+//     console.log(selected)
+//     if (selected=="All"){
+//       $(".desc").show();
+//       $("html, body").animate({
+//         scrollTop: 0
+//     }, 600);
+//     } else {
+//       $(".desc").hide();
+//       $('#' + selected).show();
+//       $("html, body").animate({
+//         scrollTop: 0
+//     }, 600);
+//     }
+//   }).change()
+
+// });
+
+// $(function(){
+//   $('#selSeason').change(function(){
+//     var selected = $(this).find(':selected').text();
+//     console.log(selected)
+//     if (selected=="All"){
+//       $(".desc").show();
+//       $("html, body, .sidebar").animate({
+//         scrollTop: 0
+//     }, 600);
+//     } else {
+//       $(".desc").hide();
+//       $('#' + selected).show();
+//       $("html, body, .sidebar").animate({
+//         scrollTop: 0
+//     }, 600);
+//     }
+//   }).change()
+
+// });
+
+
+// function filter(name) {
+//   const genre = document.getElementById(name)
+//   if (genre.id=="All"){
+//     $(".All").show();
+//     $("html, body, .sidebar").animate({
+//       scrollTop: 0
+//   }, 600);
+//   } else {
+//     $("#mov").hide();
+//     $('.' + genre.id).show();
+//     $("html, body, .sidebar").animate({
+//       scrollTop: 0
+//   }, 600);
+//   console.log(genre.id)
+// }}
 
 
 
@@ -138,6 +162,8 @@ function filter(name) {
 //     } 
 
 // }
+
+
 
 function addValue(element) {
   var i = element.querySelector("#value");

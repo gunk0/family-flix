@@ -40,57 +40,85 @@ $(function(){
 });
 
 
-function setSrc(seasonEpisode) {
-    const video = document.getElementById('videoContent');
-    const show = document.getElementById(seasonEpisode);
-    let file = `http://localhost:5500/content/tv/${show.className}/content/${seasonEpisode.substring(0, 3)}/${seasonEpisode}.mp4`;
-    
-    fetch(file)
-    .then(response => {
-      if (response.ok) {
-        // file exists, set the video source
-        video.src = file;
-      } else {
-        // try adding "mkv" extension
-        file = file.slice(0, -3) + "mkv";
-        console.log(file)
-        fetch(file)
-          .then(response => {
-            if (response.ok) {
-              // file exists, set the video source
-              video.src = file;
-              console.log(file)
-            } else {
-               // try adding "mkv" extension
-              file = file.slice(0, -3) + "m4v";
-              console.log(file)
-              fetch(file)
-                .then(response => {
-                  if (response.ok) {
-                  // file exists, set the video source
-                  video.src = file;
-                  console.log(file)
-                } else {
-                  // try adding "avi" extension
-                  file = file.slice(0, -3) + "avi";
-                  fetch(file)
-                    .then(response => {
-                      if (response.ok) {
-                        // file exists, set the video source
-                        video.src = file;
-                        console.log(file)
-                      } else {
-                        // file doesn't exist with any of the extensions
-                        console.error('File not found!');
-                      }
-                    });
-            }
-          });
-      }
-    });
-  }
-});
+function filter(name) {
+  const genre = document.getElementById(name)
+  // if (genre.id=="All"){
+  //   $(".desc").show();
+  //   $("html, body, .sidebar").animate({
+  //     scrollTop: 0
+  // }, 600);
+  // } else {
+    $("#mov").hide();
+    $('.' + genre.id).show();
+    $("html, body, .sidebar").animate({
+      scrollTop: 0
+  }, 600);
+  console.log(genre.id)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function setSrc(seasonEpisode) {
+//     const video = document.getElementById('videoContent');
+//     const show = document.getElementById(seasonEpisode);
+//     let file = `http://localhost:5500/content/tv/${show.className}/content/${seasonEpisode.substring(0, 3)}/${seasonEpisode}.mp4`;
+    
+//     fetch(file)
+//     .then(response => {
+//       if (response.ok) {
+//         // file exists, set the video source
+//         video.src = file;
+//       } else {
+//         // try adding "mkv" extension
+//         file = file.slice(0, -3) + "mkv";
+//         console.log(file)
+//         fetch(file)
+//           .then(response => {
+//             if (response.ok) {
+//               // file exists, set the video source
+//               video.src = file;
+//               console.log(file)
+//             } else {
+//                // try adding "mkv" extension
+//               file = file.slice(0, -3) + "m4v";
+//               console.log(file)
+//               fetch(file)
+//                 .then(response => {
+//                   if (response.ok) {
+//                   // file exists, set the video source
+//                   video.src = file;
+//                   console.log(file)
+//                 } else {
+//                   // try adding "avi" extension
+//                   file = file.slice(0, -3) + "avi";
+//                   fetch(file)
+//                     .then(response => {
+//                       if (response.ok) {
+//                         // file exists, set the video source
+//                         video.src = file;
+//                         console.log(file)
+//                       } else {
+//                         // file doesn't exist with any of the extensions
+//                         console.error('File not found!');
+//                       }
+//                     });
+//             }
+//           });
+//       }
+//     });
+//   }
+// });
+// }
 
 // function adjcol(id) {
 //   if (id=="film") {

@@ -12,11 +12,11 @@
 
 <header id="header">
     <ul class="head">
-        <li style="color:white"><b style="color:#58782B">A</b><b style="color:#2B3F78">D</b><b style="color:#783A2B">A</b><b style="color:#F7DBD5">M</b>flix</li>
+        <li style="color:white" id="famflix"><b style="color:#58782B">FAM</b>flix</li>
         <li><a href="homeMov.html" class="topbar" id="film" style="color:#58782B">FILM</a></li>
-        <li><a href="homeTv.html" class="topbar" id="tv" style="color:#2B3F78">TELEVISION</a></li>
-        <li><a href="homeFor.html" class="topbar" id="for" style="color:#783A2B">FOREIGN</a></li>
-        <li><a href="homeDoc.html" class="topbar" id="doc" style="color:#F7DBD5">DOCUMENTARY</a></li>
+        <li><a href="homeTv.html" class="topbar" id="tv" style="color:#2B6878">TELEVISION</a></li>
+        <li><a href="homeFor.html" class="topbar" id="for" style="color:#6A2B78">FOREIGN</a></li>
+        <li><a href="homeDoc.html" class="topbar" id="doc" style="color:#78502B">DOCUMENTARY</a></li>
         <li><a href="homeNew.html" class="topbar" id="new" style="color:#B3CD8E">RECENTLY ADDED</a></li>
         <li><a href="homeReq.html" class="topbar" id="req">REQUEST CONTENT</a></li>
         <li></li>
@@ -27,7 +27,10 @@
     <body>
         <div class="sidenav">
             <ul id="genreCat" class="category">
-                <li>By <b style="color:#58782B">Genre</b></li>
+                <li>By <b style="color:#58782B">Search</b></li>
+                <li><input type="text" id="searchInput" onchange="filterName(event)"></li>
+
+                <li style="margin-top: 10px;">By <b style="color:#58782B">Genre</b></li>
                 <li><button class="genre" onclick="filter('Action')">Action</button></li>
                 <li><button class="genre" onclick="filter('Adventure')">Adventure</button></li>
                 <li><button class="genre" onclick="filter('Animated')">Animated</button></li>
@@ -103,6 +106,18 @@
         <div class="main">
 
             <!-- A -->
+            <div id="mov" class="contained 00s Comedy Drama Romance">
+                <div class=container>
+                    <img src=content\About-a-Boy.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\About-a-Boy\movieContent.html">
+                        <div class="text"><b>About a Boy </b></div>
+                        <p class="text"> Directed by C. Weitz (2002)</p>
+                    </a>
+                <div class="bio">Will, who attends single parent meetings to woo women, meets Marcus, a troubled 12-year-old boy. As they become friends, Will learns to be responsible while he helps Marcus with his studies.</div>
+            </div>
+
             <div id="mov" class="contained 00s Comedy Drama">
                 <div class=container>
                     <img src=content\Adaptation.jpg>
@@ -150,6 +165,18 @@
                     </a>
                 <div class="bio">A high-school boy in the early 1970s is given the chance to write a story for Rolling Stone magazine about an up-and-coming rock band as he accompanies them on their concert tour.</div>
             </div>
+
+            <div id="mov" class="contained Epic Historical Action Adventure 00s">
+                <div class=container>
+                    <img src=content\Apocalypto.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\Apocalypto\movieContent.html">
+                        <div class="text"><b>Apocalypto </b></div>
+                        <p class="text"> Directed by M. Gibson (2006)</p>
+                    </a>
+                <div class="bio">As the Mayan kingdom faces its decline, a young man is taken on a perilous journey to a world ruled by fear and oppression.</div>
+           </div>
 
             <div id="mov" class="contained Crime Drama Adam 90s">
                 <div class=container>
@@ -370,6 +397,18 @@
                     </a>
                 <div class="bio">The life of Mason, from early childhood to his arrival at college.</div>
             </div>
+
+            <div id="mov" class="contained 90s Historical Epic Drama">
+                <div class=container>
+                    <img src=content\Braveheart.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\Braveheart\movieContent.html">
+                        <div class="text"><b>Braveheart </b></div>
+                        <p class="text"> Directed by M. Gibson (1995)</p>
+                    </a>
+                <div class="bio">Scottish warrior William Wallace leads his countrymen in a rebellion to free his homeland from the tyranny of King Edward I of England.</div>
+           </div>
            
             <div id="mov" class="contained Comedy 10s">
                 <div class=container>
@@ -523,6 +562,30 @@
                     </a>
                 <div class="bio">John McClane attempts to avert disaster as rogue military operatives seize control of Dulles International Airport in Washington, D.C.</div>
            </div>
+
+            <div id="mov" class="contained 80s Romance Drama">
+                <div class=container>
+                    <img src=content\Dirty-Dancing.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\Dirty-Dancing\movieContent.html">
+                        <div class="text"><b>Dirty Dancing </b></div>
+                        <p class="text"> Directed by E. Ardolino (1987)</p>
+                    </a>
+                <div class="bio">Spending the summer at a Catskills resort with her family, Frances "Baby" Houseman falls in love with the camp's dance instructor, Johnny Castle.</div>
+            </div>
+
+            <div id="mov" class="contained Tarantino 10s Western Historical">
+                <div class=container>
+                    <img src=content\Django-Unchained.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\Django-Unchained\movieContent.html">
+                        <div class="text"><b>Django Unchained </b></div>
+                        <p class="text"> Directed by Q. Tarantino (2012)</p>
+                    </a>
+                <div class="bio">With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation owner in Mississippi.</div>
+            </div>
 
             <div id="mov" class="contained Comedy Sports 00s">
                 <div class=container>
@@ -743,6 +806,30 @@
 
 
             <!-- G -->
+            <div id="mov" class="contained 00s Drama Historical Day-Lewis Scorsese">
+                <div class=container>
+                    <img src=content\Gangs-of-New-York.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\Gangs-of-New-York\movieContent.html">
+                        <div class="text"><b>Gangs of New York </b></div>
+                        <p class="text"> Directed by M. Scorsese (2002)</p>
+                    </a>
+                <div class="bio">In 1862, Amsterdam Vallon returns to the Five Points area of New York City seeking revenge against Bill the Butcher, his father's killer.</div>
+            </div>
+
+            <div id="mov" class="contained Historical Epic Drama 00s">
+                <div class=container>
+                    <img src=content\Gladiator.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\Gladiator\movieContent.html">
+                        <div class="text"><b>Gladiator </b></div>
+                        <p class="text"> Directed by R. Scott (2000)</p>
+                    </a>
+                <div class="bio">A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.</div>
+            </div>
+
             <div id="mov" class="contained Biography Comedy Drama Award 10s">
                 <div class=container>
                     <img src=content\Green-Book.jpg>
@@ -903,6 +990,18 @@
                 <div class="bio">Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.</div>
             </div>
 
+            <div id="mov" class="contained 10s Drama Romance Scifi">
+                <div class=container>
+                    <img src=content\Her.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\Her\movieContent.html">
+                        <div class="text"><b>Her </b></div>
+                        <p class="text"> Directed by S.Jonze (2013)</p>
+                    </a>
+                <div class="bio">In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.</div>
+            </div>
+
             <div id="mov" class="contained Animated Family 90s Musical Disney Fantasy Fresh">
                 <div class=container>
                     <img src=content\Hercules.jpg>
@@ -926,6 +1025,18 @@
                     </a>
                 <div class="bio">Rob, a record store owner and compulsive list maker, recounts his top five breakups, including the one in progress.</div>
             </div>
+
+            <div id="mov" class="contained 00s Rom-Com Romantic Comedy">
+                <div class=container>
+                    <img src=content\Hitch.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\Hitch\movieContent.html">
+                        <div class="text"><b>Hitch </b></div>
+                        <p class="text"> Directed by A. Tennant (2005)</p>
+                    </a>
+                <div class="bio">A smooth-talking man falls for a hardened columnist while helping a shy accountant woo a beautiful heiress.</div>
+           </div>
 
             <div id="mov" class="contained Fantasy Family Adventure 90s Spielberg Light Williams">
                 <div class=container>
@@ -1084,7 +1195,7 @@
 
             <div id="mov" class="contained War Comedy Drama 10s">
                 <div class=container>
-                    <img src=content\Jojo-Rabbit.jpg>
+                    <img src=content\Jojo-Rabbit.jpeg>
                     <div class="overlay"></div>
                     </div>
                     <a href="content\Jojo-Rabbit\movieContent.html">
@@ -1101,7 +1212,6 @@
             <div id="mov" class="contained Action 00s Tarantino MA Revenge Fresh">
                 <div class=container>
                     <img src=content\kill-bill-vol1.jpg>
-                    <video src="/Users/adam/Desktop/Brazil (1985)[DVDRip][big_dad_e™].m4v#t=620,740" poster="content\Kill-Bill-Vol-1.jpg"></video>
                     <div class="overlay"></div>
                     </div>
                     <a href="content\Kill-Bill-Vol-1\movieContent.html">
@@ -1396,6 +1506,18 @@
                     </a>
                 <div class="bio">A look at the relationship between Mike Wazowski (Billy Crystal) and James P. "Sully" Sullivan (John Goodman) during their days at Monsters University, when they weren't necessarily the best of friends.</div>
            </div>
+
+            <div id="mov" class="contained 10s Adventure Comedy Drama Anderson">
+                <div class=container>
+                    <img src=content\Moonrise-Kingdom.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\Moonrise-Kingdom\movieContent.html">
+                        <div class="text"><b>Moonrise Kingdom </b></div>
+                        <p class="text"> Directed by W. Anderson (2012)</p>
+                    </a>
+                <div class="bio">Two 12-year-olds, who live on an island, fall in love with each other and elope into the wilderness. While people set out on a search mission, a violent storm approaching them catches their attention.</div>
+            </div>
            
            <div id="mov" class="contained Animated Family Musical Folk 90s">
                 <div class=container>
@@ -1543,6 +1665,18 @@
                 <div class="bio">A faded television actor and his stunt double strive to achieve fame and success in the final years of Hollywood's Golden Age in 1969 Los Angeles.</div>
             </div>
 
+            <div id="mov" class="contained Drama Romance 10s">
+                <div class=container>
+                    <img src=content\One-Day.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\One-Day\movieContent.html">
+                        <div class="text"><b>One Day </b></div>
+                        <p class="text"> Directed by L. Scherfig (2011)</p>
+                    </a>
+                <div class="bio">After spending the night together on the night of their college graduation Dexter and Emma are shown each year on the same date to see where they are in their lives. They are sometimes together, sometimes not, on that day.</div>
+           </div>
+
 
 
 
@@ -1645,6 +1779,30 @@
                     </a>
                 <div class="bio">The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.</div>
            </div>
+
+            <div id="mov" class="contained 00s Drama Romance">
+                <div class=container>
+                    <img src=content\PS-I-Love-You.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\PS-I-Love-You\movieContent.html">
+                        <div class="text"><b>PS I Love You </b></div>
+                        <p class="text"> Directed by R. LaGravenese (2007)</p>
+                    </a>
+                <div class="bio">A young widow discovers that her late husband has left her 10 messages intended to help ease her pain and start a new life.</div>
+            </div>
+        
+            <div id="mov" class="contained 00s Comedy Drama Romance PTA">
+                <div class=container>
+                    <img src=content\Punch-Drunk-Love.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\Punch-Drunk-Love\movieContent.html">
+                        <div class="text"><b>Punch Drunk Love </b></div>
+                        <p class="text"> Directed by P. Anderson (2002)</p>
+                    </a>
+                <div class="bio">Socially frustrated Barry Egan calls a phone-sex line to curb his loneliness. Little does he know it will land him in deep trouble and will jeopardize his burgeoning romance with the mysterious Lena.</div>
+            </div>
 
 
 
@@ -1761,6 +1919,19 @@
 
 
            <!-- S -->
+            <div id="mov" class="contained 80s Romance Drama">
+                <div class=container>
+                    <img src=content\Say-Anything.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\Say-Anything\movieContent.html">
+                        <div class="text"><b>Say Anything </b></div>
+                        <p class="text"> Directed by C. Crowe (1989)</p>
+                    </a>
+                <div class="bio">A noble underachiever and a beautiful valedictorian fall in love the summer before she goes off to college.</div>
+            </div>
+
+
             <div id="mov" class="contained Palma 80s Crime Drama">
                 <div class=container>
                     <img src=content\Scarface.jpg>
@@ -1784,6 +1955,21 @@
                     </a>
                 <div class="bio">In a magically realistic version of Toronto, a young man must defeat his new girlfriend's seven evil exes one by one in order to win her heart.</div>
             </div>
+
+                   
+            <div id="mov" class="contained 00s Romance Drama">
+                <div class=container>
+                    <img src=content\Serendipity.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\Serendipity\movieContent.html">
+                        <div class="text"><b>Serendipity </b></div>
+                        <p class="text"> Directed by P. Chelsom (2001)</p>
+                    </a>
+                <div class="bio">A couple search for each other years after the night they first met, fell in love, and separated, convinced that one day they'd end up together.</div>
+            </div>
+   
+
                     
             <div id="mov" class="contained Crime Mystery Drama 90s Fincher">
                 <div class=container>
@@ -1832,6 +2018,18 @@
                     </a>
                 <div class="bio">After being snubbed by the royal family, a malevolent fairy places a curse on a princess which only a prince can break, along with the help of three good fairies.</div>
             </div>
+
+            <div id="mov" class="contained 90s Drama Romance">
+                <div class=container>
+                    <img src=content\Sleepless-in-Seattle.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\Sleepless-in-Seattle\movieContent.html">
+                        <div class="text"><b>Sleepless in Seattle </b></div>
+                        <p class="text"> Directed by N. Ephron (1993)</p>
+                    </a>
+                <div class="bio">A recently widowed man's son calls a radio talk-show in an attempt to find his father a partner.</div>
+           </div>
         
             <div id="mov" class="contained Animated Family 50s Musical Fantasy Disney Books">
                 <div class=container>
@@ -1972,7 +2170,7 @@
 
             <div id="mov" class="contained Anderson 00s Comedy Drama">
                 <div class=container>
-                    <img src=content\The-Darjeeling-Limited.jpg>
+                    <img src=content\The-Darjeeling-Limited.jpeg>
                     <div class="overlay"></div>
                     </div>
                     <a href="content\The-Darjeeling-Limited\movieContent.html">
@@ -2138,7 +2336,7 @@
                 <div class="bio">Bagheera the Panther and Baloo the Bear have a difficult time trying to convince a boy to leave the jungle for human civilization.</div>
             </div>
               
-            <div id="mov" class="contained">
+            <div id="mov" class="contained Biography Drama Historical 80s">
                 <div class=container>
                     <img src=content\The-Killing-Fields.jpg>
                     <div class="overlay"></div>
@@ -2147,7 +2345,7 @@
                         <div class="text"><b>The Killing Fields </b></div>
                         <p class="text"> Directed by R. Joffe (1984)</p>
                     </a>
-                <div class="bio">bio</div>
+                <div class="bio">A journalist is trapped in Cambodia during tyrant Pol Pot's bloody 'Year Zero' cleansing campaign, which claimed the lives of two million 'undesirable' civilians.</div>
             </div>
 
             <div id="mov" class="contained Action Adventure Drama Epic Historical Books Day-Lewis 90s">
@@ -2233,6 +2431,18 @@
                     </a>
                 <div class="bio">Set in 1825, Clare, a young Irish convict woman, chases a British officer through the rugged Tasmanian wilderness, bent on revenge for a terrible act of violence he committed against her family.</div>
            </div>
+
+            <div id="mov" class="contained Drama Romance Biography Historical 00s">
+                <div class=container>
+                    <img src=content\The-Other-Boleyn-Girl.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\The-Other-Boleyn-Girl\movieContent.html">
+                        <div class="text"><b>The Other Boleyn Girl </b></div>
+                        <p class="text"> Directed by J. Chadwick (2008)</p>
+                    </a>
+                <div class="bio">Two sisters contend for the affection of King Henry VIII.</div>
+            </div>
 
             <div id="mov" class="contained Action Comedy BuddyCop 10s">
                 <div class=container>
@@ -2450,6 +2660,18 @@
                 <div class="bio">Through a series of freak occurrences, a group of actors shooting a big-budget war movie are forced to become the soldiers they are portraying.</div>
             </div>
 
+            <div id="mov" class="contained Epic Historical Drama War 00s">
+                <div class=container>
+                    <img src=content\Troy.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\Troy\movieContent.html">
+                        <div class="text"><b>Troy </b></div>
+                        <p class="text"> Directed by W. Peterson (2004)</p>
+                    </a>
+                <div class="bio">An adaptation of Homer's great epic, the film follows the assault on Troy by the united Greek forces and chronicles the fates of the men involved.</div>
+            </div>
+
 
 
 
@@ -2593,314 +2815,47 @@
                 <div class="bio">In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy.</div>
            </div>
 
-    
+            <div id="mov" class="contained Historical 00s War Action">
+                <div class=container>
+                    <img src=content\300.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\300\movieContent.html">
+                        <div class="text"><b>300 </b></div>
+                        <p class="text"> Directed by Z. Snyder (2006)</p>
+                    </a>
+                <div class="bio">King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.</div>
+            </div>
+
+            <div id="mov" class="contained 00s Romantic Comedy Rom-Com">
+                <div class=container>
+                    <img src=content\50-First-Dates.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="content\50-First-Dates\movieContent.html">
+                        <div class="text"><b>50 First Dates </b></div>
+                        <p class="text"> Directed by P. Segal (2004)</p>
+                    </a>
+                <div class="bio">Henry Roth is a man afraid of commitment until he meets the beautiful Lucy. They hit it off and Henry think he's finally found the girl of his dreams until discovering she has short-term memory loss and forgets him the next day.</div>
+            </div>
 
         </div>
 
 
 
                 <!-- <div id="Fantasy" class="desc">
-
-                    
-                    
-                    
-                    
-                    
-
-                </div> -->
-
-                <!-- historical -->
-                <!-- <div id="Historical" class="desc">
                    
-                    <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\Gangs-of-New-York.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\Gangs-of-New-York\movieContent.html">
-                                <div class="text"><b>Gangs of New York </b></div>
-                                <p class="text"> Directed by M. Scorsese (2002)</p>
-                            </a>
-                        <div class="bio">In 1862, Amsterdam Vallon returns to the Five Points area of New York City seeking revenge against Bill the Butcher, his father's killer.</div>
-                    </div>
 
-                    <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\Django-Unchained.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\Django-Unchained\movieContent.html">
-                                <div class="text"><b>Django Unchained </b></div>
-                                <p class="text"> Directed by Q. Tarantino (2012)</p>
-                            </a>
-                        <div class="bio">With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation owner in Mississippi.</div>
-                   </div>
+               
 
-                    <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\300.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\300\movieContent.html">
-                                <div class="text"><b>300 </b></div>
-                                <p class="text"> Directed by Z. Snyder (2006)</p>
-                            </a>
-                        <div class="bio">King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.</div>
-                   </div>
-                   
-                   <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\Apocalypto.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\Apocalypto\movieContent.html">
-                                <div class="text"><b>Apocalypto </b></div>
-                                <p class="text"> Directed by M. Gibson (2006)</p>
-                            </a>
-                        <div class="bio">As the Mayan kingdom faces its decline, a young man is taken on a perilous journey to a world ruled by fear and oppression.</div>
-                   </div>
-                   
-                   <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\Braveheart.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\Braveheart\movieContent.html">
-                                <div class="text"><b>Braveheart </b></div>
-                                <p class="text"> Directed by M. Gibson (1995)</p>
-                            </a>
-                        <div class="bio">Scottish warrior William Wallace leads his countrymen in a rebellion to free his homeland from the tyranny of King Edward I of England.</div>
-                   </div>
-                   
-                   <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\Gladiator.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\Gladiator\movieContent.html">
-                                <div class="text"><b>Gladiator </b></div>
-                                <p class="text"> Directed by R. Scott (2000)</p>
-                            </a>
-                        <div class="bio">A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.</div>
-                   </div>
-                   
-                   <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\Troy.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\Troy\movieContent.html">
-                                <div class="text"><b>Troy </b></div>
-                                <p class="text"> Directed by W. Peterson (2004)</p>
-                            </a>
-                        <div class="bio">An adaptation of Homer's great epic, the film follows the assault on Troy by the united Greek forces and chronicles the fates of the men involved.</div>
-                   </div>
+               
 
-                </div> -->
+               
 
-                <!-- Mystery/Suspense -->
-                <!-- <div id="Mystery/Suspense" class="desc"> 
+               
 
-                </div> -->
+               
 
-                <!-- Rom-Com -->
-                <!-- <div id="Rom-Com" class="desc"> 
-
-                </div> -->
-
-                <!-- Romance -->
-                <!-- <div id="Romance" class="desc">
-                <div id="mov" class="contained">
-                    <div class=container>
-                        <img src=content\50-First-Dates.jpg>
-                        <div class="overlay"></div>
-                        </div>
-                        <a href="content\50-First-Dates\movieContent.html">
-                            <div class="text"><b>50 First Dates </b></div>
-                            <p class="text"> Directed by P. Segal (2004)</p>
-                        </a>
-                    <div class="bio">bio</div>
-               </div>
-               
-               <div id="mov" class="contained">
-                    <div class=container>
-                        <img src=content\About-a-Boy.jpg>
-                        <div class="overlay"></div>
-                        </div>
-                        <a href="content\About-a-Boy\movieContent.html">
-                            <div class="text"><b>About a Boy </b></div>
-                            <p class="text"> Directed by C. Weitz (2002)</p>
-                        </a>
-                    <div class="bio">bio</div>
-               </div>
-               
-               <div id="mov" class="contained">
-                    <div class=container>
-                        <img src=content\Dirty-Dancing.jpg>
-                        <div class="overlay"></div>
-                        </div>
-                        <a href="content\Dirty-Dancing\movieContent.html">
-                            <div class="text"><b>Dirty Dancing </b></div>
-                            <p class="text"> Directed by E. Ardolino (1987)</p>
-                        </a>
-                    <div class="bio">bio</div>
-               </div>
-               
-               <div id="mov" class="contained">
-                    <div class=container>
-                        <img src=content\Ghosts-of-Girlfriends-Past.jpg>
-                        <div class="overlay"></div>
-                        </div>
-                        <a href="content\Ghosts-of-Girlfriends-Past\movieContent.html">
-                            <div class="text"><b>Ghosts of Girlfriends Past </b></div>
-                            <p class="text"> Directed by M. Waters (2009)</p>
-                        </a>
-                    <div class="bio">bio</div>
-               </div>
-               
-               <div id="mov" class="contained">
-                    <div class=container>
-                        <img src=content\Her.jpg>
-                        <div class="overlay"></div>
-                        </div>
-                        <a href="content\Her\movieContent.html">
-                            <div class="text"><b>Her </b></div>
-                            <p class="text"> Directed by S.Jonze (2013)</p>
-                        </a>
-                    <div class="bio">bio</div>
-               </div>
-               
-               <div id="mov" class="contained">
-                    <div class=container>
-                        <img src=content\Hitch.jpg>
-                        <div class="overlay"></div>
-                        </div>
-                        <a href="content\Hitch\movieContent.html">
-                            <div class="text"><b>Hitch </b></div>
-                            <p class="text"> Directed by A. Tennant (2005)</p>
-                        </a>
-                    <div class="bio">bio</div>
-               </div>
-               
-               <div id="mov" class="contained">
-                    <div class=container>
-                        <img src=content\Isnt-It-Romantic.jpg>
-                        <div class="overlay"></div>
-                        </div>
-                        <a href="content\Isnt-It-Romantic\movieContent.html">
-                            <div class="text"><b>Isnt It Romantic </b></div>
-                            <p class="text"> Directed by T. Strauss-Schulson (2019)</p>
-                        </a>
-                    <div class="bio">bio</div>
-               </div>
-               
-               <div id="mov" class="contained">
-                    <div class=container>
-                        <img src=content\John-Tucker-Must-Die.jpg>
-                        <div class="overlay"></div>
-                        </div>
-                        <a href="content\John-Tucker-Must-Die\movieContent.html">
-                            <div class="text"><b>John Tucker Must Die </b></div>
-                            <p class="text"> Directed by B. Thomas (2006)</p>
-                        </a>
-                    <div class="bio">bio</div>
-               </div>
-               
-               <div id="mov" class="contained">
-                    <div class=container>
-                        <img src=content\Moonrise-Kingdom.jpg>
-                        <div class="overlay"></div>
-                        </div>
-                        <a href="content\Moonrise-Kingdom\movieContent.html">
-                            <div class="text"><b>Moonrise Kingdom </b></div>
-                            <p class="text"> Directed by W. Anderson (2012)</p>
-                        </a>
-                    <div class="bio">bio</div>
-               </div>
-               
-               <div id="mov" class="contained">
-                    <div class=container>
-                        <img src=content\One-Day.jpg>
-                        <div class="overlay"></div>
-                        </div>
-                        <a href="content\One-Day\movieContent.html">
-                            <div class="text"><b>One Day </b></div>
-                            <p class="text"> Directed by L. Scherfig (2011)</p>
-                        </a>
-                    <div class="bio">bio</div>
-               </div>
-               
-               <div id="mov" class="contained">
-                    <div class=container>
-                        <img src=content\PS-I-Love-You.jpg>
-                        <div class="overlay"></div>
-                        </div>
-                        <a href="content\PS-I-Love-You\movieContent.html">
-                            <div class="text"><b>PS I Love You </b></div>
-                            <p class="text"> Directed by R. LaGravenese (2007)</p>
-                        </a>
-                    <div class="bio">bio</div>
-               </div>
-               
-               <div id="mov" class="contained">
-                    <div class=container>
-                        <img src=content\Punch-Drunk-Love.jpg>
-                        <div class="overlay"></div>
-                        </div>
-                        <a href="content\Punch-Drunk-Love\movieContent.html">
-                            <div class="text"><b>Punch Drunk Love </b></div>
-                            <p class="text"> Directed by P. Anderson (2002)</p>
-                        </a>
-                    <div class="bio">bio</div>
-               </div>
-               
-               <div id="mov" class="contained">
-                    <div class=container>
-                        <img src=content\Say-Anything.jpg>
-                        <div class="overlay"></div>
-                        </div>
-                        <a href="content\Say-Anything\movieContent.html">
-                            <div class="text"><b>Say Anything </b></div>
-                            <p class="text"> Directed by C. Crowe (1989)</p>
-                        </a>
-                    <div class="bio">bio</div>
-               </div>
-               
-               <div id="mov" class="contained">
-                    <div class=container>
-                        <img src=content\Serendipity.jpg>
-                        <div class="overlay"></div>
-                        </div>
-                        <a href="content\Serendipity\movieContent.html">
-                            <div class="text"><b>Serendipity </b></div>
-                            <p class="text"> Directed by P. Chelsom (2001)</p>
-                        </a>
-                    <div class="bio">bio</div>
-               </div>
-               
-               <div id="mov" class="contained">
-                    <div class=container>
-                        <img src=content\Sleepless-in-Seattle.jpg>
-                        <div class="overlay"></div>
-                        </div>
-                        <a href="content\Sleepless-in-Seattle\movieContent.html">
-                            <div class="text"><b>Sleepless in Seattle </b></div>
-                            <p class="text"> Directed by N. Ephron (1993)</p>
-                        </a>
-                    <div class="bio">bio</div>
-               </div>
-               
-               <div id="mov" class="contained">
-                    <div class=container>
-                        <img src=content\The-Other-Boleyn-Girl.jpg>
-                        <div class="overlay"></div>
-                        </div>
-                        <a href="content\The-Other-Boleyn-Girl\movieContent.html">
-                            <div class="text"><b>The Other Boleyn Girl </b></div>
-                            <p class="text"> Directed by J. Chadwick (2008)</p>
-                        </a>
-                    <div class="bio">bio</div>
-               </div>
                
                <div id="mov" class="contained">
                     <div class=container>

@@ -188,6 +188,20 @@ select {
 
 /* IDS */
 
+#famflix {
+  bottom: 0px;
+  height: 14px;
+  background-color: #78502b9c;
+  font-size: larger;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#famflix::after {
+  top:0;
+  background-color: #78502B;
+}
+
+
 #header {
   height:auto;
   padding: 10px;

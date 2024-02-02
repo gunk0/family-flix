@@ -30,12 +30,12 @@ for item in dirlist:
     else:
         pass
 
-    print('<div class=contained>')
-    print('     <div class=container>')
-    print('         <img src=content\mov\%s\\img\\titlecard.jpg>'  % movs[:-1])
+    print('<div class="contained">')
+    print('     <div class="container">')
+    print('         <img src=content\%s.jpg>'  % movs[:-1])
     print('         <div class="overlay"></div>')
     print('         </div>')
-    print('         <a href="content\mov\%s\content.html">' % movs[:-1])
+    print('         <a href="https://www.youtube.com/results?search_query=%s">' % movs[:-1])
     print('             <div class="text">Check out <b>%s</b></div>' % (mov))
     print('             <p class="text"> Directed by %s (%s)</p>' % (dire[:-2], year[:-1]))
     print('         </a>')

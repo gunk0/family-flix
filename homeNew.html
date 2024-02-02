@@ -4,845 +4,912 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles\homeStyles.css" type="text/css" >
+    <link rel="stylesheet" target="_blank" href="styles\homeStyles.css" type="text/css" >
     <script src="library/jquery-3.6.0.js"></script>
     <script src="scripts\home.js"></script>
-    <title>ADAMFLIX</title>
+    <title>FAMFLIX</title>
 </head>
 <header id="header">
     <ul class="head">
         <li style="color:white">adamflix</li>
-        <li><a href="homeMov.html" class="topbar" id="film">FILM</a></li>
-        <li><a href="homeTv.html" class="topbar" id="tv">TELEVISION</a></li>
-        <li><a href="homeFor.html" class="topbar" id="for">FOREIGN</a></li>
-        <li><a href="homeDoc.html" class="topbar" id="doc">DOCUMENTARY</a></li>
-        <li><a href="homeNew.html" class="topbar" id="new">RECENTLY ADDED</a></li>
-        <li>                
-            <div class="search">
-            <select id="selGenre" >
-                <option value="all">All</option>
-                <option value="wadv">Adventure</option>
-                <option value="ani">Animated</option>
-                <option value="com">Comedy</option>
-                <option value="fam">Family</option>
-                <option value="hist">Fantasy</option>
-                <option value="scifi">Scifi</option>
-                <option value="sup">Superhero</option>
-                <option value="west">Tv</option>
-            </select>
-        </div>
+        <li><a target="_blank" href="homeMov.html" class="topbar" id="film">FILM</a></li>
+        <li><a target="_blank" href="homeTv.html" class="topbar" id="tv">TELEVISION</a></li>
+        <li><a target="_blank" href="homeFor.html" class="topbar" id="for">FOREIGN</a></li>
+        <li><a target="_blank" href="homeDoc.html" class="topbar" id="doc">DOCUMENTARY</a></li>
+        <li><a target="_blank" href="homeNew.html" class="topbar" id="new">RECENTLY ADDED</a></li>
     </ul>
 </header> 
 
     <body>
+        <div class="sidenav">
+            <ul id="genreCat" class="category">
+                <li>By <b style="color:#58782B">Search</b></li>
+                <li><input type="text" id="searchInput" onchange="filterName(event)"></li>
 
+                <li style="margin-top: 10px;">By <b style="color:#58782B">Genre</b></li>
+                <li><button class="genre" onclick="filter('Action')">Action</button></li>
+                <li><button class="genre" onclick="filter('Adventure')">Adventure</button></li>
+                <li><button class="genre" onclick="filter('Animated')">Animated</button></li>
+                <li><button class="genre" onclick="filter('Disney')">Animated - Disney</button></li>
+                <li><button class="genre" onclick="filter('Pixar')">Animated - Pixar</button></li>
+                <li><button class="genre" onclick="filter('Ghibli')">Animated - Studio Ghibli</button></li>
+                <li><button class="genre" onclick="filter('Dreamworks')">Animated - Dreamworks</button></li>
+                <li><button class="genre" onclick="filter('Biography')">Biography</button></li>
+                <li><button class="genre" onclick="filter('Comedy')">Comedy</button></li>
+                <li><button class="genre" onclick="filter('Crime')">Crime</button></li>
+                <li><button class="genre" onclick="filter('Drama')">Drama</button></li>
+                <li><button class="genre" onclick="filter('Family')">Family</button></li>
+                <li><button class="genre" onclick="filter('Fantasy')">Fantasy</button></li>
+                <li><button class="genre" onclick="filter('Historical')">Historical</button></li>
+                <li><button class="genre" onclick="filter('Epic')">Epics</button></li>
+                <li><button class="genre" onclick="filter('Mystery')">Mystery</button></li>
+                <li><button class="genre" onclick="filter('Suspense')">Suspense</button></li>
+                <li><button class="genre" onclick="filter('Rom-Com')">Rom-Com</button></li>
+                <li><button class="genre" onclick="filter('Romantic')">Romance</button></li>
+                <li><button class="genre" onclick="filter('Scifi')">Scifi</button></li>
+                <li><button class="genre" onclick="filter('Suspense')">Suspense</button></li>
+                <li><button class="genre" onclick="filter('Superhero')">Superhero</button></li>
+                <li><button class="genre" onclick="filter('Thriller')">Thriller</button></li>
 
-                <!-- Adventure -->
-                <div id="Adventure" class="desc">
-                    <div class="contained">
+                <li style="margin-top: 10px;">By <b style="color:#58782B;">Decade</b></li>
+                <li><button class="genre" onclick="filter('20s')">20s</button></li>
+                <li><button class="genre" onclick="filter('10s')">10s</button></li>
+                <li><button class="genre" onclick="filter('00s')">00s</button></li>
+                <li><button class="genre" onclick="filter('90s')">90s</button></li>
+                <li><button class="genre" onclick="filter('80s')">80s</button></li>
+                <li><button class="genre" onclick="filter('70s')">70s</button></li>
+                <li><button class="genre" onclick="filter('60s')">60s</button></li>
+                <li><button class="genre" onclick="filter('50s')">50s and Earlier</button></li>
+                
+                <li style="margin-top: 10px;">By <b style="color:#58782B;">List</b></li>
+                <li><button class="genre" onclick="filter('Books')">Based on Books</button></li>
+                <!-- <li><button class="genre" onclick="filter('Award')">Award Winners</button></li> -->
+                <li><button class="genre" onclick="filter('Adam')">Adam's Favourites</button></li>
+                <li><button class="genre" onclick="filter('Nic')">Nicole's Favourites</button></li>
+                <li><button class="genre" onclick="filter('New')">Brand-Spanking New</button></li>
+
+            </ul>
+        </div>
+
+        <div class="main">
+
+                    <div class="contained Adventure Drama Family 50s Books">
                         <div class="container">
                             <img src="content/20000leaguesunderthesea.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/20000leaguesunderthesea/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=20000leaguesunderthesea">
                             <div class="text"><b>20,000 Leagues Under the Sea</b></div>
-                            <p class="text">Directed by Richard Fleischer (1954)</p>
+                            <p class="text">Directed by R. Fleischer (1954)</p>
                         </a>
                         <div class="bio">Based on Jules Verne's novel, A ship sent to investigate a wave of mysterious sinkings encounters the advanced submarine, the Nautilus, commanded by Captain Nemo.</div>
                     </div>
 
-                </div>
-
-                <!-- animation -->
-                <div id="Animated" class="desc">
-
-                    <div class="contained">
+                    <div class="contained Animation 60s Books Disney">
                         <div class="container">
                             <img src="content/101dalmatians.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/101dalmatians/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=101dalmatians">
                             <div class="text"><b>101 Dalmatians</b></div>
-                            <p class="text">Directed by Clyde Geronimi, Hamilton Luske, Wolfgang Reitherman (1961)</p>
+                            <p class="text">Directed by C. Geronimi, H. Luske, W. Reitherman (1961)</p>
                         </a>
                         <div class="bio">101 Dalmatians is an animated classic that tells the story of Pongo and Perdita, two dalmatians trying to rescue their kidnapped puppies from the villainous Cruella de Vil.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained Animated 90s Disney">
                         <div class="container">
                             <img src="content/abugslife.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/abugslife/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=abugslife">
                             <div class="text"><b>A Bug's Life</b></div>
-                            <p class="text">Directed by John Lasseter, Andrew Stanton (1998)</p>
+                            <p class="text">Directed by J. Lasseter, A. Stanton (1998)</p>
                         </a>
                         <div class="bio">A Bug's Life is an animated film that follows a misfit ant named Flik as he recruits a group of insects to save their colony from grasshoppers.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 90s Animated Disney">
                         <div class="container">
                             <img src="content/agoofymovie.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/agoofymovie/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=agoofymovie">
                             <div class="text"><b>A Goofy Movie</b></div>
-                            <p class="text">Directed by Kevin Lima (1995)</p>
+                            <p class="text">Directed by K. Lima (1995)</p>
                         </a>
                         <div class="bio">A Goofy Movie tells the story of Goofy and his teenage son Max as they embark on a road trip that strengthens their father-son bond.</div>
                     </div>
+                        
+                    <div  class="contained Comedy 80s">
+                        <div class="container">
+                            <img src=content/Airplane.jpg>
+                            <div class="overlay"></div>
+                            </div>
+                            <a target="_blank" href="https://www.youtube.com/results?search_query=airplanemovietrailer">
+                                <div class="text"><b>Airplane</b></div>
+                                <p class="text"> Directed by J. Abrahams (1980)</p>
+                            </a>
+                        <div class="bio">After the crew becomes sick with food poisoning, a neurotic ex-fighter pilot must land a commercial airplane full of passengers safely.</div>
+                    </div>
 
-                    <div class="contained">
+                    <div  class="contained Biography Drama 80s">
+                        <div class=container>
+                            <img src=content/Amadeus.jpg>
+                            <div class="overlay"></div>
+                            </div>
+                            <a target="_blank" href="https://www.youtube.com/results?search_query=amadeus">
+                                <div class="text"><b>Amadeus</b></div>
+                                <p class="text"> Directed by M. Forman (1984)</p>
+                            </a>
+                        <div class="bio">The life, success and troubles of Wolfgang Amadeus Mozart, as told by Antonio Salieri, the contemporaneous composer who was deeply jealous of Mozart's talent and claimed to have murdered him.</div>
+                    </div>
+
+                    <div  class="contained Comedy Drama 70s">
+                        <div class=container>
+                            <img src=content/AmericanGraffiti.jpg>
+                            <div class="overlay"></div>
+                            </div>
+                            <a target="_blank" href="https://www.youtube.com/results?search_query=AmericanGraffiti">
+                                <div class="text"><b>American Graffiti</b></div>
+                                <p class="text"> Directed by G. Lucas (1973)</p>
+                            </a>
+                        <div class="bio">A group of teenagers in California's central valley spend one final night after their 1962 high school graduation cruising the strip with their buddies before they pursue their varying goals.</div>
+                    </div>
+
+                    <div  class="contained 70s Comedy">
+                        <div class=container>
+                            <img src=content/Animal-House.jpg>
+                            <div class="overlay"></div>
+                            </div>
+                            <a target="_blank" href="https://www.youtube.com/results?search_query=AnimalHouse">
+                                <div class="text"><b>Animal House</b></div>
+                                <p class="text"> Directed by J. Landis (1978)</p>
+                            </a>
+                        <div class="bio">At a 1962 college, Dean Vernon Wormer is determined to expel the entire Delta Tau Chi Fraternity, but those troublemakers have other plans for him</div>
+                    </div>
+
+                    <div  class="contained Superhero 20s">
+                        <div class=container>
+                            <img src=content/Antman2.jpg>
+                            <div class="overlay"></div>
+                            </div>
+                            <a target="_blank" href="https://www.youtube.com/results?search_query=aAntman and the Wasp 2 Quantumania">
+                                <div class="text"><b>Antman and the Wasp 2 Quantumania</b></div>
+                                <p class="text"> Directed by P. Reed (2023)</p>
+                            </a>
+                        <div class="bio">Scott Lang and Hope Van Dyne are dragged into the Quantum Realm, along with Hope's parents and Scott's daughter Cassie. Together they must find a way to escape, but what secrets is Hope's mother hiding?</div>
+                    </div>
+
+                    <div class="contained 00s Animation Disney">
                         <div class="container">
                             <img src="content/atlantisthelostempire.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/atlantisthelostempire/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=atlantisthelostempire">
                             <div class="text"><b>Atlantis: The Lost Empire</b></div>
-                            <p class="text">Directed by Gary Trousdale, Kirk Wise (2001)</p>
+                            <p class="text">Directed by G. Trousdale, K. Wise (2001)</p>
                         </a>
                         <div class="bio">Atlantis: The Lost Empire is an animated science fiction film that follows a young linguist on an expedition to find the lost city of Atlantis.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained Disney 50s Books Animated">
                         <div class="container">
                             <img src="content/Bambi.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/Bambi/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=Bambi">
                             <div class="text"><b>Bambi</b></div>
-                            <p class="text">Directed by David Hand (1942)</p>
+                            <p class="text">Directed by D. Hand (1942)</p>
                         </a>
                         <div class="bio">Bambi is an animated classic that follows the life of a young deer as he grows up in the forest, experiencing the joys and challenges of nature.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 90s Disney Books Animated">
                         <div class="container">
                             <img src="content/beautyandthebeast.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/beautyandthebeast/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=beautyandthebeast">
                             <div class="text"><b>Beauty and the Beast</b></div>
-                            <p class="text">Directed by Gary Trousdale, Kirk Wise (1991)</p>
+                            <p class="text">Directed by G. Trousdale, K. Wise (1991)</p>
                         </a>
                         <div class="bio">Beauty and the Beast is a classic animated fairy tale about Belle, who befriends a prince cursed to live as a beast until true love breaks the spell.</div>
                     </div>
                                         
-                    <div class="contained">
+                    <div class="contained Disney Animated 00s">
                         <div class="container">
                             <img src="content/bolt.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/bolt/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=bolt">
                             <div class="text"><b>Bolt</b></div>
-                            <p class="text">Directed by Byron Howard, Chris Williams (2008)</p>
+                            <p class="text">Directed by B. Howard, C. Williams (2008)</p>
                         </a>
                         <div class="bio">Bolt is an animated film about a dog who believes he has superpowers and embarks on a cross-country journey.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 00s Disney Animated">
                         <div class="container">
                             <img src="content/brotherbear.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/brotherbear/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=brotherbear">
                             <div class="text"><b>Brother Bear</b></div>
-                            <p class="text">Directed by Aaron Blaise, Robert Walker (2003)</p>
+                            <p class="text">Directed by A. Blaise, R. Walker (2003)</p>
                         </a>
                         <div class="bio">Brother Bear is an animated film that tells the story of a young Inuit boy transformed into a bear and his journey of self-discovery.</div>
                     </div>
              
-                    <div class="contained">
+                    <div class="contained 00s Pixar Animated">
                         <div class="container">
                             <img src="content/cars.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/cars/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=cars">
                             <div class="text"><b>Cars</b></div>
-                            <p class="text">Directed by John Lasseter, Joe Ranft (2006)</p>
+                            <p class="text">Directed by J. Lasseter, J. Ranft (2006)</p>
                         </a>
                         <div class="bio">Cars is an animated film that explores the adventures of a race car named Lightning McQueen as he discovers the importance of friendship and community.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Disney 00s Animated">
                         <div class="container">
                             <img src="content/chickenlittle.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/chickenlittle/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=chickenlittle">
                             <div class="text"><b>Chicken Little</b></div>
-                            <p class="text">Directed by Mark Dindal (2005)</p>
+                            <p class="text">Directed by M. Dindal (2005)</p>
                         </a>
                         <div class="bio">Chicken Little is an animated comedy about a young chicken who causes panic in his town by claiming the sky is falling.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Disney Animated 50s">
                         <div class="container">
                             <img src="content/cinderella.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/cinderella/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=cinderella">
                             <div class="text"><b>Cinderella</b></div>
-                            <p class="text">Directed by Clyde Geronimi, Wilfred Jackson, Hamilton Luske (1950)</p>
+                            <p class="text">Directed by C. Geronimi, W. Jackson, H. Luske (1950)</p>
                         </a>
                         <div class="bio">Cinderella is a classic fairy tale adaptation, telling the story of a kind and mistreated young woman who gets a chance to attend the royal ball.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 00s Animated Books">
                         <div class="container">
                             <img src="content/coraline.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/Dumbo/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=Dumbo">
                             <div class="text"><b>Coraline</b></div>
                             <p class="text">Directed by H. Selick (2009)</p>
                         </a>
                         <div class="bio">bio</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 50s Disney Animated">
                         <div class="container">
                             <img src="content/Dumbo.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/Dumbo/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=Dumbo">
                             <div class="text"><b>Dumbo</b></div>
-                            <p class="text">Directed by Ben Sharpsteen (1941)</p>
+                            <p class="text">Directed by B. Sharpsteen (1941)</p>
                         </a>
                         <div class="bio">Dumbo is a Disney animated film that follows the story of a young elephant with large ears who learns to embrace his uniqueness.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Animated 50s Disney">
                         <div class="container">
                             <img src="content/Fantasia.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/Fantasia/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=Fantasia">
                             <div class="text"><b>Fantasia</b></div>
                             <p class="text">Directed by Various (1940)</p>
                         </a>
                         <div class="bio">Fantasia is an animated film produced by Walt Disney, featuring a series of segments set to classical music.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Animated Disney 50s">
                         <div class="container">
                             <img src="content/funandfancyfree.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/funandfancyfree/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=funandfancyfree">
                             <div class="text"><b>Fun and Fancy Free</b></div>
-                            <p class="text">Directed by Jack Kinney, Hamilton Luske (1947)</p>
+                            <p class="text">Directed by J. Kinney, H. Luske (1947)</p>
                         </a>
                         <div class="bio">Fun and Fancy Free is an animated anthology film featuring two stories, Bongo and Mickey and the Beanstalk, narrated by Jiminy Cricket.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 00s Animated Disney">
                         <div class="container">
                             <img src="content/homeontherange.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/homeontherange/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=homeontherange">
                             <div class="text"><b>Home on the Range</b></div>
-                            <p class="text">Directed by Will Finn, John Sanford (2004)</p>
+                            <p class="text">Directed by W. Finn, J. Sanford (2004)</p>
                         </a>
                         <div class="bio">Home on the Range is an animated western comedy about a group of farm animals trying to save their owner's farm from foreclosure.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Anderson 10s Stop-Motion Animated McDormand">
                         <div class="container">
                             <img src="content/isle-of-dogs.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/isleofdogs/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=isleofdogs">
                             <div class="text"><b>Isle of Dogs</b></div>
-                            <p class="text">Directed by Wes Anderson (2018)</p>
+                            <p class="text">Directed by W. Anderson (2018)</p>
                         </a>
                         <div class="bio">Isle of Dogs is a stop-motion animated film that tells the story of a young boy searching for his lost dog in a dystopian Japan.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 80s Disney Animated Books">
                         <div class="container">
                             <img src="content/oliverandcompany.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/oliverandcompany/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=oliverandcompany">
                             <div class="text"><b>Oliver and Company</b></div>
-                            <p class="text">Directed by George Scribner (1988)</p>
+                            <p class="text">Directed by G. Scribner (1988)</p>
                         </a>
                         <div class="bio">Oliver and Company is an animated musical film that reimagines Charles Dickens' novel, Oliver Twist, with animals in modern-day New York City.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained 00s Books Biography Animated">
                         <div class="container">
                             <img src="content/Persepolis.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/Persepolis/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=Persepolis">
                             <div class="text"><b>Persepolis</b></div>
-                            <p class="text">Directed by Marjane Satrapi, Vincent Paronnaud (2007)</p>
+                            <p class="text">Directed by M. Satrapi, V. Paronnaud (2007)</p>
                         </a>
                         <div class="bio">Persepolis is an animated coming-of-age film based on Marjane Satrapi's autobiographical graphic novel, depicting her life during the Iranian Revolution.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Disney 50s Animated Books">
                         <div class="container">
                             <img src="content/pinocchio1.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/Pinocchio/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=Pinocchio">
                             <div class="text"><b>Pinocchio</b></div>
-                            <p class="text">Directed by Ben Sharpsteen, Hamilton Luske (1940)</p>
+                            <p class="text">Directed by B. Sharpsteen, H. Luske (1940)</p>
                         </a>
                         <div class="bio">Pinocchio is a classic Disney animated film that tells the story of a wooden puppet who wishes to become a real boy.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 00s Animated Disney">
                         <div class="container">
                             <img src="content/pigletsbigmovie.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/pigletsbigmovie/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=pigletsbigmovie">
                             <div class="text"><b>Piglet's Big Movie</b></div>
-                            <p class="text">Directed by Francis Glebas (2003)</p>
+                            <p class="text">Directed by F. Glebas (2003)</p>
                         </a>
                         <div class="bio">Piglet's Big Movie follows Piglet and his friends from the Hundred Acre Wood as they search for him after he goes missing.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 90s Animated Disney">
                         <div class="container">
                             <img src="content/Pocahontas.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/Pocahontas/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=Pocahontas">
                             <div class="text"><b>Pocahontas</b></div>
-                            <p class="text">Directed by Mike Gabriel, Eric Goldberg (1995)</p>
+                            <p class="text">Directed by M. Gabriel, E. Goldberg (1995)</p>
                         </a>
                         <div class="bio">Pocahontas is an animated musical that reimagines the historical encounter between a Native American woman and English settler John Smith.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 00s Animated Disney">
                         <div class="container">
                             <img src="content/poohsheffalumpmovie.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/poohsheffalumpmovie/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=poohsheffalumpmovie">
                             <div class="text"><b>Pooh's Heffalump Movie</b></div>
-                            <p class="text">Directed by Frank Nissen (2005)</p>
+                            <p class="text">Directed by F. Nissen (2005)</p>
                         </a>
                         <div class="bio">Pooh's Heffalump Movie follows Winnie the Pooh and his friends as they set out to capture a creature they believe is a Heffalump.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained 10s Dreamworks Animated">
                         <div class="container">
                             <img src="content/puss-in-boots.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/pussinboots/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=pussinboots">
                             <div class="text"><b>Puss in Boots</b></div>
-                            <p class="text">Directed by Chris Miller (2011)</p>
+                            <p class="text">Directed by C. Miller (2011)</p>
                         </a>
                         <div class="bio">Puss in Boots is a spin-off from the Shrek series, focusing on the adventures of the character Puss in Boots.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained Pixar 00s Animated">
                         <div class="container">
                             <img src="content/ratatouille.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/ratatouille/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=ratatouille">
                             <div class="text"><b>Ratatouille</b></div>
-                            <p class="text">Directed by Brad Bird (2007)</p>
+                            <p class="text">Directed by B. Bird (2007)</p>
                         </a>
                         <div class="bio">Ratatouille follows a rat named Remy with a passion for cooking, who teams up with a young chef to create culinary masterpieces.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Folk Disney Animated 70s">
                         <div class="container">
                             <img src="content/robinhood.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/robinhood/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=robinhood">
                             <div class="text"><b>Robin Hood</b></div>
-                            <p class="text">Directed by Wolfgang Reitherman (1973)</p>
+                            <p class="text">Directed by W. Reitherman (1973)</p>
                         </a>
                         <div class="bio">Robin Hood is an animated film that retells the classic tale of the legendary outlaw Robin Hood and his band of Merry Men.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained Dreamworks Animated 00s">
                         <div class="container">
                             <img src="content/Shrek2.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/Shrek2/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=Shrek2">
                             <div class="text"><b>Shrek 2</b></div>
-                            <p class="text">Directed by Andrew Adamson, Kelly Asbury, Conrad Vernon (2004)</p>
+                            <p class="text">Directed by A. Adamson, K. Asbury, C. Vernon (2004)</p>
                         </a>
                         <div class="bio">Shrek 2 continues the adventures of Shrek and his friends as they face new challenges in the kingdom of Far Far Away.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained Dreamworks Animated 00s">
                         <div class="container">
                             <img src="content/Shrek3.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/ShrektheThird/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=ShrektheThird">
                             <div class="text"><b>Shrek the Third</b></div>
-                            <p class="text">Directed by Chris Miller, Raman Hui (2007)</p>
+                            <p class="text">Directed by C. Miller, R. Hui (2007)</p>
                         </a>
                         <div class="bio">Shrek the Third follows Shrek's journey to find a suitable heir to the throne of Far Far Away.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained Dreamworks Animated 10s">
                         <div class="container">
                             <img src="content/Shrek4.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/ShrekForeverAfter/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=ShrekForeverAfter">
                             <div class="text"><b>Shrek Forever After</b></div>
                             <p class="text">Directed by Mike Mitchell (2010)</p>
                         </a>
                         <div class="bio">Shrek Forever After explores an alternate reality where Shrek makes a deal with Rumpelstiltskin and experiences life without the fame of being an ogre.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Disney 50s Animated">
                         <div class="container">
                             <img src="content/ichabodandmrtoad.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/theadventuresofichabodandmrtoad/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=theadventuresofichabodandmrtoad">
                             <div class="text"><b>The Adventures of Ichabod and Mr. Toad</b></div>
-                            <p class="text">Directed by James Algar, Clyde Geronimi, Jack Kinney (1949)</p>
+                            <p class="text">Directed by J. Algar, C. Geronimi, J. Kinney (1949)</p>
                         </a>
                         <div class="bio">The Adventures of Ichabod and Mr. Toad is a package film consisting of two segments, The Wind in the Willows and The Legend of Sleepy Hollow.</div>
                     </div>
                                         
-                    <div class="contained">
+                    <div class="contained 80s Disney Animated Books">
                         <div class="container">
                             <img src="content/theblackcauldron.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/theblackcauldron/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=theblackcauldron">
                             <div class="text"><b>The Black Cauldron</b></div>
-                            <p class="text">Directed by Ted Berman, Richard Rich (1985)</p>
+                            <p class="text">Directed by T. Berman, R. Rich (1985)</p>
                         </a>
                         <div class="bio">The Black Cauldron is an animated dark fantasy film based on Lloyd Alexander's novel, The Chronicles of Prydain.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Disney Animated 00s">
                         <div class="container">
                             <img src="content/theemperorsnewgroove.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/theemperorsnewgroove/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=theemperorsnewgroove">
                             <div class="text"><b>The Emperor's New Groove</b></div>
-                            <p class="text">Directed by Mark Dindal (2000)</p>
+                            <p class="text">Directed by M. Dindal (2000)</p>
                         </a>
                         <div class="bio">The Emperor's New Groove is an animated comedy about a selfish emperor who is transformed into a llama and learns the value of humility.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 80s Disney Animated">
                         <div class="container">
                             <img src="content/thefoxandthehound.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/thefoxandthehound/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=thefoxandthehound">
                             <div class="text"><b>The Fox and the Hound</b></div>
-                            <p class="text">Directed by Ted Berman, Richard Rich, Art Stevens (1981)</p>
+                            <p class="text">Directed by T. Berman, R. Rich, A. Stevens (1981)</p>
                         </a>
                         <div class="bio">The Fox and the Hound is an animated film that tells the story of the unlikely friendship between a fox named Tod and a hound named Copper.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained Animated Disney 80s">
                         <div class="container">
                             <img src="content/thegreatmousedetective.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/thegreatmousedetective/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=thegreatmousedetective">
                             <div class="text"><b>The Great Mouse Detective</b></div>
-                            <p class="text">Directed by Ron Clements, Burny Mattinson, Dave Michener, John Musker (1986)</p>
+                            <p class="text">Directed by R. Clements, B. Mattinson, D. Michener, J. Musker (1986)</p>
                         </a>
                         <div class="bio">The Great Mouse Detective is an animated mystery film featuring a mouse detective named Basil of Baker Street.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Books 90s Animated Disney">
                         <div class="container">
                             <img src="content/thehunchbackofnotredame.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/thehunchbackofnotredame/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=thehunchbackofnotredame">
                             <div class="text"><b>The Hunchback of Notre Dame</b></div>
-                            <p class="text">Directed by Gary Trousdale, Kirk Wise (1996)</p>
+                            <p class="text">Directed by G. Trousdale, K. Wise (1996)</p>
                         </a>
                         <div class="bio">The Hunchback of Notre Dame is an animated musical drama based on Victor Hugo's novel, exploring themes of acceptance and tolerance.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 00s Pixar Animated">
                         <div class="container">
                             <img src="content/theincredibles.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/theincredibles/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=theincredibles">
                             <div class="text"><b>The Incredibles</b></div>
-                            <p class="text">Directed by Brad Bird (2004)</p>
+                            <p class="text">Directed by B. Bird (2004)</p>
                         </a>
                         <div class="bio">The Incredibles is a superhero animated film that follows a family with superpowers as they come out of retirement to save the world.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 10s Animated">
                         <div class="container">
                             <img src="content/the-lego-movie.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/TheLegoMovie/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=TheLegoMovie">
                             <div class="text"><b>The Lego Movie</b></div>
-                            <p class="text">Directed by Phil Lord, Christopher Miller (2014)</p>
+                            <p class="text">Directed by P. Lord, C. Miller (2014)</p>
                         </a>
                         <div class="bio">The Lego Movie is an animated film that follows Emmet, an ordinary Lego construction worker, as he embarks on a quest to save the Lego world from an evil tyrant.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Disney 90s Animated">
                         <div class="container">
                             <img src="content/thelionking.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/thelionking/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=thelionking">
                             <div class="text"><b>The Lion King</b></div>
-                            <p class="text">Directed by Roger Allers, Rob Minkoff (1994)</p>
+                            <p class="text">Directed by R. Allers, R. Minkoff (1994)</p>
                         </a>
                         <div class="bio">The Lion King is an iconic animated film that follows the journey of Simba, a young lion, as he learns about responsibility and identity.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Disney Animated 00s">
                         <div class="container">
                             <img src="content/thelionking1andahalf.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/thelionking1andahalf/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=thelionking1andahalf">
                             <div class="text"><b>The Lion King 1 1/2</b></div>
-                            <p class="text">Directed by Bradley Raymond (2004)</p>
+                            <p class="text">Directed by B. Raymond (2004)</p>
                         </a>
                         <div class="bio">The Lion King 1 1/2 is a direct-to-video film that provides a comedic perspective on the events of the original Lion King film from Timon and Pumbaa's point of view.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 70s Disney Animated">
                         <div class="container">
                             <img src="content/themanyadventuresofwinniethepooh.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/themanyadventuresofwinniethepooh/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=themanyadventuresofwinniethepooh">
                             <div class="text"><b>The Many Adventures of Winnie the Pooh</b></div>
-                            <p class="text">Directed by John Lounsbery, Wolfgang Reitherman (1977)</p>
+                            <p class="text">Directed by J. Lounsbery, W. Reitherman (1977)</p>
                         </a>
                         <div class="bio">The Many Adventures of Winnie the Pooh is an animated film that compiles several animated shorts featuring A.A. Milne's beloved characters.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained 70s Disney Animated">
                         <div class="container">
                             <img src="content/therescuers.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/therescuers/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=therescuers">
                             <div class="text"><b>The Rescuers</b></div>
-                            <p class="text">Directed by Wolfgang Reitherman, John Lounsbery (1977)</p>
+                            <p class="text">Directed by W. Reitherman, J. Lounsbery (1977)</p>
                         </a>
                         <div class="bio">The Rescuers is an animated adventure film featuring a mouse organization, the Rescue Aid Society, on a mission to rescue a kidnapped orphan.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 90s Animated Disney">
                         <div class="container">
                             <img src="content/therescuersdownunder.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/therescuersdownunder/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=therescuersdownunder">
                             <div class="text"><b>The Rescuers Down Under</b></div>
-                            <p class="text">Directed by Hendel Butoy, Mike Gabriel (1990)</p>
+                            <p class="text">Directed by H. Butoy, M. Gabriel (1990)</p>
                         </a>
                         <div class="bio">The Rescuers Down Under is an animated adventure film and a sequel to The Rescuers, following Bernard and Bianca as they rescue a boy from a poacher in the Australian Outback.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained Animated 90s New">
                         <div class="container">
                             <img src="content/super-mario-bros.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/TheSuperMarioBrosMovie/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=TheSuperMarioBrosMovie">
                             <div class="text"><b>The Super Mario Bros. Movie</b></div>
-                            <p class="text">Directed by Annabel Jankel, Rocky Morton (1993)</p>
+                            <p class="text">Directed by A. Jankel, R. Morton (2023)</p>
                         </a>
-                        <div class="bio">The Super Mario Bros. Movie is a live-action adaptation of the popular video game franchise, following Mario and Luigi as they venture into a parallel dimension to rescue Princess Daisy from an evil dictator.</div>
+                        <div class="bio">A plumber named Mario travels through an underground labyrinth with his brother Luigi, trying to save a captured princess.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Disney 60s Animated Books">
                         <div class="container">
                             <img src="content/theswordandthestone.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/theswordandthestone/movieContent.html">
-                            <div class="text"><b>The Sword and the Stone</b></div>
-                            <p class="text">Directed by Wolfgang Reitherman (1963)</p>
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=theswordandthestone">
+                            <div class="text"><b>The Sword in the Stone</b></div>
+                            <p class="text">Directed by W. Reitherman (1963)</p>
                         </a>
                         <div class="bio">The Sword and the Stone is an animated film that follows a young Arthur as he learns valuable lessons from the wizard Merlin, eventually becoming the legendary King Arthur.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Animated Disney 00s">
                         <div class="container">
                             <img src="content/thetiggermovie.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/thetiggermovie/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=thetiggermovie">
                             <div class="text"><b>The Tigger Movie</b></div>
-                            <p class="text">Directed by Jun Falkenstein (2000)</p>
+                            <p class="text">Directed by J. Falkenstein (2000)</p>
                         </a>
                         <div class="bio">The Tigger Movie follows Tigger as he sets out on a journey to find his family and discovers the importance of friendship along the way.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 00s Animated Disney">
                         <div class="container">
                             <img src="content/treasureplanet.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/treasureplanet/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=treasureplanet">
                             <div class="text"><b>Treasure Planet</b></div>
-                            <p class="text">Directed by Ron Clements, John Musker (2002)</p>
+                            <p class="text">Directed by R. Clements, J. Musker (2002)</p>
                         </a>
                         <div class="bio">Treasure Planet is an animated space adventure film that reimagines Robert Louis Stevenson's novel "Treasure Island" in a futuristic setting.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained 70s Books Animated">
                         <div class="container">
                             <img src="content/watership-down.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/WatershipDown/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=WatershipDown">
                             <div class="text"><b>Watership Down</b></div>
-                            <p class="text">Directed by Martin Rosen (1978)</p>
+                            <p class="text">Directed by M. Rosen (1978)</p>
                         </a>
                         <div class="bio">Watership Down is an animated film adapted from Richard Adams' novel, depicting the journey of a group of rabbits seeking a new home.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Animated Disney 90s">
                         <div class="container">
                             <img src="content/winniethepoohsmostgrandadventure.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/winniethepoohsmostgrandadventure/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=winniethepoohsmostgrandadventure">
                             <div class="text"><b>Winnie the Pooh’s Most Grand Adventure</b></div>
-                            <p class="text">Directed by Karl Geurs (1997)</p>
+                            <p class="text">Directed by K. Geurs (1997)</p>
                         </a>
                         <div class="bio">Winnie the Pooh’s Most Grand Adventure follows Pooh and friends as they embark on a quest to find and rescue their missing friend Christopher Robin.</div>
                     </div>
 
-                <!-- comedy -->
-                <div id="Comedy" class="desc">
-                    <div class="contained">
+                    <div class="contained Family Disney Adventure Sports 60s">
                         <div class="container">
                             <img src="content/thelovebug.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/thelovebug/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=thelovebug">
                             <div class="text"><b>The Love Bug</b></div>
-                            <p class="text">Directed by Robert Stevenson (1968)</p>
+                            <p class="text">Directed by R. Stevenson (1968)</p>
                         </a>
                         <div class="bio">Down-on-his-luck race car driver Jim Douglas teams up with a little VW Bug that has a mind of it's own, not realizing Herbie's worth until a sneaky rival plots to steal him.</div>
                     </div>
                 </div>
 
-                <!-- family -->
-                <div id="Family" class="desc">
-                    <div class="contained">
+                    <div class="contained 50s Disney Drama Western Family">
                         <div class="container">
                             <img src="content/oldyeller.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/oldyeller/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=oldyeller">
                             <div class="text"><b>Old Yeller</b></div>
-                            <p class="text">Directed by Robert Stevenson (1957)</p>
+                            <p class="text">Directed by R. Stevenson (1957)</p>
                         </a>
                         <div class="bio">A teenage boy grows to love a stray yellow dog while helping his mother and younger brother run their Texas homestead while their father is away on a cattle drive. First thought to be good-for-nothing mutt, Old Yeller is soon beloved by all.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained Musical Animated Disney Fantasy 70s">
                         <div class="container">
                             <img src="content/petesdragon.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/petesdragon/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=petesdragon">
                             <div class="text"><b>Petes Dragon</b></div>
-                            <p class="text">Directed by Don Chaffey (1977)</p>
+                            <p class="text">Directed by D. Chaffey (1977)</p>
                         </a>
                         <div class="bio">An orphan boy and his magical dragon come to town with his abusive adoptive parents in pursuit.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Adventure Family Disney 60s Books">
                         <div class="container">
                             <img src="content/swissfamilyrobinson.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/swissfamilyrobinson/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=swissfamilyrobinson">
                             <div class="text"><b>Swiss Family Robinson</b></div>
-                            <p class="text">Directed by Ken Annakin (1960)</p>
+                            <p class="text">Directed by K Annakin (1960)</p>
                         </a>
                         <div class="bio">A shipwrecked family must build a new life on a deserted island, encountering various challenges and adventures.</div>
                     </div>
 
-
-                </div>
-
-                <!-- fantasy -->
-                <div id="Fantasy" class="desc">
-                    <div class="contained">
+                    <div class="contained Musical Fantasy 60s Disney">
                         <div class="container">
                             <img src="content/marypoppins.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/marypoppins/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=marypoppins">
                             <div class="text"><b>Mary Poppins</b></div>
-                            <p class="text">Directed by Robert Stevenson (1964)</p>
+                            <p class="text">Directed by R. Stevenson (1964)</p>
                         </a>
                         <div class="bio">In turn of the century London, a magical nanny employs music and adventure to help two neglected children become closer to their father.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained 70s Musical Fantasy Books Disney">
                         <div class="container">
                             <img src="content/bedknobsandbroomsticks.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/bedknobsandbroomsticks/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=bedknobsandbroomsticks">
                             <div class="text"><b>Bedknobs and Broomsticks</b></div>
-                            <p class="text">Directed by Robert Stevenson (1971)</p>
+                            <p class="text">Directed by R. Stevenson (1971)</p>
                         </a>
                         <div class="bio">An apprentice witch, three kids and a cynical magician conman search for the missing component to a magic spell to be used in the defense of Britain in World War II.</div>
                     </div>
 
-                </div>
-
-                <!-- scifi -->
-                <div id="Scifi" class="desc">
-
-                    <div class="contained">
+                    <div class="contained Scifi Action 00s Space">
                         <div class="container">
                             <img src="content/Star-Trek.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/StarTrek/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=StarTrek">
                             <div class="text"><b>Star Trek 11 </b></div>
                             <p class="text">Directed by J.J. Abrams (2009)</p>
                         </a>
                         <div class="bio">Part of the reboot film series of Star Trek. The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan tears the Federation apart one planet at a time.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained Scifi Action Space 10s">
                         <div class="container">
                             <img src="content/Into-Darkness.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/StarTrekIntoDarkness/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=StarTrekIntoDarkness">
                             <div class="text"><b>Star Trek 12 Into Darkness</b></div>
                             <p class="text">Directed by J.J. Abrams (2013)</p>
                         </a>
                         <div class="bio">Part of the reboot film series of Star Trek. Captain Kirk leads a manhunt to a war-zone world to capture a one-man weapon of mass destruction.</div>
                     </div>
 
-                </div>
-
-                <!-- superhero -->
-                <div id="Superhero" class="desc">
-                    <div class="contained">
+                    <div class="contained Superhero 90s">
                         <div class="container">
                             <img src="content/darkman.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/Darkman/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=Darkman">
                             <div class="text"><b>Darkman</b></div>
                             <p class="text">Directed by S. Raimi (1990)</p>
                         </a>
                         <div class="bio">A brilliant scientist left for dead returns to exact revenge on the people who burned him alive.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained Superhero 00s">
                         <div class="container">
                             <img src="content/hellboy.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/hellboy/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=hellboy">
                             <div class="text"><b>Hellboy</b></div>
                             <p class="text">Directed by G. del Toro (2004)</p>
                         </a>
                         <div class="bio">A demon raised from infancy after being conjured by and rescued from the Nazis, grows up to become a defender against the forces of darkness.</div>
                     </div>
                 
-                    <div class="contained">
+                    <div class="contained Superhero 00s">
                         <div class="container">
                             <img src="content/spiderman1.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/Spiderman1/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=Spiderman1">
                             <div class="text"><b>Spiderman 1</b></div>
-                            <p class="text">Directed by Sam Raimi (2002)</p>
+                            <p class="text">Directed by S. Raimi (2002)</p>
                         </a>
                         <div class="bio">After being bitten by a genetically-modified spider, a shy teenager gains spider-like abilities that he uses to fight injustice as a masked superhero and face a vengeful enemy.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained Superhero 00s">
                         <div class="container">
                             <img src="content/spiderman2.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/Spiderman2/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=Spiderman2">
                             <div class="text"><b>Spiderman 2</b></div>
-                            <p class="text">Directed by Sam Raimi (2004)</p>
+                            <p class="text">Directed by S. Raimi (2004)</p>
                         </a>
                         <div class="bio">Peter Parker is beset with troubles in his failing personal life as he battles a former brilliant scientist named Otto Octavius.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained Superhero 00s">
                         <div class="container">
                             <img src="content/spiderman3.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/Spiderman3/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=Spiderman3">
                             <div class="text"><b>Spiderman 3</b></div>
-                            <p class="text">Directed by Sam Raimi (2007)</p>
+                            <p class="text">Directed by S. Raimi (2007)</p>
                         </a>
                         <div class="bio">A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains, temptations, and revenge.</div>
                     </div>
 
-                    <div class="contained">
+                    <div class="contained Superhero Animated 10s">
                         <div class="container">
                             <img src="content/spiderman-into-the-spider-verse.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/SpidermanIntotheSpiderVerse/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=SpidermanIntotheSpiderVerse">
                             <div class="text"><b>Spiderman: Into the Spider-Verse</b></div>
-                            <p class="text">Directed by Peter Ramsey, Rodney Rothman, Bob Persichetti (2018)</p>
+                            <p class="text">Directed by P. Ramsey, R. Rothman, B. Persichetti (2018)</p>
                         </a>
                         <div class="bio">Miles Morales becomes the Spider-Man of his universe and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.</div>
                     </div>
                     
-                    <div class="contained">
+                    <div class="contained Superhero Animated 20s">
                         <div class="container">
                             <img src="content/spider-man-across-the-spider-verse.jpg">
                             <div class="overlay"></div>
                         </div>
-                        <a href="content/SpidermanAcrosstheSpiderVerse/movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=SpidermanAcrosstheSpiderVerse">
                             <div class="text"><b>Spiderman: Across the Spider-Verse</b></div>
-                            <p class="text">Directed by Joaquim Dos Santos (2022)</p>
+                            <p class="text">Directed by J. Dos Santos (2022)</p>
                         </a>
                         <div class="bio">Miles Morales catapults across the multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero.</div>
                     </div>
-
                 </div>
 
-                <!-- TV -->
-                <div id="TV" class="desc">
-
-                    <div class=contained> 
+                    <!-- <div class=contained> 
                         <div class="container">
                         <img src=content\lower-decks.jpg>
                             <div class="overlay">
                             </div>
                         </div>
-                        <a href="content\tv\LowerDecks\content.html">
+                        <a target="_blank" href="content\tv\LowerDecks\content.html">
                             <div class="text"><b>Star Trek: Lower Decks</b>
                             </div>
                             <p class="text">Seasons 1-4 (2020-Present)</p>
@@ -855,7 +922,7 @@
                             <div class="overlay">
                             </div>
                         </div>
-                        <a href="content\tv\picard\content.html">
+                        <a target="_blank" href="content\tv\picard\content.html">
                             <div class="text"><b>Star Trek: Picard</b>
                             </div>
                             <p class="text">Season 1 (2020-Present)</p>
@@ -868,12 +935,11 @@
                             <div class="overlay">
                             </div>
                         </div>
-                        <a href="content\tv\strangenewworlds\content.html">
+                        <a target="_blank" href="content\tv\strangenewworlds\content.html">
                             <div class="text"><b>Star Trek: Strange New Worlds</b>
                             </div>
                             <p class="text">Seasons 1-2 (2022-Present)</p>
                         </a>   
-                    </div> 
-                </div>
+                    </div>  -->
     </body>
 </html>

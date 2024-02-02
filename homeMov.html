@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles\homeStyles.css" type="text/css" >
+    <link rel="stylesheet" target="_blank" href="styles\homeStyles.css" type="text/css" >
     <script src="library/jquery-3.6.0.js"></script>
     <script src="scripts\home.js"></script>
     <title>ADAMFLIX-MOV</title>
@@ -13,12 +13,12 @@
 <header id="header">
     <ul class="head">
         <li style="color:white" id="famflix"><b style="color:#58782B">FAM</b>flix</li>
-        <li><a href="homeMov.html" class="topbar" id="film" style="color:#58782B">FILM</a></li>
-        <li><a href="homeTv.html" class="topbar" id="tv" style="color:#2B6878">TELEVISION</a></li>
-        <li><a href="homeFor.html" class="topbar" id="for" style="color:#6A2B78">FOREIGN</a></li>
-        <li><a href="homeDoc.html" class="topbar" id="doc" style="color:#78502B">DOCUMENTARY</a></li>
-        <li><a href="homeNew.html" class="topbar" id="new" style="color:#B3CD8E">RECENTLY ADDED</a></li>
-        <li><a href="homeReq.html" class="topbar" id="req">REQUEST CONTENT</a></li>
+        <li><a target="_blank" href="homeMov.html" class="topbar" id="film" style="color:#58782B">FILM</a></li>
+        <li><a target="_blank" href="homeTv.html" class="topbar" id="tv" style="color:#2B6878">TELEVISION</a></li>
+        <li><a target="_blank" href="homeFor.html" class="topbar" id="for" style="color:#6A2B78">FOREIGN</a></li>
+        <li><a target="_blank" href="homeDoc.html" class="topbar" id="doc" style="color:#78502B">DOCUMENTARY</a></li>
+        <li><a target="_blank" href="homeNew.html" class="topbar" id="new" style="color:#B3CD8E">RECENTLY ADDED</a></li>
+        <li><a target="_blank" href="homeReq.html" class="topbar" id="req">REQUEST CONTENT</a></li>
         <li></li>
     </ul>
 
@@ -41,7 +41,6 @@
                 <li><button class="genre" onclick="filter('Biography')">Biography</button></li>
                 <li><button class="genre" onclick="filter('Comedy')">Comedy</button></li>
                 <li><button class="genre" onclick="filter('Crime')">Crime</button></li>
-                <li><button class="genre" onclick="filter('BuddyCop')">Crime - Buddy Cop</button></li>
                 <li><button class="genre" onclick="filter('Drama')">Drama</button></li>
                 <li><button class="genre" onclick="filter('Family')">Family</button></li>
                 <li><button class="genre" onclick="filter('Fantasy')">Fantasy</button></li>
@@ -68,22 +67,21 @@
                 
                 <li style="margin-top: 10px;">By <b style="color:#58782B;">List</b></li>
                 <li><button class="genre" onclick="filter('Books')">Based on Books</button></li>
-                <li><button class="genre" onclick="filter('Award')">Award Winners</button></li>
+                <!-- <li><button class="genre" onclick="filter('Award')">Award Winners</button></li> -->
                 <li><button class="genre" onclick="filter('Adam')">Adam's Favourites</button></li>
                 <li><button class="genre" onclick="filter('Nic')">Nicole's Favourites</button></li>
-                <li><button class="genre" onclick="filter('Can')">Canadian Director</button></li>
                 <li><button class="genre" onclick="filter('New')">Brand-Spanking New</button></li>
-                <li><button class="genre" onclick="filter('Light')">Something Light</button></li>
-                <li><button class="genre" onclick="filter('Series')">One of Many</button></li>
-                <li><button class="genre" onclick="filter('Fresh')">Certified Fresh</button></li>
-                <li><button class="genre" onclick="filter('Pirates')">Walk the Plank</button></li>
-                <li><button class="genre" onclick="filter('Dystopian')">What Went Wrong?</button></li>
-                <li><button class="genre" onclick="filter('Folk')">Folk Tales</button></li>
-                <li><button class="genre" onclick="filter('Revenge')">Best Served Cold</button></li>
-                <li><button class="genre" onclick="filter('Stop-Motion')">Stop Motion Animation</button></li>
-                <li><button class="genre" onclick="filter('MA')">Fisticuffs</button></li>
-                <li><button class="genre" onclick="filter('Sports')">Sports Movies </button></li>
-                <li><button class="genre" onclick="filter('Space')">Out of this World</button></li>
+                <!-- <li><button class="genre" onclick="filter('Light')">Something Light</button></li> -->
+                <!-- <li><button class="genre" onclick="filter('Series')">One of Many</button></li> -->
+                <!-- <li><button class="genre" onclick="filter('Pirates')">Walk the Plank</button></li> -->
+                <!-- <li><button class="genre" onclick="filter('Dystopian')">What Went Wrong?</button></li> -->
+                <!-- <li><button class="genre" onclick="filter('Folk')">Folk Tales</button></li> -->
+                <!-- <li><button class="genre" onclick="filter('Revenge')">Best Served Cold</button></li> -->
+                <!-- <li><button class="genre" onclick="filter('Stop-Motion')">Stop Motion Animation</button></li> -->
+                <!-- <li><button class="genre" onclick="filter('BuddyCop')">Buddy Cop</button></li> -->
+                <!-- <li><button class="genre" onclick="filter('MA')">Fisticuffs</button></li> -->
+                <!-- <li><button class="genre" onclick="filter('Sports')">Sports Movies </button></li> -->
+                <!-- <li><button class="genre" onclick="filter('Space')">Out of this World</button></li> -->
 
                 <li style="margin-top: 10px;">By <b style="color:#58782B;">Director</b></li>
                 <li><button class="genre" onclick="filter('Tarantino')">Quentin Tarantino</button></li>
@@ -94,11 +92,12 @@
                 <li><button class="genre" onclick="filter('Anderson')">Wes Anderson</button></li>
                 <li><button class="genre" onclick="filter('Coen')">Coen Brothers</button></li>
 
-                <li style="margin-top: 10px;">By <b style="color:#58782B;">Actor</b></li>
+                <!-- <li style="margin-top: 10px;">By <b style="color:#58782B;">Actor</b></li>
                 <li><button class="genre" onclick="filter('Day-Lewis')">Daniel Day-Lewis</button></li>
                 <li><button class="genre" onclick="filter('Williams')">Robin Williams</button></li>
                 <li><button class="genre" onclick="filter('Hoffman')">Philip Seymour Hoffman</button></li>
                 <li><button class="genre" onclick="filter('Depp')">Johnny Depp</button></li>
+                <li><button class="genre" onclick="filter('McDormand')">Frances McDormond</button></li> -->
             </ul>
         </div>
 
@@ -111,7 +110,7 @@
                     <img src=content\About-a-Boy.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\About-a-Boy\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=About-a-Boy">
                         <div class="text"><b>About a Boy </b></div>
                         <p class="text"> Directed by C. Weitz (2002)</p>
                     </a>
@@ -123,7 +122,7 @@
                     <img src=content\A-Clockwork-Orange.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\A-Clockwork-Orange\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=A-Clockwork-Orange">
                         <div class="text"><b>A Clockwork Orange </b></div>
                         <p class="text"> Directed by S. Kubrick (1971)</p>
                     </a>
@@ -135,7 +134,7 @@
                     <img src=content\Ad-Astra.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Ad-Astra\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Ad-Astra">
                         <div class="text"><b>Ad Astra </b></div>
                         <p class="text"> Directed by J. Gray (2019)</p>
                     </a>
@@ -147,7 +146,7 @@
                     <img src=content\Adaptation.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Adaptation\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Adaptation">
                         <div class="text"><b>Adaptation </b></div>
                         <p class="text"> Directed by S. Jonze (2002)</p>
                     </a>
@@ -159,7 +158,7 @@
                     <img src=content\Aladdin.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Aladdin\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Aladdin">
                         <div class="text"><b>Aladdin </b></div>
                         <p class="text"> Directed by J. Musker (1992)</p>
                     </a>
@@ -171,7 +170,7 @@
                     <img src=content\Alice-in-Wonderland.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Alice-in-Wonderland\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Alice-in-Wonderland">
                         <div class="text"><b>Alice in Wonderland </b></div>
                         <p class="text"> Directed by C. Geronimi (1951)</p>
                     </a>
@@ -183,7 +182,7 @@
                     <img src=content\Alien.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Alien\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Alien">
                         <div class="text"><b>Alien </b></div>
                         <p class="text"> Directed by R. Scott (1979)</p>
                     </a>
@@ -195,7 +194,7 @@
                     <img src=content\Almost-Famous.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Almost-Famous\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Almost-Famous">
                         <div class="text"><b>Almost Famous </b></div>
                         <p class="text"> Directed by C. Crowe (2000)</p>
                     </a>
@@ -207,7 +206,7 @@
                     <img src=content\Apocalypto.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Apocalypto\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Apocalypto">
                         <div class="text"><b>Apocalypto </b></div>
                         <p class="text"> Directed by M. Gibson (2006)</p>
                     </a>
@@ -219,7 +218,7 @@
                     <img src=content\American-History-X.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\American-History-X\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=American-History-X">
                         <div class="text"><b>American History X </b></div>
                         <p class="text"> Directed by T. Kaye (1998)</p>
                     </a>
@@ -231,7 +230,7 @@
                     <img src=content\American-Psyco.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\American-Psyco\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=American-Psyco">
                         <div class="text"><b>American Psyco </b></div>
                         <p class="text"> Directed by M. Harron (2000)</p>
                     </a>
@@ -243,7 +242,7 @@
                     <img src=content\Apollo-13.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Apollo-13\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Apollo-13">
                         <div class="text"><b>Apollo 13 </b></div>
                         <p class="text"> Directed by R. Howard (1995)</p>
                     </a>
@@ -256,7 +255,7 @@
                     <img src=content\Argo.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Argo\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Argo">
                         <div class="text"><b>Argo </b></div>
                         <p class="text"> Directed by B. Affleck (2012)</p>
                     </a>
@@ -268,7 +267,7 @@
                     <img src=content\Arrival.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Arrival\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Arrival">
                         <div class="text"><b>Arrival </b></div>
                         <p class="text"> Directed by D. Villeneuve (2016)</p>
                     </a>
@@ -280,7 +279,7 @@
                     <img src=content\AvatarMov.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Avatar\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Avatar">
                         <div class="text"><b>Avatar </b></div>
                         <p class="text"> Directed by D. Cameron (2009)</p>
                     </a>
@@ -292,7 +291,7 @@
                     <img src=content\Avengers1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Avengers-1\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Avengers-1">
                         <div class="text"><b>Avengers 1 </b></div>
                         <p class="text"> Directed by J. Whedon (2012)</p>
                     </a>
@@ -304,7 +303,7 @@
                     <img src=content\Avengers2.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Avengers-2-Age-of-Ultron\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Avengers-2-Age-of-Ultron">
                         <div class="text"><b>Avengers 2 Age of Ultron </b></div>
                         <p class="text"> Directed by J. Whedon (2015)</p>
                     </a>
@@ -316,7 +315,7 @@
                     <img src=content\Avengers3.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Avengers-3-Infinity-War\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Avengers-3-Infinity-War">
                         <div class="text"><b>Avengers 3 Infinity War </b></div>
                         <p class="text"> Directed by A. Russo (2018)</p>
                     </a>
@@ -328,7 +327,7 @@
                     <img src=content\Avengers4.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Avengers-4-Endgame\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Avengers-4-Endgame">
                         <div class="text"><b>Avengers 4 Endgame </b></div>
                         <p class="text"> Directed by A. Russo (2019)</p>
                     </a>
@@ -344,7 +343,7 @@
                     <img src=content\Badlands.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Before-The-Devil-Knows-Youre-Dead\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Before-The-Devil-Knows-Youre-Dead">
                         <div class="text"><b>Badlands</b></div>
                         <p class="text"> Directed by T. Malick (1973)</p>
                     </a>
@@ -356,7 +355,7 @@
                     <img src=content\Before-The-Devil-Knows-Youre-Dead.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Before-The-Devil-Knows-Youre-Dead\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Before-The-Devil-Knows-Youre-Dead">
                         <div class="text"><b>Before The Devil Knows Youre Dead </b></div>
                         <p class="text"> Directed by S. Lumet (2007)</p>
                     </a>
@@ -368,7 +367,7 @@
                     <img src=content\Batman.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Batman\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Batman">
                         <div class="text"><b>Batman </b></div>
                         <p class="text"> Directed by T. Burton (1989)</p>
                     </a>
@@ -380,7 +379,7 @@
                     <img src=content\Batman-Returns.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Batman-Returns\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Batman-Returns">
                         <div class="text"><b>Batman Returns </b></div>
                         <p class="text"> Directed by T. Burton (1992)</p>
                     </a>
@@ -392,7 +391,7 @@
                     <img src=content\Batman-Begins.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Batman-1-Begins\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Batman-1-Begins">
                         <div class="text"><b>Batman 1 Begins </b></div>
                         <p class="text"> Directed by C. Nolan (2005)</p>
                     </a>
@@ -404,7 +403,7 @@
                     <img src=content\Batman-The-Dark-Knight.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Batman-2-The-Dark-Knight\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Batman-2-The-Dark-Knight">
                         <div class="text"><b>Batman 2 The Dark Knight </b></div>
                         <p class="text"> Directed by C. Nolan (2008)</p>
                     </a>
@@ -416,7 +415,7 @@
                     <img src=content\Batman-The-Dark-Knight-Rises.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Batman-3-The-Dark-Knight-Rises\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Batman-3-The-Dark-Knight-Rises">
                         <div class="text"><b>Batman 3 The Dark Knight Rises </b></div>
                         <p class="text"> Directed by C. Nolan (2012)</p>
                     </a>
@@ -428,7 +427,7 @@
                     <img src=content\Being-John-Malkovich.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Being-John-Malkovich\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Being-John-Malkovich">
                         <div class="text"><b>Being John Malkovich </b></div>
                         <p class="text"> Directed by S. Jonze (1999)</p>
                     </a>
@@ -440,7 +439,7 @@
                     <img src=content\Beverly-Hills-Cop.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Beverly-Hills-Cop\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Beverly-Hills-Cop">
                         <div class="text"><b>Beverly Hills Cop </b></div>
                         <p class="text"> Directed by M. Brest (1984)</p>
                     </a>
@@ -452,7 +451,7 @@
                     <img src=content\Big-Daddy.jpeg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Big-Daddy\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Big-Daddy">
                         <div class="text"><b>Big Daddy </b></div>
                         <p class="text"> Directed by D. Dugan (1999)</p>
                     </a>
@@ -464,7 +463,7 @@
                     <img src=content\Big-Hero-6.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Big-Hero-6\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Big-Hero-6">
                         <div class="text"><b>Big Hero 6 </b></div>
                         <p class="text"> Directed by D. Hall (2014)</p>
                     </a>
@@ -476,7 +475,7 @@
                     <img src=content\Billy-Madison.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Billy-Madison\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Billy-Madison">
                         <div class="text"><b>Billy Madison </b></div>
                         <p class="text"> Directed by T. Davis (1995)</p>
                     </a>
@@ -488,7 +487,7 @@
                     <img src=content\Birdman.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Birdman\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Birdman">
                         <div class="text"><b>Birdman </b></div>
                         <p class="text"> Directed by A. Inarritu (2014)</p>
                     </a>
@@ -500,7 +499,7 @@
                     <img src=content\BlacKkKlansman.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\BlacKkKlansman\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=BlacKkKlansman">
                         <div class="text"><b>BlacKkKlansman </b></div>
                         <p class="text"> Directed by S. Lee (2018)</p>
                     </a>
@@ -512,7 +511,7 @@
                     <img src=content\Black-Swan.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Black-Swan\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Black-Swan">
                         <div class="text"><b>Black Swan </b></div>
                         <p class="text"> Directed by D. Aronofsky (2010)</p>
                     </a>
@@ -524,7 +523,7 @@
                     <img src=content\Blazing-Saddles.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Blazing-Saddles\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Blazing-Saddles">
                         <div class="text"><b>Blazing Saddles </b></div>
                         <p class="text"> Directed by M. Brooks (1974)</p>
                     </a>
@@ -536,7 +535,7 @@
                     <img src=content\Blood-Simple.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Blood-Simple\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Blood-Simple">
                         <div class="text"><b>Blood Simple </b></div>
                         <p class="text"> Directed by J&E Coen (1984)</p>
                     </a>
@@ -548,7 +547,7 @@
                     <img src=content\Body-Double.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Body-Double\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Body-Double">
                         <div class="text"><b>Body Double </b></div>
                         <p class="text"> Directed by B. De Palma (1984)</p>
                     </a>
@@ -560,7 +559,7 @@
                     <img src=content\Bohemian-Rhapsody.jpeg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Bohemian-Rhapsody\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Bohemian-Rhapsody">
                         <div class="text"><b>Bohemian Rhapsody </b></div>
                         <p class="text"> Directed by D. Signer (2018)</p>
                     </a>
@@ -572,7 +571,7 @@
                     <img src=content\Boogie-Nights.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Boogie-Nights\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Boogie-Nights">
                         <div class="text"><b>Boogie Nights </b></div>
                         <p class="text"> Directed by P. Anderson (1997)</p>
                     </a>
@@ -584,7 +583,7 @@
                     <img src=content\Boyhood.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Boyhood\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Boyhood">
                         <div class="text"><b>Boyhood </b></div>
                         <p class="text"> Directed by R. Linklater (2014)</p>
                     </a>
@@ -596,7 +595,7 @@
                     <img src=content\Braveheart.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Braveheart\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Braveheart">
                         <div class="text"><b>Braveheart </b></div>
                         <p class="text"> Directed by M. Gibson (1995)</p>
                     </a>
@@ -608,7 +607,7 @@
                     <img src=content\Bridesmaids.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Bridesmaids\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Bridesmaids">
                         <div class="text"><b>Bridesmaids </b></div>
                         <p class="text"> Directed by P. Feig (2011)</p>
                     </a>
@@ -620,7 +619,7 @@
                     <img src=content\Bridget-Jones-Diary.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Bridget-Jones's-Diary\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Bridget-Jones's-Diary">
                         <div class="text"><b>Bridget Jones's Diary </b></div>
                         <p class="text"> Directed by S. Maguire (2001)</p>
                     </a>
@@ -636,7 +635,7 @@
                     <img src=content\Caddyshack.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Caddyshack\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Caddyshack">
                         <div class="text"><b>Caddyshack </b></div>
                         <p class="text"> Directed by H. Ramis (1980)</p>
                     </a>
@@ -648,7 +647,7 @@
                     <img src=content\Capote.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Capote\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Capote">
                         <div class="text"><b>Capote </b></div>
                         <p class="text"> Directed by B. Miller (2005)</p>
                     </a>
@@ -660,7 +659,7 @@
                     <img src=content\Ca1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Captain-America-1-The-First-Avenger\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Captain-America-1-The-First-Avenger">
                         <div class="text"><b>Captain America 1 The First Avenger </b></div>
                         <p class="text"> Directed by J. Johnston (2011)</p>
                     </a>
@@ -672,7 +671,7 @@
                     <img src=content\Ca2.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Captain-America-2-The-Winter-Soldier\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Captain-America-2-The-Winter-Soldier">
                         <div class="text"><b>Captain America 2 The Winter Soldier </b></div>
                         <p class="text"> Directed by A. Russo (2014)</p>
                     </a>
@@ -684,7 +683,7 @@
                     <img src=content\Ca3.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Captain-America-3-Civil-War\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Captain-America-3-Civil-War">
                         <div class="text"><b>Captain America 3 Civil War </b></div>
                         <p class="text"> Directed by A. Russo (2016)</p>
                     </a>
@@ -696,7 +695,7 @@
                     <img src=content\Captain-Marvel.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Captain-Marvel\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Captain-Marvel">
                         <div class="text"><b>Captain Marvel </b></div>
                         <p class="text"> Directed by A. Boden (2019)</p>
                     </a>
@@ -708,7 +707,7 @@
                     <img src=content\Captian-Phillips.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Captian-Phillips\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Captian-Phillips">
                         <div class="text"><b>Captian Phillips </b></div>
                         <p class="text"> Directed by P. Greengrass (2013)</p>
                     </a>
@@ -720,7 +719,7 @@
                     <img src=content\Casablanca.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Casablanca\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Casablanca">
                         <div class="text"><b>Casablanca </b></div>
                         <p class="text"> Directed by M. Curtiz (1942)</p>
                     </a>
@@ -732,7 +731,7 @@
                     <img src=content\Castle-in-the-Sky.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Castle-in-the-Sky\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Castle-in-the-Sky">
                         <div class="text"><b>Castle in the Sky </b></div>
                         <p class="text"> Directed by H. Miyazaki (1986)</p>
                     </a>
@@ -744,7 +743,7 @@
                     <img src=content\Cloudy-with-a-Chance.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Cloudy-with-a-Chance-of-Meatballs\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Cloudy-with-a-Chance-of-Meatballs">
                         <div class="text"><b>Cloudy with a Chance of Meatballs </b></div>
                         <p class="text"> Directed by P. Lord (2009)</p>
                     </a>
@@ -761,7 +760,7 @@
                     <img src=content\Darkest-Hour.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Darkest-Hour\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Darkest-Hour">
                         <div class="text"><b>Darkest Hour </b></div>
                         <p class="text"> Directed by J. Wright (2017)</p>
                     </a>
@@ -773,19 +772,31 @@
                     <img src=content\Dead-Poets-Society.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Dead-Poets-Society\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Dead-Poets-Society">
                         <div class="text"><b>Dead Poets Society </b></div>
                         <p class="text"> Directed by P. Weir (1989)</p>
                     </a>
                 <div class="bio">Maverick teacher John Keating returns in 1959 to the prestigious New England boys' boarding school where he was once a star student, using poetry to embolden his pupils to new heights of self-expression.</div>
            </div>
 
+            <div id="mov" class="contained Superhero 10s Series">
+                <div class=container>
+                    <img src=content\Deadpool2.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Deadpool-2">
+                        <div class="text"><b>Deadpool 2 </b></div>
+                        <p class="text"> Directed by D. Leitch (2018)</p>
+                    </a>
+                <div class="bio">Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool) assembles a team of fellow mutant rogues to protect a young boy with supernatural abilities from the brutal, time-traveling cyborg Cable.</div>
+            </div>
+
             <div id="mov" class="contained Action Cop Thriller Christmas 80s Fresh">
                 <div class=container>
                     <img src=content\die-hard1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Die-Hard\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Die-Hard">
                         <div class="text"><b>Die Hard </b></div>
                         <p class="text"> Directed by J. McTiernan (1988)</p>
                     </a>
@@ -797,7 +808,7 @@
                     <img src=content\die-hard2.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Die-Hard-2\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Die-Hard-2">
                         <div class="text"><b>Die Hard 2 </b></div>
                         <p class="text"> Directed by R. Harlin (1990)</p>
                     </a>
@@ -809,7 +820,7 @@
                     <img src=content\Dirty-Dancing.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Dirty-Dancing\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Dirty-Dancing">
                         <div class="text"><b>Dirty Dancing </b></div>
                         <p class="text"> Directed by E. Ardolino (1987)</p>
                     </a>
@@ -821,7 +832,7 @@
                     <img src=content\District-9.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\District-9\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=District-9">
                         <div class="text"><b>District 9 </b></div>
                         <p class="text"> Directed by N. Blomkamp (2009)</p>
                     </a>
@@ -833,7 +844,7 @@
                     <img src=content\Django-Unchained.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Django-Unchained\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Django-Unchained">
                         <div class="text"><b>Django Unchained </b></div>
                         <p class="text"> Directed by Q. Tarantino (2012)</p>
                     </a>
@@ -845,7 +856,7 @@
                     <img src=content\Dodgeball.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Dodgeball-A-True-Underdog-Story\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Dodgeball-A-True-Underdog-Story">
                         <div class="text"><b>Dodgeball A True Underdog Story </b></div>
                         <p class="text"> Directed by R. Thurber (2004)</p>
                     </a>
@@ -857,7 +868,7 @@
                     <img src=content\Dogville.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Dogville\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Dogville">
                         <div class="text"><b>Dogville </b></div>
                         <p class="text"> Directed by L. Trier (2003)</p>
                     </a>
@@ -869,7 +880,7 @@
                     <img src=content\Don-Jon.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Don-Jon\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Don-Jon">
                         <div class="text"><b>Don Jon </b></div>
                         <p class="text"> Directed by J. Levitt (2013)</p>
                     </a>
@@ -881,7 +892,7 @@
                     <img src=content\Dressed-to-Kill.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Dressed-to-Kill\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Dressed-to-Kill">
                         <div class="text"><b>Dressed to Kill </b></div>
                         <p class="text"> Directed by B. De Palma (1980)</p>
                     </a>
@@ -893,7 +904,7 @@
                     <img src=content\Dr-Strange.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Dr-Strange\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Dr-Strange">
                         <div class="text"><b>Dr Strange </b></div>
                         <p class="text"> Directed by S. Derrickson (2016)</p>
                     </a>
@@ -905,7 +916,7 @@
                     <img src=content\Dumb-and-Dumber.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Dumb-and-Dumber\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Dumb-and-Dumber">
                         <div class="text"><b>Dumb and Dumber </b></div>
                         <p class="text"> Directed by P. Farrelly (1994)</p>
                     </a>
@@ -922,7 +933,7 @@
                     <img src=content\Ed-Wood.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Ed-Wood\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Ed-Wood">
                         <div class="text"><b>Ed Wood </b></div>
                         <p class="text"> Directed by T. Burton (1994)</p>
                     </a>
@@ -934,7 +945,7 @@
                     <img src=content\Edward-Scissorhands.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Edward-Scissorhands\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Edward-Scissorhands">
                         <div class="text"><b>Edward Scissorhands </b></div>
                         <p class="text"> Directed by T. Burton (1990)</p>
                     </a>
@@ -946,7 +957,7 @@
                     <img src=content\Election.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Election\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Election">
                         <div class="text"><b>Election </b></div>
                         <p class="text"> Directed by A. Payne (1999)</p>
                     </a>
@@ -958,19 +969,31 @@
                     <img src=content\Everything-Everywhere-All-At-Once.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Everything-Everywhere-All-At-Once\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Everything-Everywhere-All-At-Once">
                         <div class="text"><b>Everything Everywhere All At Once </b></div>
                         <p class="text"> Directed by D. Kwan (2022)</p>
                     </a>
                 <div class="bio">A middle-aged Chinese immigrant is swept up into an insane adventure in which she alone can save existence by exploring other universes and connecting with the lives she could have led.</div>
             </div>
+
+            <div id="mov" class="contained Scifi Thriller Drama 10s Psychological">
+                <div class=container>
+                    <img src=content\Ex-Machina.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Ex-Machina">
+                        <div class="text"><b>Ex Machina </b></div>
+                        <p class="text"> Directed by A. Garland (2015)</p>
+                    </a>
+                <div class="bio">A young programmer is selected to participate in a ground-breaking experiment in synthetic intelligence by evaluating the human qualities of a highly advanced humanoid A.I.</div>
+           </div>
     
             <div id="mov" class="contained Drama Mystery Thriller 90s Kubrick">
                 <div class=container>
                     <img src=content\Eyes-Wide-Shut.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Eyes-Wide-Shut\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Eyes-Wide-Shut">
                         <div class="text"><b>Eyes Wide Shut </b></div>
                         <p class="text"> Directed by S. Kubrick (1999)</p>
                     </a>
@@ -987,7 +1010,7 @@
                     <img src=content\Fantastic-Mr-Fox.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Fantastic-Mr-Fox\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Fantastic-Mr-Fox">
                         <div class="text"><b>Fantastic Mr Fox </b></div>
                         <p class="text"> Directed by W. Anderson (2009)</p>
                     </a>
@@ -999,7 +1022,7 @@
                     <img src=content\Fargo.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Fargo\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Fargo">
                         <div class="text"><b>Fargo </b></div>
                         <p class="text"> Directed by J&E. Coen (1996)</p>
                     </a>
@@ -1011,7 +1034,7 @@
                     <img src=content\Finding-Nemo.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Finding-Nemo\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Finding-Nemo">
                         <div class="text"><b>Finding Nemo </b></div>
                         <p class="text"> Directed by A. Stanton (2003)</p>
                     </a>
@@ -1023,7 +1046,7 @@
                     <img src=content\Finding-Dory.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Finding-Dory\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Finding-Dory">
                         <div class="text"><b>Finding Dory </b></div>
                         <p class="text"> Directed by A. Stanton (2016)</p>
                     </a>
@@ -1035,7 +1058,7 @@
                     <img src=content\Forgetting-Sarah-Marshall.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Forgetting-Sarah-Marshall\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Forgetting-Sarah-Marshall">
                         <div class="text"><b>Forgetting Sarah Marshall </b></div>
                         <p class="text"> Directed by N. Stoller (2008)</p>
                     </a>
@@ -1047,7 +1070,7 @@
                     <img src=content\Frozen.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Frozen\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Frozen">
                         <div class="text"><b>Frozen </b></div>
                         <p class="text"> Directed by C. Buck (2013)</p>
                     </a>
@@ -1059,7 +1082,7 @@
                     <img src=content\Funny-People.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Funny-People\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Funny-People">
                         <div class="text"><b>Funny People </b></div>
                         <p class="text"> Directed by J. Apatow (2009)</p>
                     </a>
@@ -1076,7 +1099,7 @@
                     <img src=content\Gangs-of-New-York.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Gangs-of-New-York\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Gangs-of-New-York">
                         <div class="text"><b>Gangs of New York </b></div>
                         <p class="text"> Directed by M. Scorsese (2002)</p>
                     </a>
@@ -1088,7 +1111,7 @@
                     <img src=content\Gattaca.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Gattaca\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Gattaca">
                         <div class="text"><b>Gattaca </b></div>
                         <p class="text"> Directed by A. Niccol (1997)</p>
                     </a>
@@ -1100,7 +1123,7 @@
                     <img src=content\Gladiator.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Gladiator\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Gladiator">
                         <div class="text"><b>Gladiator </b></div>
                         <p class="text"> Directed by R. Scott (2000)</p>
                     </a>
@@ -1112,7 +1135,7 @@
                     <img src=content\Green-Book.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Green-Book\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Green-Book">
                         <div class="text"><b>Green Book </b></div>
                         <p class="text"> Directed by P. Farrelly (2018)</p>
                     </a>
@@ -1124,7 +1147,7 @@
                     <img src=content\Goodfellas.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Goodfellas\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Goodfellas">
                         <div class="text"><b>Goodfellas </b></div>
                         <p class="text"> Directed by M. Scorsese (1990)</p>
                     </a>
@@ -1136,7 +1159,7 @@
                     <img src=content\Good-Morning-Vietnam.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Good-Morning-Vietnam\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Good-Morning-Vietnam">
                         <div class="text"><b>Good Morning Vietnam </b></div>
                         <p class="text"> Directed by B. Levinson (1987)</p>
                     </a>
@@ -1148,11 +1171,23 @@
                     <img src=content\Good-Will-Hunting.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Good-Will-Hunting\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Good-Will-Hunting">
                         <div class="text"><b>Good Will Hunting </b></div>
                         <p class="text"> Directed by G. Sant (1997)</p>
                     </a>
                 <div class="bio">Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life.</div>
+            </div>
+
+            <div id="mov" class="contained Thriller Books Psychological 10s Mystery Drama">
+                <div class=container>
+                    <img src=content\Gone-Girl.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Gone-Girl">
+                        <div class="text"><b>Gone Girl </b></div>
+                        <p class="text"> Directed by D. Fincher (2014)</p>
+                    </a>
+                <div class="bio">With his wife's disappearance having become the focus of an intense media circus, a man sees the spotlight turned on him when it's suspected that he may not be innocent.</div>
             </div>
 
             <div id="mov" class="contained Superhero 10s Series">
@@ -1160,7 +1195,7 @@
                     <img src=content\Guardians1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Guardians-of-the-Galaxy-1\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Guardians-of-the-Galaxy-1">
                         <div class="text"><b>Guardians of the Galaxy 1 </b></div>
                         <p class="text"> Directed by J. Gunn (2014)</p>
                     </a>
@@ -1172,14 +1207,12 @@
                     <img src=content\Guardians2.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Guardians-of-the-Galaxy-2\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Guardians-of-the-Galaxy-2">
                         <div class="text"><b>Guardians of the Galaxy 2 </b></div>
                         <p class="text"> Directed by J. Gunn (2017)</p>
                     </a>
                 <div class="bio">The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father, the ambitious celestial being Ego.</div>
            </div>
-
-
 
 
             <!-- H -->
@@ -1188,7 +1221,7 @@
                     <img src=content\Hard-Eight.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Hard-Eight\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Hard-Eight">
                         <div class="text"><b>Hard Eight </b></div>
                         <p class="text"> Directed by P. Anderson (1996)</p>
                     </a>
@@ -1200,7 +1233,7 @@
                     <img src=content\Harry-Potter1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Harry-Potter-and-the-1-Philosopher's-Stone\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Harry-Potter-and-the-1-Philosopher's-Stone">
                         <div class="text"><b>Harry Potter and the 1 Philosopher's Stone </b></div>
                         <p class="text"> Directed by C. Columbus (2001)</p>
                     </a>
@@ -1212,7 +1245,7 @@
                     <img src=content\Harry-Potter2.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Harry-Potter-and-the-2-Chamber-of-Secrets\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Harry-Potter-and-the-2-Chamber-of-Secrets">
                         <div class="text"><b>Harry Potter and the 2 Chamber of Secrets </b></div>
                         <p class="text"> Directed by C. Columbus (2002)</p>
                     </a>
@@ -1224,7 +1257,7 @@
                     <img src=content\Harry-Potter3.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Harry-Potter-and-the-3-Prisoner-of-Azkaban\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Harry-Potter-and-the-3-Prisoner-of-Azkaban">
                         <div class="text"><b>Harry Potter and the 3 Prisoner of Azkaban </b></div>
                         <p class="text"> Directed by A. Cuaron (2004)</p>
                     </a>
@@ -1236,7 +1269,7 @@
                     <img src=content\Harry-Potter4.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Harry-Potter-and-the-4-Goblet-of-Fire\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Harry-Potter-and-the-4-Goblet-of-Fire">
                         <div class="text"><b>Harry Potter and the 4 Goblet of Fire </b></div>
                         <p class="text"> Directed by M. Newell (2005)</p>
                     </a>
@@ -1248,7 +1281,7 @@
                     <img src=content\Harry-Potter5.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Harry-Potter-and-the-5-Order-of-the-Phoenix\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Harry-Potter-and-the-5-Order-of-the-Phoenix">
                         <div class="text"><b>Harry Potter and the 5 Order of the Phoenix </b></div>
                         <p class="text"> Directed by D. Yates (2007)</p>
                     </a>
@@ -1260,7 +1293,7 @@
                     <img src=content\Harry-Potter6.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Harry-Potter-and-the-6-Half-Blood-Prince\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Harry-Potter-and-the-6-Half-Blood-Prince">
                         <div class="text"><b>Harry Potter and the 6 Half Blood Prince </b></div>
                         <p class="text"> Directed by D. Yates (2009)</p>
                     </a>
@@ -1272,7 +1305,7 @@
                     <img src=content\Harry-Potter7.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Harry-Potter-and-the-7-Deathly-Hallows-P1\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Harry-Potter-and-the-7-Deathly-Hallows-P1">
                         <div class="text"><b>Harry Potter and the 7 Deathly Hallows P1 </b></div>
                         <p class="text"> Directed by D. Yates (2010)</p>
                     </a>
@@ -1284,7 +1317,7 @@
                     <img src=content\Harry-Potter8.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Harry-Potter-and-the-8-Deathly-Hallows-P2\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Harry-Potter-and-the-8-Deathly-Hallows-P2">
                         <div class="text"><b>Harry Potter and the 8 Deathly Hallows P2 </b></div>
                         <p class="text"> Directed by D. Yates (2011)</p>
                     </a>
@@ -1296,7 +1329,7 @@
                     <img src=content\Her.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Her\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Her">
                         <div class="text"><b>Her </b></div>
                         <p class="text"> Directed by S.Jonze (2013)</p>
                     </a>
@@ -1308,7 +1341,7 @@
                     <img src=content\Hercules.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Hercules\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Hercules">
                         <div class="text"><b>Hercules </b></div>
                         <p class="text"> Directed by R. Clements (1997)</p>
                     </a>
@@ -1320,7 +1353,7 @@
                     <img src=content\High-Fidelity.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\High-Fidelity\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=High-Fidelity">
                         <div class="text"><b>High Fidelity </b></div>
                         <p class="text"> Directed by S. Frears (2000)</p>
                     </a>
@@ -1332,7 +1365,7 @@
                     <img src=content\Hitch.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Hitch\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Hitch">
                         <div class="text"><b>Hitch </b></div>
                         <p class="text"> Directed by A. Tennant (2005)</p>
                     </a>
@@ -1344,7 +1377,7 @@
                     <img src=content\Hook.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Hook\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Hook">
                         <div class="text"><b>Hook </b></div>
                         <p class="text"> Directed by S. Spielberg (1991)</p>
                     </a>
@@ -1356,7 +1389,7 @@
                     <img src=content\Hocus-Pocus.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Hocus-Pocus\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Hocus-Pocus">
                         <div class="text"><b>Hocus Pocus </b></div>
                         <p class="text"> Directed by K. Ortega (1993)</p>
                     </a>
@@ -1368,7 +1401,7 @@
                         <img src=content\Hot-Fuzz.jpg>
                         <div class="overlay"></div>
                         </div>
-                        <a href="content\Hot-Fuzz\movieContent.html">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=Hot-Fuzz">
                             <div class="text"><b>Hot Fuzz </b></div>
                             <p class="text"> Directed by J. Edgar (2007)</p>
                         </a>
@@ -1380,7 +1413,7 @@
                     <img src=content\How-to-Train-Your-Dragon.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\How-to-Train-Your-Dragon\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=How-to-Train-Your-Dragon">
                         <div class="text"><b>How to Train Your Dragon </b></div>
                         <p class="text"> Directed by C. Sanders (2010)</p>
                     </a>
@@ -1392,7 +1425,7 @@
                     <img src=content\Howls-Moving-Castle.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Howls-Moving-Castle\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Howls-Moving-Castle">
                         <div class="text"><b>Howls Moving Castle </b></div>
                         <p class="text"> Directed by H. Miyazaki (2004)</p>
                     </a>
@@ -1409,7 +1442,7 @@
                     <img src=content\Identity-Thief.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Identity-Thief\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Identity-Thief">
                         <div class="text"><b>Identity Thief </b></div>
                         <p class="text"> Directed by S. Gordon (2013)</p>
                     </a>
@@ -1421,7 +1454,7 @@
                     <img src=content\Idiocracy.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Idiocracy\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Idiocracy">
                         <div class="text"><b>Idiocracy </b></div>
                         <p class="text"> Directed by M. Judge (2006)</p>
                     </a>
@@ -1433,7 +1466,7 @@
                     <img src=content\I-Love-You-Man.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\I-Love-You,-Man\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=I-Love-You,-Man">
                         <div class="text"><b>I Love You, Man </b></div>
                         <p class="text"> Directed by J. Hamburg (2009)</p>
                     </a>
@@ -1445,7 +1478,7 @@
                     <img src=content\Indiana-Jones-and-the-Raiders-of-the-Lost-Ark.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Indiana-Jones-and-the-Raiders-of-the-Lost-Ark\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Indiana-Jones-and-the-Raiders-of-the-Lost-Ark">
                         <div class="text"><b>Indiana Jones and the Raiders of the Lost Ark </b></div>
                         <p class="text"> Directed by S. Spielberg (1981)</p>
                     </a>
@@ -1457,7 +1490,7 @@
                     <img src=content\Indiana-Jones-And-The-Temple-Of-Doom.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Indiana-Jones-And-The-Temple-Of-Doom\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Indiana-Jones-And-The-Temple-Of-Doom">
                         <div class="text"><b>Indiana Jones And The Temple Of Doom </b></div>
                         <p class="text"> Directed by S. Spielberg (1984)</p>
                     </a>
@@ -1469,7 +1502,7 @@
                     <img src=content\Indiana-Jones-and-the-Last-Crusade.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Indiana-Jones-and-the-Last-Crusade\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Indiana-Jones-and-the-Last-Crusade">
                         <div class="text"><b>Indiana Jones and the Last Crusade </b></div>
                         <p class="text"> Directed by S. Spielberg (1989)</p>
                     </a>
@@ -1481,7 +1514,7 @@
                     <img src=content\Interstellar.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Interstellar\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Interstellar">
                         <div class="text"><b>Interstellar </b></div>
                         <p class="text"> Directed by C. Nolan (2014)</p>
                     </a>
@@ -1493,7 +1526,7 @@
                     <img src=content\Iron-Man1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Iron-Man-1\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Iron-Man-1">
                         <div class="text"><b>Iron Man 1 </b></div>
                         <p class="text"> Directed by J. Favereau (2008)</p>
                     </a>
@@ -1505,7 +1538,7 @@
                     <img src=content\Iron-Man2.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Iron-Man-2\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Iron-Man-2">
                         <div class="text"><b>Iron Man 2 </b></div>
                         <p class="text"> Directed by J. Favreau (2010)</p>
                     </a>
@@ -1517,7 +1550,7 @@
                     <img src=content\Iron-Man3.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Iron-Man-3\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Iron-Man-3">
                         <div class="text"><b>Iron Man 3 </b></div>
                         <p class="text"> Directed by S. Black (2013)</p>
                     </a>
@@ -1535,7 +1568,7 @@
                     <img src=content\Jackie-Brown.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Jackie-Brown\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Jackie-Brown">
                         <div class="text"><b>Jackie Brown </b></div>
                         <p class="text"> Directed by Q. Tarantino (1997)</p>
                     </a>
@@ -1547,7 +1580,7 @@
                     <img src=content\Jojo-Rabbit.jpeg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Jojo-Rabbit\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Jojo-Rabbit">
                         <div class="text"><b>Jojo Rabbit </b></div>
                         <p class="text"> Directed by T. Waititi (2019)</p>
                     </a>
@@ -1563,7 +1596,7 @@
                     <img src=content\Kick-Ass.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Kick-Ass\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Kick-Ass">
                         <div class="text"><b>Kick-Ass </b></div>
                         <p class="text"> Directed by M. Vaughn (2010)</p>
                     </a>
@@ -1576,7 +1609,7 @@
                     <img src=content\kill-bill-vol1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Kill-Bill-Vol-1\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Kill-Bill-Vol-1">
                         <div class="text"><b>Kill Bill Vol 1 </b></div>
                         <p class="text"> Directed by Q. Tarantino (2003)</p>
                     </a>
@@ -1588,7 +1621,7 @@
                     <img src=content\kill-bill-vol2.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Kill-Bill-Vol-2\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Kill-Bill-Vol-2">
                         <div class="text"><b>Kill Bill Vol 2 </b></div>
                         <p class="text"> Directed by Q. Tarantino (2004)</p>
                     </a>
@@ -1600,7 +1633,7 @@
                     <img src=content\Knives-Out.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Knives-Out\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Knives-Out">
                         <div class="text"><b>Knives Out </b></div>
                         <p class="text"> Directed by R. Johnson (2019)</p>
                     </a>
@@ -1612,7 +1645,7 @@
                     <img src=content\Knocked-Up.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Knocked-Up\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Knocked-Up">
                         <div class="text"><b>Knocked Up </b></div>
                         <p class="text"> Directed by J. Apatow (2007)</p>
                     </a>
@@ -1624,7 +1657,7 @@
                     <img src=content\Kubo-And-The-Two-Strings.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Kubo-And-The-Two-Strings\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Kubo-And-The-Two-Strings">
                         <div class="text"><b>Kubo And The Two Strings </b></div>
                         <p class="text"> Directed by T. Knight (2016)</p>
                     </a>
@@ -1636,7 +1669,7 @@
                     <img src=content\Kung-Fu-Panda1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Kung-Fu-Panda\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Kung-Fu-Panda">
                         <div class="text"><b>Kung Fu Panda </b></div>
                         <p class="text"> Directed by M. Osborne (2008)</p>
                     </a>
@@ -1648,7 +1681,7 @@
                     <img src=content\Kung-Fu-Panda2.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Kung-Fu-Panda-2\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Kung-Fu-Panda-2">
                         <div class="text"><b>Kung Fu Panda 2 </b></div>
                         <p class="text"> Directed by J. Nelson (2011)</p>
                     </a>
@@ -1665,7 +1698,7 @@
                     <img src=content\Lady-and-the-Tramp.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Lady-and-the-Tramp\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Lady-and-the-Tramp">
                         <div class="text"><b>Lady and the Tramp </b></div>
                         <p class="text"> Directed by C. Geronimi (1955)</p>
                     </a>
@@ -1677,7 +1710,7 @@
                     <img src=content\Legally-Blonde.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Legally-Blonde\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Legally-Blonde">
                         <div class="text"><b>Legally Blonde </b></div>
                         <p class="text"> Directed by R. Luketic (2001)</p>
                     </a>
@@ -1689,7 +1722,7 @@
                     <img src=content\lethal-weapon1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Kill-Bill-Vol-2\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Kill-Bill-Vol-2">
                         <div class="text"><b>Leathal Weapon 1 </b></div>
                         <p class="text"> Directed by R. Donner (1987)</p>
                     </a>
@@ -1701,7 +1734,7 @@
                     <img src=content\lethal-weapon2.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Kill-Bill-Vol-2\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Kill-Bill-Vol-2">
                         <div class="text"><b>Leathal Weapon 2 </b></div>
                         <p class="text"> Directed by R. Donner (1989)</p>
                     </a>
@@ -1713,7 +1746,7 @@
                     <img src=content\Licorice-Pizza.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Licorice-Pizza\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Licorice-Pizza">
                         <div class="text"><b>Licorice Pizza </b></div>
                         <p class="text"> Directed by P. Anderson (2021)</p>
                     </a>
@@ -1725,7 +1758,7 @@
                     <img src=content\Lilo-and-Stitch.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Lilo-and-Stitch\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Lilo-and-Stitch">
                         <div class="text"><b>Lilo and Stitch </b></div>
                         <p class="text"> Directed by D. Deblois (2002)</p>
                     </a>
@@ -1737,19 +1770,19 @@
                     <img src=content\Lincoln.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Lincoln\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Lincoln">
                         <div class="text"><b>Lincoln </b></div>
                         <p class="text"> Directed by S. Speilburg (2012)</p>
                     </a>
                 <div class="bio">As the American Civil War continues to rage, America's president struggles with continuing carnage on the battlefield as he fights with many inside his own cabinet on the decision to emancipate the slaves.</div>
            </div>
            
-           <div id="mov" class="contained Romance Drama Nicole Books 10s">
+           <div id="mov" class="contained Romance Drama Nic Books 10s">
                 <div class=container>
                     <img src=content\Little-Women.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Little-Women\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Little-Women">
                         <div class="text"><b>Little Women </b></div>
                         <p class="text"> Directed by G. Gerwig (2019)</p>
                     </a>
@@ -1761,7 +1794,7 @@
                     <img src=content\Logan.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Logan\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Logan">
                         <div class="text"><b>Logan </b></div>
                         <p class="text"> Directed by J. Mangold (2017)</p>
                     </a>
@@ -1773,7 +1806,7 @@
                     <img src=content\Lost-in-Translation.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Lost-in-Translation\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Lost-in-Translation">
                         <div class="text"><b>Lost in Translation </b></div>
                         <p class="text"> Directed by S. Coppola (2003)</p>
                     </a>
@@ -1790,7 +1823,7 @@
                     <img src=content\Magnolia.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Magnolia\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Magnolia">
                         <div class="text"><b>Magnolia </b></div>
                         <p class="text"> Directed by P. Anderson (1996)</p>
                     </a>
@@ -1802,7 +1835,7 @@
                     <img src=content\Manchester-by-the-Sea.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Manchester-by-the-Sea\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Manchester-by-the-Sea">
                         <div class="text"><b>Manchester by the Sea </b></div>
                         <p class="text"> Directed by K. Lonergan (2016)</p>
                     </a>
@@ -1814,7 +1847,7 @@
                     <img src=content\Meet-The-Parents.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Meet-The-Parents\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Meet-The-Parents">
                         <div class="text"><b>Meet The Parents </b></div>
                         <p class="text"> Directed by J. Roach (2000)</p>
                     </a>
@@ -1826,7 +1859,7 @@
                     <img src=content\Millers-Crossing.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Millers-Crossing\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Millers-Crossing">
                         <div class="text"><b>Millers Crossing </b></div>
                         <p class="text"> Directed by J. Coen (1990)</p>
                     </a>
@@ -1838,7 +1871,7 @@
                     <img src=content\mission-impossible.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Kill-Bill-Vol-2\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Kill-Bill-Vol-2">
                         <div class="text"><b>Mission Impossible </b></div>
                         <p class="text"> Directed by B. De Palma (1996)</p>
                     </a>
@@ -1850,7 +1883,7 @@
                     <img src=content\Moana.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Moana\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Moana">
                         <div class="text"><b>Moana </b></div>
                         <p class="text"> Directed by R. Clements (2016)</p>
                     </a>
@@ -1862,7 +1895,7 @@
                     <img src=content\Monsters-Inc.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Monsters-Inc\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Monsters-Inc">
                         <div class="text"><b>Monsters Inc </b></div>
                         <p class="text"> Directed by P. Docter (2001)</p>
                     </a>
@@ -1874,7 +1907,7 @@
                     <img src=content\Monsters-University.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Monsters-University\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Monsters-University">
                         <div class="text"><b>Monsters University </b></div>
                         <p class="text"> Directed by D. Scanion (2013)</p>
                     </a>
@@ -1886,7 +1919,7 @@
                     <img src=content\Moonrise-Kingdom.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Moonrise-Kingdom\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Moonrise-Kingdom">
                         <div class="text"><b>Moonrise Kingdom </b></div>
                         <p class="text"> Directed by W. Anderson (2012)</p>
                     </a>
@@ -1898,7 +1931,7 @@
                     <img src=content\Mulan.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Mulan\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Mulan">
                         <div class="text"><b>Mulan </b></div>
                         <p class="text"> Directed by T. Bancroft (1998)</p>
                     </a>
@@ -1910,7 +1943,7 @@
                     <img src=content\Muppet-Treasure-Island.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Muppet-Treasure-Island\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Muppet-Treasure-Island">
                         <div class="text"><b>Muppet Treasure Island </b></div>
                         <p class="text"> Directed by B. Henson (1996)</p>
                     </a>
@@ -1922,7 +1955,7 @@
                     <img src=content\My-Left-Foot.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\My-Left-Foot:-The-Story-of-Christy-Brown\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=My-Left-Foot:-The-Story-of-Christy-Brown">
                         <div class="text"><b>My Left Foot: The Story of Christy Brown </b></div>
                         <p class="text"> Directed by J. Sheridan (1989)</p>
                     </a>
@@ -1934,7 +1967,7 @@
                     <img src=content\My-Neighbor-Totoro.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\My-Neighbor-Totoro\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=My-Neighbor-Totoro">
                         <div class="text"><b>My Neighbor Totoro </b></div>
                         <p class="text"> Directed by H. Miyazaki (1988)</p>
                     </a>
@@ -1951,7 +1984,7 @@
                     <img src=content\Natural-Born-Killers.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Natural-Born-Killers\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Natural-Born-Killers">
                         <div class="text"><b>Natural Born Killers </b></div>
                         <p class="text"> Directed by O. Stone (1994)</p>
                     </a>
@@ -1963,7 +1996,7 @@
                     <img src=content\Nausicaa-of-the-Valley-of-the-Wind.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Nausicaa-of-the-Valley-of-the-Wind\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Nausicaa-of-the-Valley-of-the-Wind">
                         <div class="text"><b>Nausicaa of the Valley of the Wind </b></div>
                         <p class="text"> Directed by H. Miyazaki (1986)</p>
                     </a>
@@ -1975,7 +2008,7 @@
                     <img src=content\Nebraska.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Nebraska\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Nebraska">
                         <div class="text"><b>Nebraska </b></div>
                         <p class="text"> Directed by A. Payne (2013)</p>
                     </a>
@@ -1987,7 +2020,7 @@
                     <img src=content\No-Country-for-Old-Men.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\No-Country-for-Old-Men\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=No-Country-for-Old-Men">
                         <div class="text"><b>No Country for Old Men </b></div>
                         <p class="text"> Directed by J&E. Coen (2007)</p>
                     </a>
@@ -2008,7 +2041,7 @@
                     <img src=content\O-Brother-Where-Art-Thou.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\O-Brother,-Where-Art-Thou\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=O-Brother,-Where-Art-Thou">
                         <div class="text"><b>O Brother, Where Art Thou </b></div>
                         <p class="text"> Directed by J&E Coen (2000)</p>
                     </a>
@@ -2020,7 +2053,7 @@
                     <img src=content\Once-Upon-A-Time-In-America.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Once-Upon-A-Time-In-America\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Once-Upon-A-Time-In-America">
                         <div class="text"><b>Once Upon A Time In America </b></div>
                         <p class="text"> Directed by S. Leone (1984)</p>
                     </a>
@@ -2032,7 +2065,7 @@
                     <img src=content\Once-Upon-A-Time-In-Hollywood.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Once-Upon-A-Time-In-Hollywood\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Once-Upon-A-Time-In-Hollywood">
                         <div class="text"><b>Once Upon A Time In Hollywood </b></div>
                         <p class="text"> Directed by Q. Tarantino (2019)</p>
                     </a>
@@ -2044,7 +2077,7 @@
                     <img src=content\One-Day.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\One-Day\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=One-Day">
                         <div class="text"><b>One Day </b></div>
                         <p class="text"> Directed by L. Scherfig (2011)</p>
                     </a>
@@ -2063,7 +2096,7 @@
                     <img src=content\Peter-Pan.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Peter-Pan\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Peter-Pan">
                         <div class="text"><b>Peter Pan </b></div>
                         <p class="text"> Directed by H. Luske (1953)</p>
                     </a>
@@ -2075,7 +2108,7 @@
                     <img src=content\Phantom-Thread.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Phantom-Thread\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Phantom-Thread">
                         <div class="text"><b>Phantom Thread </b></div>
                         <p class="text"> Directed by P. Anderson (2017)</p>
                     </a>
@@ -2087,7 +2120,7 @@
                     <img src=content\Pineapple-Express.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Pineapple-Express\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Pineapple-Express">
                         <div class="text"><b>Pineapple Express </b></div>
                         <p class="text"> Directed by D. Green (2008)</p>
                     </a>
@@ -2099,7 +2132,7 @@
                     <img src=content\Pirates-of-the-Caribbean-1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Pirates-of-the-Caribbean-1-Curse-of-the-Black-Pearl\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Pirates-of-the-Caribbean-1-Curse-of-the-Black-Pearl">
                         <div class="text"><b>Pirates of the Caribbean 1 Curse of the Black Pearl </b></div>
                         <p class="text"> Directed by G. Verbinski (2003)</p>
                     </a>
@@ -2111,7 +2144,7 @@
                     <img src=content\Pirates-of-the-Caribbean-2.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Pirates-of-the-Caribbean-2-Dead-Man's-Chest\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Pirates-of-the-Caribbean-2-Dead-Man's-Chest">
                         <div class="text"><b>Pirates of the Caribbean 2 Dead Man's Chest </b></div>
                         <p class="text"> Directed by G. Verbinski (2006)</p>
                     </a>
@@ -2123,7 +2156,7 @@
                     <img src=content\Pirates-of-the-Caribbean-3.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Pirates-of-the-Caribbean-3-At-Worlds-End\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Pirates-of-the-Caribbean-3-At-Worlds-End">
                         <div class="text"><b>Pirates of the Caribbean 3 At Worlds End </b></div>
                         <p class="text"> Directed by G. Verbinski (2007)</p>
                     </a>
@@ -2135,7 +2168,7 @@
                     <img src=content\Princess-Mononoke.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Princess-Mononoke\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Princess-Mononoke">
                         <div class="text"><b>Princess Mononoke </b></div>
                         <p class="text"> Directed by H. Miyazaki (1997)</p>
                     </a>
@@ -2147,7 +2180,7 @@
                     <img src=content\Predator.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Predator\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Predator">
                         <div class="text"><b>Predator </b></div>
                         <p class="text"> Directed by J. McTiernan (1987)</p>
                     </a>
@@ -2159,7 +2192,7 @@
                     <img src=content\Prometheus.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Prometheus\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Prometheus">
                         <div class="text"><b>Prometheus </b></div>
                         <p class="text"> Directed by R. Scott (2012)</p>
                     </a>
@@ -2171,7 +2204,7 @@
                     <img src=content\Pulp-Fiction.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Pulp-Fiction\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Pulp-Fiction">
                         <div class="text"><b>Pulp Fiction </b></div>
                         <p class="text"> Directed by Q. Tarantino (1994)</p>
                     </a>
@@ -2183,7 +2216,7 @@
                     <img src=content\PS-I-Love-You.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\PS-I-Love-You\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=PS-I-Love-You">
                         <div class="text"><b>PS I Love You </b></div>
                         <p class="text"> Directed by R. LaGravenese (2007)</p>
                     </a>
@@ -2192,10 +2225,10 @@
         
             <div id="mov" class="contained 00s Comedy Drama Romance PTA">
                 <div class=container>
-                    <img src=content\Punch-Drunk-Love.jpg>
+                    <img src=content\Punch-Drunk-Love.jpeg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Punch-Drunk-Love\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Punch-Drunk-Love">
                         <div class="text"><b>Punch Drunk Love </b></div>
                         <p class="text"> Directed by P. Anderson (2002)</p>
                     </a>
@@ -2215,7 +2248,7 @@
                     <img src=content\Quick-Change.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Quick-Change\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Quick-Change">
                         <div class="text"><b>Quick Change </b></div>
                         <p class="text"> Directed by H. Franklin (1990)</p>
                     </a>
@@ -2234,7 +2267,7 @@
                     <img src=content\Raising-arizona.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Reservoir-Dogs\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Reservoir-Dogs">
                         <div class="text"><b>Raising Arizona </b></div>
                         <p class="text"> Directed by J&E Coen (1987)</p>
                     </a>
@@ -2246,7 +2279,7 @@
                     <img src=content\Raging-Bull.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Raging-Bull\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Raging-Bull">
                         <div class="text"><b>Raging Bull </b></div>
                         <p class="text"> Directed by M. Scorsese (1980)</p>
                     </a>
@@ -2258,7 +2291,7 @@
                     <img src=content\Requiem-For-A-Dream.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Requiem-For-A-Dream\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Requiem-For-A-Dream">
                         <div class="text"><b>Requiem For A Dream </b></div>
                         <p class="text"> Directed by D. Aronofsky (2000)</p>
                     </a>
@@ -2270,7 +2303,7 @@
                     <img src=content\Rango.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Rango\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Rango">
                         <div class="text"><b>Rango </b></div>
                         <p class="text"> Directed by G. Verbinski (2011)</p>
                     </a>
@@ -2282,7 +2315,7 @@
                     <img src=content\Reservoir-Dogs.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Reservoir-Dogs\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Reservoir-Dogs">
                         <div class="text"><b>Reservoir Dogs </b></div>
                         <p class="text"> Directed by Q. Tarantino (1992)</p>
                     </a>
@@ -2294,7 +2327,7 @@
                     <img src=content\Rio.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Rio\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Rio">
                         <div class="text"><b>Rio </b></div>
                         <p class="text"> Directed by C. Saldanha (2011)</p>
                     </a>
@@ -2306,7 +2339,7 @@
                     <img src=content\Rogue-One.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Rogue-One\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Rogue-One">
                         <div class="text"><b>Rogue One </b></div>
                         <p class="text"> Directed by G. Edwards (2016)</p>
                     </a>
@@ -2318,7 +2351,7 @@
                     <img src=content\Rushmore.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Rushmore\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Rushmore">
                         <div class="text"><b>Rushmore </b></div>
                         <p class="text"> Directed by W. Anderson (1998)</p>
                     </a>
@@ -2334,7 +2367,7 @@
                     <img src=content\Say-Anything.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Say-Anything\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Say-Anything">
                         <div class="text"><b>Say Anything </b></div>
                         <p class="text"> Directed by C. Crowe (1989)</p>
                     </a>
@@ -2347,7 +2380,7 @@
                     <img src=content\Scarface.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Scarface\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Scarface">
                         <div class="text"><b>Scarface </b></div>
                         <p class="text"> Directed by B. De Palma (1983)</p>
                     </a>
@@ -2359,7 +2392,7 @@
                     <img src=content\Scott-Pilgrim.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Scott-Pilgrim-vs-the-World\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Scott-Pilgrim-vs-the-World">
                         <div class="text"><b>Scott Pilgrim vs the World </b></div>
                         <p class="text"> Directed by E. Wright (2010)</p>
                     </a>
@@ -2371,7 +2404,7 @@
                     <img src=content\Serendipity.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Serendipity\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Serendipity">
                         <div class="text"><b>Serendipity </b></div>
                         <p class="text"> Directed by P. Chelsom (2001)</p>
                     </a>
@@ -2383,7 +2416,7 @@
                     <img src=content\Se7en.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Se7en\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Se7en">
                         <div class="text"><b>Se7en </b></div>
                         <p class="text"> Directed by D. Fincher (1995)</p>
                     </a>
@@ -2395,7 +2428,7 @@
                     <img src=content\Schindlers-List.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Schindlers-List\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Schindlers-List">
                         <div class="text"><b>Schindlers List </b></div>
                         <p class="text"> Directed by S. Spielberg (1993)</p>
                     </a>
@@ -2407,7 +2440,7 @@
                     <img src=content\Shazam.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Shazam\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Shazam">
                         <div class="text"><b>Shazam </b></div>
                         <p class="text"> Directed by D. Sandberg (2019)</p>
                     </a>
@@ -2419,7 +2452,7 @@
                     <img src=content\Shrek1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Shrek\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Shrek">
                         <div class="text"><b>Shrek 1</b></div>
                         <p class="text"> Directed by A. Adamson (2001)</p>
                     </a>
@@ -2431,7 +2464,7 @@
                     <img src=content\Sleeping-Beauty.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Sleeping-Beauty\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Sleeping-Beauty">
                         <div class="text"><b>Sleeping Beauty </b></div>
                         <p class="text"> Directed by C. Geronimi (1959)</p>
                     </a>
@@ -2443,7 +2476,7 @@
                     <img src=content\Sleepless-in-Seattle.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Sleepless-in-Seattle\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Sleepless-in-Seattle">
                         <div class="text"><b>Sleepless in Seattle </b></div>
                         <p class="text"> Directed by N. Ephron (1993)</p>
                     </a>
@@ -2455,7 +2488,7 @@
                     <img src=content\Snow-White.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Snow-White-and-the-Seven-Dwarfs\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Snow-White-and-the-Seven-Dwarfs">
                         <div class="text"><b>Snow White and the Seven Dwarfs </b></div>
                         <p class="text"> Directed by D. Hand (1937)</p>
                     </a>
@@ -2467,19 +2500,31 @@
                     <img src=content\Sophies-Choice.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Sophies-Choice\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Sophies-Choice">
                         <div class="text"><b>Sophies Choice </b></div>
                         <p class="text"> Directed by A. Pakula (1982)</p>
                     </a>
                 <div class="bio">Sophie is the survivor of Nazi concentration camps, who has found a reason to live with Nathan, a sparkling if unsteady American Jew obsessed with the Holocaust.</div>
             </div>
 
+            <div id="mov" class="contained 10s Scifi Action Thriller Mystery">
+                <div class=container>
+                    <img src=content\Source-Code.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Source-Code">
+                        <div class="text"><b>Source Code </b></div>
+                        <p class="text"> Directed by D. Jones (2011)</p>
+                    </a>
+                <div class="bio">A soldier wakes up in someone else's body and discovers he's part of an experimental government program to find the bomber of a commuter train within 8 minutes.</div>
+           </div>
+
             <div id="mov" class="contained 80s Comedy Space">
                 <div class=container>
                     <img src=content\Spaceballs.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Spaceballs\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Spaceballs">
                         <div class="text"><b>Spaceballs </b></div>
                         <p class="text"> Directed by M. Brooks (1987)</p>
                     </a>
@@ -2491,7 +2536,7 @@
                     <img src=content\Spawn.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Spawn\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Spawn">
                         <div class="text"><b>Spawn </b></div>
                         <p class="text"> Directed by M. Dippe (1997)</p>
                     </a>
@@ -2500,10 +2545,10 @@
                                
             <div id="mov" class="contained Superhero 10s Series">
                 <div class=container>
-                    <img src=content\Spiderman-1-Homecoming.jpg>
+                    <img src=content\Spiderman-Homecoming.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Spiderman-Homecoming\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Spiderman-Homecoming">
                         <div class="text"><b>Spiderman 1 Homecoming </b></div>
                         <p class="text"> Directed by J. Watts (2017)</p>
                     </a>
@@ -2515,7 +2560,7 @@
                     <img src=content\Spiderman-Far-from-Home.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Spiderman-2-Far-from-Home\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Spiderman-2-Far-from-Home">
                         <div class="text"><b>Spiderman 2 Far from Home </b></div>
                         <p class="text"> Directed by J. Watts (2019)</p>
                     </a>
@@ -2527,7 +2572,7 @@
                     <img src=content\Spiderman-No-Way-Home.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Spiderman-3-No-Way-Home\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Spiderman-3-No-Way-Home">
                         <div class="text"><b>Spiderman 3 No Way Home </b></div>
                         <p class="text"> Directed by J. Watts (2021)</p>
                     </a>
@@ -2539,7 +2584,7 @@
                     <img src=content\Spirited-Away.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Spirited-Away\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Spirited-Away">
                         <div class="text"><b>Spirited Away </b></div>
                         <p class="text"> Directed by H. Miyazaki (2001)</p>
                     </a>
@@ -2551,7 +2596,7 @@
                     <img src=content\Spotlight.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Spotlight\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Spotlight">
                         <div class="text"><b>Spotlight </b></div>
                         <p class="text"> Directed by T. McCarthy (2015)</p>
                     </a>
@@ -2563,7 +2608,7 @@
                     <img src=content\Superbad.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Superbad\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Superbad">
                         <div class="text"><b>Superbad </b></div>
                         <p class="text"> Directed by G. Mottola (2007)</p>
                     </a>
@@ -2580,23 +2625,47 @@
                     <img src=content\Talladega-Nights.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Talladega-Nights-The-Ballad-of-Ricky-Bobby\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Talladega-Nights-The-Ballad-of-Ricky-Bobby">
                         <div class="text"><b>Talladega Nights The Ballad of Ricky Bobby </b></div>
                         <p class="text"> Directed by A. McKay (2006)</p>
                     </a>
                 <div class="bio">Number one NASCAR driver Ricky Bobby stays atop the heap thanks to a pact with his best friend and teammate, Cal Naughton, Jr. But when a French Formula One driver, makes his way up the ladder, Ricky Bobby's talent and devotion are put to the test.</div>
             </div>
 
+            <div id="mov" class="contained Psychological Drama 20s">
+                <div class=container>
+                    <img src=content\Tar.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Tar">
+                        <div class="text"><b>Tar </b></div>
+                        <p class="text"> Directed by T. Field (2022)</p>
+                    </a>
+                <div class="bio">Set in the international world of Western classical music, the film centers on Lydia Tár, widely considered one of the greatest living composer-conductors and the very first female director of a major German orchestra.</div>
+           </div>
+
             <div id="mov" class="contained Animated Family Books Disney 90s">
                 <div class=container>
                     <img src=content\Tarzan.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Tarzan\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Tarzan">
                         <div class="text"><b>Tarzan </b></div>
                         <p class="text"> Directed by C. Buck (1999)</p>
                     </a>
                 <div class="bio">A man raised by gorillas must decide where he really belongs when he discovers he is a human.</div>
+            </div>
+
+            <div id="mov" class="contained Crime Drama Scorsese Neo-Noir Psychological Thriller 70s">
+                <div class=container>
+                    <img src=content\Taxi-Driver.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Taxi-Driver">
+                        <div class="text"><b>Taxi Driver </b></div>
+                        <p class="text"> Directed by M. Scorsese (1976)</p>
+                    </a>
+                <div class="bio">A mentally unstable veteran works as a nighttime taxi driver in New York City, where the perceived decadence and sleaze fuels his urge for violent action.</div>
             </div>
   
             <div id="mov" class="contained Comedy Romantic 00s Rom-Com">
@@ -2604,7 +2673,7 @@
                     <img src=content\40Year-Old-Virgin.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-40-Year-Old-Virgin\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-40-Year-Old-Virgin">
                         <div class="text"><b>The 40 Year Old Virgin </b></div>
                         <p class="text"> Directed by J. Apatow (2005)</p>
                     </a>
@@ -2616,7 +2685,7 @@
                     <img src=content\The-Abyss.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Abyss\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Abyss">
                         <div class="text"><b>The Abyss </b></div>
                         <p class="text"> Directed by J. Cameron (1989)</p>
                     </a>
@@ -2628,7 +2697,7 @@
                     <img src=content\Aristocats.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Aristocats\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Aristocats">
                         <div class="text"><b>The Aristocats </b></div>
                         <p class="text"> Directed by W. Reitherman (1970)</p>
                     </a>
@@ -2640,7 +2709,7 @@
                     <img src=content\The-Color-Purple.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Color-Purple\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Color-Purple">
                         <div class="text"><b>The Color Purple </b></div>
                         <p class="text"> Directed by S. Spielberg (1985)</p>
                     </a>
@@ -2652,7 +2721,7 @@
                     <img src=content\The-Darjeeling-Limited.jpeg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Darjeeling-Limited\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Darjeeling-Limited">
                         <div class="text"><b>The Darjeeling Limited </b></div>
                         <p class="text"> Directed by W. Anderson (2007)</p>
                     </a>
@@ -2664,7 +2733,7 @@
                     <img src=content\The-Grand-Budapest-Hotel.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Grand-Budapest-Hotel\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Grand-Budapest-Hotel">
                         <div class="text"><b>The Grand Budapest Hotel </b></div>
                         <p class="text"> Directed by W. Anderson (2014)</p>
                     </a>
@@ -2676,7 +2745,7 @@
                     <img src=content\The-Graduate.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Graduate\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Graduate">
                         <div class="text"><b>The Graduate </b></div>
                         <p class="text"> Directed by M. Nichols (1967)</p>
                     </a>
@@ -2688,19 +2757,31 @@
                     <img src=content\The-Great-Gatsby.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Great-Gatsby\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Great-Gatsby">
                         <div class="text"><b>The Great Gatsby </b></div>
                         <p class="text"> Directed by B. Luhrmann (2013)</p>
                     </a>
                 <div class="bio">A writer and wall street trader, Nick Carraway, finds himself drawn to the past and lifestyle of his mysterious millionaire neighbor, Jay Gatsby, amid the riotous parties of the Jazz Age.</div>
            </div>
+
+            <div id="mov" class="contained Crime Thriller Books 10s Mystery">
+                <div class=container>
+                    <img src=content\The-Girl-With-The-Dragon-Tattoo.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Girl-With-The-Dragon-Tattoo">
+                        <div class="text"><b>The Girl With The Dragon Tattoo </b></div>
+                        <p class="text"> Directed by D. Fincher (2011)</p>
+                    </a>
+                <div class="bio">Journalist Mikael Blomkvist is aided in his search for a woman who has been missing for 40 years by young computer hacker Lisbeth Salander.</div>
+            </div>
         
             <div id="mov" class="contained Comedy BuddyCop Action 10s">
                 <div class=container>
                     <img src=content\The-Heat.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Heat\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Heat">
                         <div class="text"><b>The Heat </b></div>
                         <p class="text"> Directed by P. Feig (2013)</p>
                     </a>
@@ -2712,7 +2793,7 @@
                     <img src=content\The-Help.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Help\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Help">
                         <div class="text"><b>The Help </b></div>
                         <p class="text"> Directed by T. Taylor (2011)</p>
                     </a>
@@ -2724,7 +2805,7 @@
                     <img src=content\The-Hobbit1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Hobbit-An-Unexpected-Journey\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Hobbit-An-Unexpected-Journey">
                         <div class="text"><b>The Hobbit An Unexpected Journey </b></div>
                         <p class="text"> Directed by P. Jackson (2012)</p>
                     </a>
@@ -2736,7 +2817,7 @@
                     <img src=content\The-Hobbit2.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Hobbit-The-Desolation-of-Smaug\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Hobbit-The-Desolation-of-Smaug">
                         <div class="text"><b>The Hobbit The Desolation of Smaug </b></div>
                         <p class="text"> Directed by P. Jackson (2013)</p>
                     </a>
@@ -2748,7 +2829,7 @@
                     <img src=content\The-Hobbit3.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Hobbit-Battle-Of-The-Five-Armies\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Hobbit-Battle-Of-The-Five-Armies">
                         <div class="text"><b>The Hobbit Battle Of The Five Armies </b></div>
                         <p class="text"> Directed by P. Jackson (2014)</p>
                     </a>
@@ -2760,7 +2841,7 @@
                     <img src=content\The-Hunger-Games-1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Hunger-Games-1\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Hunger-Games-1">
                         <div class="text"><b>The Hunger Games 1 </b></div>
                         <p class="text"> Directed by G. Ross (2012)</p>
                     </a>
@@ -2772,7 +2853,7 @@
                     <img src=content\The-Hunger-Games-2.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Hunger-Games-2-Catching-Fire\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Hunger-Games-2-Catching-Fire">
                         <div class="text"><b>The Hunger Games 2 Catching Fire</b></div>
                         <p class="text"> Directed by F. Lawrence (2013)</p>
                     </a>
@@ -2784,7 +2865,7 @@
                     <img src=content\The-Hunger-Games-3.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Hunger-Games-3-Mockingjay-P1\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Hunger-Games-3-Mockingjay-P1">
                         <div class="text"><b>The Hunger Games 3 Mockingjay P1 </b></div>
                         <p class="text"> Directed by F. Lawrence (2014)</p>
                     </a>
@@ -2796,7 +2877,7 @@
                     <img src=content\The-Hunger-Games-4.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Hunger-Games-4-Mockingjay-P2\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Hunger-Games-4-Mockingjay-P2">
                         <div class="text"><b>The Hunger Games 4 Mockingjay P2</b></div>
                         <p class="text"> Directed by F. Lawrence (2015)</p>
                     </a>
@@ -2808,7 +2889,7 @@
                     <img src=content\The-Incredible-Hulk.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Incredible-Hulk\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Incredible-Hulk">
                         <div class="text"><b>The Incredible Hulk </b></div>
                         <p class="text"> Directed by L. Leterrier (2008)</p>
                     </a>
@@ -2820,7 +2901,7 @@
                     <img src=content\The-Jungle-Book.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Jungle-Book\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Jungle-Book">
                         <div class="text"><b>The Jungle Book </b></div>
                         <p class="text"> Directed by W. Reitherman (1967)</p>
                     </a>
@@ -2832,19 +2913,31 @@
                     <img src=content\The-Killing-Fields.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Killing-Fields\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Killing-Fields">
                         <div class="text"><b>The Killing Fields </b></div>
                         <p class="text"> Directed by R. Joffe (1984)</p>
                     </a>
                 <div class="bio">A journalist is trapped in Cambodia during tyrant Pol Pot's bloody 'Year Zero' cleansing campaign, which claimed the lives of two million 'undesirable' civilians.</div>
             </div>
 
+            <div id="mov" class="contained Thriller Drama Psychological Horror 10s">
+                <div class=container>
+                    <img src=content\The-Killing-of-a-Sacred-Deer.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Killing-of-a-Sacred-Deer">
+                        <div class="text"><b>The Killing of a Sacred Deer </b></div>
+                        <p class="text"> Directed by Y. Lanthimos (2017)</p>
+                    </a>
+                <div class="bio">Steven, a charismatic surgeon, is forced to make an unthinkable sacrifice after his life starts to fall apart, when the behavior of a teenage boy he has taken under his wing turns sinister.</div>
+           </div>
+
             <div id="mov" class="contained Action Adventure Drama Epic Historical Books Day-Lewis 90s">
                 <div class=container>
                     <img src=content\The-Last-of-the-Mohicans.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Last-of-the-Mohicans\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Last-of-the-Mohicans">
                         <div class="text"><b>The Last of the Mohicans </b></div>
                         <p class="text"> Directed by M. Mann (1992)</p>
                     </a>
@@ -2856,7 +2949,7 @@
                     <img src=content\The-Little-Mermaid.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Little-Mermaid\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Little-Mermaid">
                         <div class="text"><b>The Little Mermaid </b></div>
                         <p class="text"> Directed by J. Musker (1989)</p>
                     </a>
@@ -2868,7 +2961,7 @@
                     <img src=content\lotr1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Lord-of-the-Rings-Fellowship-of-the-Ring\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Lord-of-the-Rings-Fellowship-of-the-Ring">
                         <div class="text"><b>The Lord of the Rings Fellowship of the Ring </b></div>
                         <p class="text"> Directed by P. Jackson (2001)</p>
                     </a>
@@ -2880,7 +2973,7 @@
                     <img src=content\lotr2.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Lord-of-the-Rings-Two-Towers\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Lord-of-the-Rings-Two-Towers">
                         <div class="text"><b>The Lord of the Rings Two Towers </b></div>
                         <p class="text"> Directed by P. Jackson (2002)</p>
                     </a>
@@ -2892,7 +2985,7 @@
                     <img src=content\lotr3.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Lord-of-the-Rings-Return-of-the-King\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Lord-of-the-Rings-Return-of-the-King">
                         <div class="text"><b>The Lord of the Rings Return of the King </b></div>
                         <p class="text"> Directed by P. Jackson (2003)</p>
                     </a>
@@ -2904,7 +2997,7 @@
                     <img src=content\The-Martian.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Martian\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Martian">
                         <div class="text"><b>The Martian </b></div>
                         <p class="text"> Directed by R. Scott (2015)</p>
                     </a>
@@ -2916,7 +3009,7 @@
                     <img src=content\The-Master.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Master\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Master">
                         <div class="text"><b>The Master </b></div>
                         <p class="text"> Directed by P. Anderson (2012)</p>
                     </a>
@@ -2928,7 +3021,7 @@
                     <img src=content\The-Nightingale.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Nightingale\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Nightingale">
                         <div class="text"><b>The Nightingale </b></div>
                         <p class="text"> Directed by J. Kent (2018)</p>
                     </a>
@@ -2940,7 +3033,7 @@
                     <img src=content\The-Other-Boleyn-Girl.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Other-Boleyn-Girl\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Other-Boleyn-Girl">
                         <div class="text"><b>The Other Boleyn Girl </b></div>
                         <p class="text"> Directed by J. Chadwick (2008)</p>
                     </a>
@@ -2952,7 +3045,7 @@
                     <img src=content\The-Other-Guys.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Other-Guys\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Other-Guys">
                         <div class="text"><b>The Other Guys </b></div>
                         <p class="text"> Directed by A. Mackay (2010)</p>
                     </a>
@@ -2964,7 +3057,7 @@
                     <img src=content\The-Passion-of-the-Christ.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Passion-of-the-Christ\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Passion-of-the-Christ">
                         <div class="text"><b>The Passion of the Christ </b></div>
                         <p class="text"> Directed by M. Gibson (2004)</p>
                     </a>
@@ -2976,7 +3069,7 @@
                     <img src=content\The-Pianist.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Pianist\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Pianist">
                         <div class="text"><b>The Pianist </b></div>
                         <p class="text"> Directed by R. Polanski (2002)</p>
                     </a>
@@ -2988,7 +3081,7 @@
                     <img src=content\The-Place-Beyond-the-Pines.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Place-Beyond-the-Pines\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Place-Beyond-the-Pines">
                         <div class="text"><b>The Place Beyond the Pines </b></div>
                         <p class="text"> Directed by D. Cianfrance (2012)</p>
                     </a>
@@ -3000,7 +3093,7 @@
                     <img src=content\The-Prestige.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Prestige\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Prestige">
                         <div class="text"><b>The Prestige </b></div>
                         <p class="text"> Directed by C. Nolan (2006)</p>
                     </a>
@@ -3012,7 +3105,7 @@
                     <img src=content\The-Princess-Bride.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Princess-Bride\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Princess-Bride">
                         <div class="text"><b>The Princess Bride </b></div>
                         <p class="text"> Directed by R. Reiner (1987)</p>
                     </a>
@@ -3024,7 +3117,7 @@
                     <img src=content\The-Royal-Tenenbaums.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Royal-Tenenbaums\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Royal-Tenenbaums">
                         <div class="text"><b>The Royal Tenenbaums </b></div>
                         <p class="text"> Directed by W. Anderson (2001)</p>
                     </a>
@@ -3036,11 +3129,35 @@
                     <img src=content\The-Shawshank-Redemption.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Shawshank-Redemption\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Shawshank-Redemption">
                         <div class="text"><b>The Shawshank Redemption </b></div>
                         <p class="text"> Directed by F. Darabont (1994)</p>
                     </a>
                 <div class="bio">Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.</div>
+           </div>
+
+            <div id="mov" class="contained Crime Thriller Drama Psychological 90s Books">
+                <div class=container>
+                    <img src=content\The-Silence-Of-The-Lambs.jpeg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Silence-Of-The-Lambs">
+                        <div class="text"><b>The Silence Of The Lambs </b></div>
+                        <p class="text"> Directed by J. Demme (1991)</p>
+                    </a>
+                <div class="bio">A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.</div>
+            </div>
+
+            <div id="mov" class="contained Coen 20s Drama Thriller Mystery McDormand Historical">
+                <div class=container>
+                    <img src=content\The-Tragedy-of-Macbeth.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Tragedy-of-Macbeth">
+                        <div class="text"><b>The Tragedy of Macbeth </b></div>
+                        <p class="text"> Directed by J. Coen (2021)</p>
+                    </a>
+                <div class="bio">A Scottish lord becomes convinced by a trio of witches that he will become the next King of Scotland, and his ambitious wife supports him in his plans of seizing power.</div>
            </div>
 
             <div id="mov" class="contained Palma 80s Crime Drama Thriller">
@@ -3048,7 +3165,7 @@
                     <img src=content\The-Untouchables.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Untouchables\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Untouchables">
                         <div class="text"><b>The Untouchables </b></div>
                         <p class="text"> Directed by B. De Palma (1987)</p>
                     </a>
@@ -3060,7 +3177,7 @@
                     <img src=content\The-Usual-Suspects.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Usual-Suspects\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Usual-Suspects">
                         <div class="text"><b>The Usual Suspects </b></div>
                         <p class="text"> Directed by B. Singer (1995)</p>
                     </a>
@@ -3072,7 +3189,7 @@
                     <img src=content\The-Ugly-Truth.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Ugly-Truth\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Ugly-Truth">
                         <div class="text"><b>The Ugly Truth </b></div>
                         <p class="text"> Directed by R. Luketic (2009)</p>
                     </a>
@@ -3084,7 +3201,7 @@
                     <img src=content\The-Wedding-Singer.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\The-Wedding-Singer\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Wedding-Singer">
                         <div class="text"><b>The Wedding Singer </b></div>
                         <p class="text"> Directed by F. Coraci (1998)</p>
                     </a>
@@ -3096,7 +3213,7 @@
                     <img src=content\This-Is-40.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\This-Is-40\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=This-Is-40">
                         <div class="text"><b>This Is 40 </b></div>
                         <p class="text"> Directed by J. Apatow (2012)</p>
                     </a>
@@ -3108,7 +3225,7 @@
                     <img src=content\This-Means-War.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\This-Means-War\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=This-Means-War">
                         <div class="text"><b>This Means War </b></div>
                         <p class="text"> Directed by McG (2012)</p>
                     </a>
@@ -3120,7 +3237,7 @@
                     <img src=content\Three-Billboards.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Three-Billboards-Outside-Ebbing,-Missouri\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Three-Billboards-Outside-Ebbing,-Missouri">
                         <div class="text"><b>Three Billboards Outside Ebbing, Missouri </b></div>
                         <p class="text"> Directed by M. McDonagh (2017)</p>
                     </a>
@@ -3132,7 +3249,7 @@
                     <img src=content\There-Will-Be-Blood.jpeg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\There-Will-Be-Blood\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=There-Will-Be-Blood">
                         <div class="text"><b>There Will Be Blood </b></div>
                         <p class="text"> Directed by P. Anderson (2007)</p>
                     </a>
@@ -3144,7 +3261,7 @@
                     <img src=content\Thor1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Thor-1\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Thor-1">
                         <div class="text"><b>Thor 1 </b></div>
                         <p class="text"> Directed by K. Branagh (2011)</p>
                     </a>
@@ -3153,10 +3270,10 @@
         
             <div id="mov" class="contained 10s Superhero Series">
                 <div class=container>
-                    <img src=content\Thor-2-The-Dark-World.jpg>
+                    <img src=content\Thor2.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Thor-2-The-Dark-World\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Thor-2-The-Dark-World">
                         <div class="text"><b>Thor 2 The Dark World </b></div>
                         <p class="text"> Directed by A. Taylor (2013)</p>
                     </a>
@@ -3165,10 +3282,10 @@
         
             <div id="mov" class="contained 20s Superhero Series">
                 <div class=container>
-                    <img src=content\Thor-4-Love-and-Thunder.jpg>
+                    <img src=content\Thor4.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Thor-4-Love-and-Thunder\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Thor-4-Love-and-Thunder">
                         <div class="text"><b>Thor 4 Love and Thunder </b></div>
                         <p class="text"> Directed by T. Waititi (2022)</p>
                     </a>
@@ -3180,7 +3297,7 @@
                     <img src=content\Titanic.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Titanic\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Titanic">
                         <div class="text"><b>Titanic </b></div>
                         <p class="text"> Directed by D. Cameron (1997)</p>
                     </a>
@@ -3192,7 +3309,7 @@
                     <img src=content\Touch-of-evil.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Toy-Story-1\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Toy-Story-1">
                         <div class="text"><b>Touch of Evil </b></div>
                         <p class="text"> Directed by O. Welles (1958)</p>
                     </a>
@@ -3204,7 +3321,7 @@
                     <img src=content\Toy-Story1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Toy-Story-1\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Toy-Story-1">
                         <div class="text"><b>Toy Story 1 </b></div>
                         <p class="text"> Directed by J. Lasseter (1995)</p>
                     </a>
@@ -3216,7 +3333,7 @@
                     <img src=content\Toy-Story2.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Toy-Story-2\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Toy-Story-2">
                         <div class="text"><b>Toy Story 2 </b></div>
                         <p class="text"> Directed by J. Lasseter (1999)</p>
                     </a>
@@ -3228,7 +3345,7 @@
                     <img src=content\Trainspotting.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Trainspotting\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Trainspotting">
                         <div class="text"><b>Trainspotting </b></div>
                         <p class="text"> Directed by D. Boyle (1996)</p>
                     </a>
@@ -3240,7 +3357,7 @@
                     <img src=content\Tropic-Thunder.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Tropic-Thunder\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Tropic-Thunder">
                         <div class="text"><b>Tropic Thunder </b></div>
                         <p class="text"> Directed by B. Stiller (2008)</p>
                     </a>
@@ -3252,7 +3369,7 @@
                     <img src=content\Troy.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Troy\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Troy">
                         <div class="text"><b>Troy </b></div>
                         <p class="text"> Directed by W. Peterson (2004)</p>
                     </a>
@@ -3271,7 +3388,7 @@
                     <img src=content\Up.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Up\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Up">
                         <div class="text"><b>Up </b></div>
                         <p class="text"> Directed by P. Docter (2009)</p>
                     </a>
@@ -3290,7 +3407,7 @@
                     <img src=content\Venom.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Venom\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Venom">
                         <div class="text"><b>Venom </b></div>
                         <p class="text"> Directed by R. Fleischer (2018)</p>
                     </a>
@@ -3310,7 +3427,7 @@
                     <img src=content\WALLE.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\WALL-E\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=WALL-E">
                         <div class="text"><b>WALL-E </b></div>
                         <p class="text"> Directed by A. Stanton (2008)</p>
                     </a>
@@ -3322,7 +3439,7 @@
                     <img src=content\Walk-the-Line.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Walk-the-Line\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Walk-the-Line">
                         <div class="text"><b>Walk the Line </b></div>
                         <p class="text"> Directed by J. Mangold (2005)</p>
                     </a>
@@ -3334,7 +3451,7 @@
                     <img src=content\Wedding-Crashers.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Wedding-Crashers\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Wedding-Crashers">
                         <div class="text"><b>Wedding Crashers </b></div>
                         <p class="text"> Directed by D. Dobkin (2005)</p>
                     </a>
@@ -3346,7 +3463,7 @@
                     <img src=content\When-Harry-Met-Sally.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\When-Harry-Met-Sally\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=When-Harry-Met-Sally">
                         <div class="text"><b>When Harry Met Sally </b></div>
                         <p class="text"> Directed by R. Reiner (1989)</p>
                     </a>
@@ -3358,7 +3475,7 @@
                     <img src=content\Whiplash.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Whiplash\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Whiplash">
                         <div class="text"><b>Whiplash </b></div>
                         <p class="text"> Directed by D. Chazelle (2014)</p>
                     </a>
@@ -3370,7 +3487,7 @@
                     <img src=content\Wild-at-heart.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Wedding-Crashers\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Wedding-Crashers">
                         <div class="text"><b>Wild At Heart </b></div>
                         <p class="text"> Directed by D. Lynch (1990)</p>
                     </a>
@@ -3382,7 +3499,7 @@
                     <img src=content\Ww1.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Wonder-Woman\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Wonder-Woman">
                         <div class="text"><b>Wonder Woman </b></div>
                         <p class="text"> Directed by P. Jenkins (2017)</p>
                     </a>
@@ -3394,7 +3511,7 @@
                     <img src=content\Ww2.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Wonder-Woman-1984\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Wonder-Woman-1984">
                         <div class="text"><b>Wonder Woman 1984 </b></div>
                         <p class="text"> Directed by P. Jenkins (2020)</p>
                     </a>
@@ -3406,7 +3523,7 @@
                     <img src=content\Wreck-it-Ralph.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Wreck-it-Ralph\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Wreck-it-Ralph">
                         <div class="text"><b>Wreck it Ralph </b></div>
                         <p class="text"> Directed by R. Moore (2012)</p>
                     </a>
@@ -3442,19 +3559,26 @@
                     <img src=content\Zootopia.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\Zootopia\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Zootopia">
                         <div class="text"><b>Zootopia </b></div>
                         <p class="text"> Directed by B. Howard (2016)</p>
                     </a>
                 <div class="bio">In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy.</div>
            </div>
 
+
+
+
+
+
+
+           <!-- # -->
             <div id="mov" class="contained 60s Scifi Kubrick Adventure Space">
                 <div class=container>
                     <img src=content\2001-A-Space-Odyssey.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\2001-A-Space-Odyssey\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=2001-A-Space-Odyssey">
                         <div class="text"><b>2001 A Space Odyssey </b></div>
                         <p class="text"> Directed by S. Kubrick (1968)</p>
                     </a>
@@ -3466,7 +3590,7 @@
                     <img src=content\300.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\300\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=300">
                         <div class="text"><b>300 </b></div>
                         <p class="text"> Directed by Z. Snyder (2006)</p>
                     </a>
@@ -3478,170 +3602,19 @@
                     <img src=content\50-First-Dates.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a href="content\50-First-Dates\movieContent.html">
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=50-First-Dates">
                         <div class="text"><b>50 First Dates </b></div>
                         <p class="text"> Directed by P. Segal (2004)</p>
                     </a>
                 <div class="bio">Henry Roth is a man afraid of commitment until he meets the beautiful Lucy. They hit it off and Henry think he's finally found the girl of his dreams until discovering she has short-term memory loss and forgets him the next day.</div>
             </div>
 
+
+
+
+
+
         </div>
-
-
-
-                <!-- <div id="Fantasy" class="desc">
-                   
-                   
-                   
-
-                   
-
-                   
-
-
-                   
-
-                   
-                   
-
-                   
-
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\Deadpool-2.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\Deadpool-2\movieContent.html">
-                                <div class="text"><b>Deadpool 2 </b></div>
-                                <p class="text"> Directed by D. Leitch (2018)</p>
-                            </a>
-                        <div class="bio">bio</div>
-                   </div>
-
-                </div> -->
-
-                <!-- thriller -->
-                <!-- <div id="Thriller" class="desc">
-
-                    <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\Ex-Machina.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\Ex-Machina\movieContent.html">
-                                <div class="text"><b>Ex Machina </b></div>
-                                <p class="text"> Directed by A. Garland (2015)</p>
-                            </a>
-                        <div class="bio">bio</div>
-                   </div>
-                   
-                   <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\Gone-Girl.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\Gone-Girl\movieContent.html">
-                                <div class="text"><b>Gone Girl </b></div>
-                                <p class="text"> Directed by D. Fincher (2014)</p>
-                            </a>
-                        <div class="bio">bio</div>
-                   </div>
-                   
-                   <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\Source-Code.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\Source-Code\movieContent.html">
-                                <div class="text"><b>Source Code </b></div>
-                                <p class="text"> Directed by D. Jones (2011)</p>
-                            </a>
-                        <div class="bio">bio</div>
-                   </div>
-                   
-                   <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\Tar.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\Tar\movieContent.html">
-                                <div class="text"><b>Tar </b></div>
-                                <p class="text"> Directed by T. Field (2022)</p>
-                            </a>
-                        <div class="bio">bio</div>
-                   </div>
-                   
-                   <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\The-Killing-of-a-Sacred-Deer.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\The-Killing-of-a-Sacred-Deer\movieContent.html">
-                                <div class="text"><b>The Killing of a Sacred Deer </b></div>
-                                <p class="text"> Directed by Y. Lanthimos (2017)</p>
-                            </a>
-                        <div class="bio">bio</div>
-                   </div>
-                   
-                   <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\The-Silence-Of-The-Lambs.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\The-Silence-Of-The-Lambs\movieContent.html">
-                                <div class="text"><b>The Silence Of The Lambs </b></div>
-                                <p class="text"> Directed by J. Demme (1991)</p>
-                            </a>
-                        <div class="bio">bio</div>
-                   </div>
-                   
-                   <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\The-Tragedy-of-Macbeth.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\The-Tragedy-of-Macbeth\movieContent.html">
-                                <div class="text"><b>The Tragedy of Macbeth </b></div>
-                                <p class="text"> Directed by J. Coen (2021)</p>
-                            </a>
-                        <div class="bio">bio</div>
-                   </div>
-
-                    <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\Taxi-Driver.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\Taxi-Driver\movieContent.html">
-                                <div class="text"><b>Taxi Driver </b></div>
-                                <p class="text"> Directed by M. Scorsese (1976)</p>
-                            </a>
-                        <div class="bio">bio</div>
-                    </div>
-
-                    <div id="mov" class="contained">
-                        <div class=container>
-                            <img src=content\The-Girl-With-The-Dragon-Tattoo.jpg>
-                            <div class="overlay"></div>
-                            </div>
-                            <a href="content\The-Girl-With-The-Dragon-Tattoo\movieContent.html">
-                                <div class="text"><b>The Girl With The Dragon Tattoo </b></div>
-                                <p class="text"> Directed by D. Fincher (2011)</p>
-                            </a>
-                        <div class="bio">bio</div>
-                   </div>
-
-                </div>  -->
-
-            </div>
-
     </body>
 </html>
                   

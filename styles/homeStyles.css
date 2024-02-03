@@ -213,7 +213,11 @@ select {
 }
 
 #mov {
-  display:none;
+  display:block;
+}
+
+#tv {
+  display:block;
 }
 
 #selGenre {

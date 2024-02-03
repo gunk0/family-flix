@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="styles\homeStyles.css" type="text/css" >
     <script src="library/jquery-3.6.0.js"></script>
     <script src="scripts\home.js"></script>
-    <title>ADAMFLIX-TV</title>
+    <title>FAMFLIX-TV</title>
 </head>
 
 <header id="header">
     <ul class="head">
-        <li style="color:white"><b style="color:#2B3F78">A</b><b style="color:#783A2B">D</b><b style="color:#F7DBD5">A</b><b style="color:#58782B">M</b>flix</li>
+        <li style="color:white" id="famflix"><b style="color:#2B3F78">FAM</b>flix</li>
         <li><a href="homeMov.html" class="topbar" id="film" style="color:#58782B">FILM</a></li>
-        <li><a href="homeTv.html" class="topbar" id="tv" style="color:#2B3F78">TELEVISION</a></li>
-        <li><a href="homeFor.html" class="topbar" id="for" style="color:#783A2B">FOREIGN</a></li>
-        <li><a href="homeDoc.html" class="topbar" id="doc" style="color:#F7DBD5">DOCUMENTARY</a></li>
+        <li><a href="homeTv.html" class="topbar" id="tele" style="color:#2B3F78">TELEVISION</a></li>
+        <li><a href="homeFor.html" class="topbar" id="for" style="color:#6A2B78">FOREIGN</a></li>
+        <li><a href="homeDoc.html" class="topbar" id="doc" style="color:#78502B">DOCUMENTARY</a></li>
         <li><a href="homeNew.html" class="topbar" id="new" style="color:#B3CD8E">RECENTLY ADDED</a></li>
         <li><a href="homeReq.html" class="topbar" id="req">REQUEST CONTENT</a></li>
         <li></li>
@@ -25,12 +25,14 @@
     <div class="sidenav">
         <ul id="genreCat" class="category">
             <li>By <b style="color:#2B3F78">Genre</b></li>
-            <li><button class="genre" onclick="filter('Comedy')">Comedy</button></li>
-            <li><button class="genre" onclick="filter('Crime')">Crime</button></li>
-            <li><button class="genre" onclick="filter('Drama')">Drama</button></li>
-            <li><button class="genre" onclick="filter('Family')">Family</button></li>
-            <li><button class="genre" onclick="filter('Fantasy')">Fantasy</button></li>
-            <li><button class="genre" onclick="filter('Scifi')">Scifi</button></li>
+            <li><button class="genre" onclick="filterTV('TV-Animated')">Animated</button></li>
+            <li><button class="genre" onclick="filterTV('TV-Comedy')">Comedy</button></li>
+            <li><button class="genre" onclick="filterTV('TV-Crime')">Crime</button></li>
+            <li><button class="genre" onclick="filterTV('TV-Drama')">Drama</button></li>
+            <li><button class="genre" onclick="filterTV('TV-Family')">Family</button></li>
+            <li><button class="genre" onclick="filterTV('TV-Fantasy')">Fantasy</button></li>
+            <li><button class="genre" onclick="filterTV('TV-Scifi')">Scifi</button></li>
+            <li><button class="genre" onclick="filterTV('TV-Sitcom')">Sitcom</button></li>
         </ul>
     </div>
 </header>      
@@ -38,7 +40,7 @@
     <body>
         <div class="main">
 
-            <div class=contained> 
+<div id="tv" class="contained TV-Animated TV-Family"> 
                 <div class="container">
                     <img src=content\AdventureTime.jpg>
                     <div class="overlay">
@@ -46,74 +48,80 @@
                 </div>
                 <a href="content\AdventureTime\content.html">
                 <div class="text"> <b> Adventure Time</b></div>
-                <p class="text">Seasons 1-10 & Distant Lands</p></a>
-                 
+                <p class="text">Seasons 1-10 & Distant Lands Series</p></a>
+                <div class="bio">Silly | Imaginative</div>
             </div> 
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained TV-Animated TV-Family"> <div class="container">
                 <img src=content\Avatar.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\Avatar\content.html">
                 <div class="text"> <b> Avatar: The Last Airbender</b></div>
                 <p class="text">Seasons 1-3</p></a>
+                <div class="bio">Light | Fantasy | Action-Packed</div>
                  
             </div> 
                         
-            <div class=contained> <div class="container">
+<div id="tv" class="contained TV-Animated"> <div class="container">
                 <img src=content\KingoftheHill.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\KingoftheHill\content.html">
                 <div class="text"> <b> King of the Hill</b></div>
                 <p class="text">Seasons 1-8</p></a>
-                 
+                <div class="bio"> Sitcom | Realistic</div>
             </div> 
                         
-            <div class=contained> <div class="container">
+<div id="tv" class="contained TV-Animated TV-Family"> <div class="container">
                 <img src=content\Korra.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\Korra\content.html">
                 <div class="text"> <b> The Legend of Korra</b></div>
                 <p class="text">Seasons 3-4</p></a>
-                 
+                <div class="bio"> Action-Packed | Fantasy | Steampunk</div>  
             </div> 
             
-            <div class=contained> <div class="container">
+<div id="tv" class="contained TV-Animated"> <div class="container">
                 <img src=content\RickandMorty.png>
                 <div class="overlay"></div></div>
                 <a href="content\RickandMorty\content.html">
                 <div class="text"> <b> Rick and Morty</b></div>
                 <p class="text">Seasons 1-6</p></a>
+                <div class="bio"> Scifi | Crude-Humour | Sitcom</div>  
                  
             </div> 
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained TV-Animated"> <div class="container">
                 <img src=content\SolarOpposites.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\SolarOpposites\content.html">
                 <div class="text"> <b> Solar Opposites</b></div>
                 <p class="text">Seasons 1-3</p></a>
+                <div class="bio"> Scifi | Crude-Humour | Sitcom</div>  
                  
             </div> 
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained TV-Sitcom"> <div class="container">
                 <img src=content\Friends.jpg>
                 <div class="overlay"></div></div>
-                    <a href="content\Friends\content.html">
-                    <div class="text"> <b> Friends</b></div><p class="text">Seasons 1-10</p></a>
+                <a href="content\Friends\content.html">
+                <div class="text"> <b> Friends</b></div>
+                <p class="text">Seasons 1-10</p></a>
+                <div class="bio"> Sitcom | Silly | Dramatic</div>  
                  
             </div> 
             
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\Barry.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\Barry\content.html">
                 <div class="text"> <b> Barry</b></div>
                 <p class="text">Seasons 1-2</p></a>
+                <div class="bio"> Sitcom | Silly | Dramatic</div>  
                  
             </div> 
 
                         
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\Brooklyn99.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\Brooklyn99\content.html">
@@ -123,7 +131,7 @@
             </div> 
 
                         
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\CheckItOut.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\CheckItOut\content.html">
@@ -132,7 +140,7 @@
                  
             </div> 
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\Community.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\Community\content.html">
@@ -141,7 +149,7 @@
                  
             </div> 
             
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\EricAndre.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\EricAndre\content.html">
@@ -150,7 +158,7 @@
                  
             </div> 
             
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\JoePera.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\joePera\content.html">
@@ -159,7 +167,7 @@
                  
             </div> 
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\JohnWilson.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\JohnWilson\content.html">
@@ -168,7 +176,7 @@
                  
             </div> 
                         
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\NathanForYou.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\NathanForYou\content.html">
@@ -177,7 +185,7 @@
                  
             </div> 
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\Office.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\Office\content.html">
@@ -186,7 +194,7 @@
                  
             </div>
             
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\ParksandRec.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\ParksandRec\content.html">
@@ -195,7 +203,7 @@
                  
             </div>  
             
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\SchittsCreek.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\SchittsCreek\content.html">
@@ -204,7 +212,7 @@
                  
             </div> 
             
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\TimandEric.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\TimandEric\content.html">
@@ -213,7 +221,7 @@
                  
             </div> 
                         
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\WhoisAmerica.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\WhoisAmerica\content.html">
@@ -222,7 +230,7 @@
                  
             </div> 
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\Masterchef.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\Masterchef\content.html">
@@ -231,7 +239,7 @@
                  
             </div> 
                         
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\PartsUnknown.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\PartsUnknown\content.html">
@@ -240,7 +248,7 @@
                  
             </div> 
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\BetterCallSaul.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\BetterCallSaul\content.html">
@@ -250,7 +258,7 @@
             </div> 
 
             
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\BreakingBad.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\BreakingBad\content.html">
@@ -259,7 +267,7 @@
                  
             </div> 
                         
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\Sopranos.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\Sopranos\content.html">
@@ -268,7 +276,7 @@
                  
             </div> 
             
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\TrueDetective.png>
                 <div class="overlay"></div></div>
                 <a href="content\TrueDetective\content.html">
@@ -277,7 +285,7 @@
                  
             </div> 
                         
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\Watchmen.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\Watchmen\content.html">
@@ -286,7 +294,7 @@
                  
             </div> 
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\Atlanta.png>
                 <div class="overlay"></div></div>
                 <a href="content\Atlanta\content.html">
@@ -295,7 +303,7 @@
                  
             </div> 
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\Chernobyl.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\Chernobyl\content.html">
@@ -304,7 +312,7 @@
                  
             </div> 
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\OneTreeHill.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\OneTreeHill\content.html">
@@ -313,7 +321,7 @@
                  
             </div> 
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\GameofThrones.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\GameofThrones\content.html">
@@ -322,7 +330,7 @@
                  
             </div> 
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\Outlander.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\Outlander\content.html">
@@ -331,7 +339,7 @@
                  
             </div> 
             
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\Witcher.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\Witcher\content.html">
@@ -340,7 +348,7 @@
                  
             </div> 
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\StarTrekVoyager.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\StarTrekVoyager\startrekvoyager.html">
@@ -349,7 +357,7 @@
                  
             </div>
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\StarTrekPicard.jpg>
                 <div class="overlay"></div></div>
                 <a href="content\StarTrekPicard\content.html">
@@ -358,7 +366,7 @@
                  
             </div>
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\StarTrekNextGen.jpg>
                 <div class="overlay"></div></div>
                     <a href="content\StarTrekNextGen\startrekNextGen.html">
@@ -366,7 +374,7 @@
                  
             </div> 
 
-            <div class=contained> <div class="container">
+<div id="tv" class="contained"> <div class="container">
                 <img src=content\StarTrekStrangeNew.jpg>
                 <div class="overlay"></div></div>
                     <a href="content\StarTrekStrangeNew\startrekNextGen.html">

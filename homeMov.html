@@ -17,7 +17,6 @@
         <li><a href="homeTv.html" class="topbar" id="tele" style="color:#2B3F78">TELEVISION</a></li>
         <li><a href="homeFor.html" class="topbar" id="for" style="color:#6A2B78">FOREIGN</a></li>
         <li><a href="homeDoc.html" class="topbar" id="doc" style="color:#78502B">DOCUMENTARY</a></li>
-        <li><a href="homeNew.html" class="topbar" id="new" style="color:#B3CD8E">RECENTLY ADDED</a></li>
         <li><a href="homeReq.html" class="topbar" id="req">REQUEST CONTENT</a></li>
         <li></li>
     </ul>
@@ -38,10 +37,10 @@
                 <li><button class="genre" onclick="filter('Comedy')">Comedy</button></li>
                 <li><button class="genre" onclick="filter('Crime')">Crime</button></li>
                 <li><button class="genre" onclick="filter('Drama')">Drama</button></li>
+                <li><button class="genre" onclick="filter('Epic')">Epics</button></li>
                 <li><button class="genre" onclick="filter('Family')">Family</button></li>
                 <li><button class="genre" onclick="filter('Fantasy')">Fantasy</button></li>
                 <li><button class="genre" onclick="filter('Historical')">Historical</button></li>
-                <li><button class="genre" onclick="filter('Epic')">Epics</button></li>
                 <li><button class="genre" onclick="filter('Mystery')">Mystery</button></li>
                 <li><button class="genre" onclick="filter('Rom-Com')">Rom-Com</button></li>
                 <li><button class="genre" onclick="filter('Romantic')">Romance</button></li>
@@ -60,8 +59,9 @@
                 <li><button class="genre" onclick="filter('50s')">50s and Earlier</button></li>
                 
                 <li style="margin-top: 10px;">By <b style="color:#58782B;">List</b></li>
+                <li><button class="genre" onclick="filter('Recent')">Recently Added</button></li>
                 <li><button class="genre" onclick="filter('Books')">Based on Books</button></li>
-                <!-- <li><button class="genre" onclick="filter('Award')">Award Winners</button></li> -->
+                <li><button class="genre" onclick="filter('Award')">Best Picture Nominees</button></li>
                 <li><button class="genre" onclick="filter('Adam')">Adam's Favourites</button></li>
                 <li><button class="genre" onclick="filter('Nic')">Nicole's Favourites</button></li>
                 <li><button class="genre" onclick="filter('New')">Brand-Spanking New</button></li>
@@ -109,6 +109,18 @@
                 <div class="bio">Will, who attends single parent meetings to woo women, meets Marcus, a troubled 12-year-old boy. As they become friends, Will learns to be responsible while he helps Marcus with his studies.</div>
             </div>
 
+            <div id="mov" class="contained Recent Animated 90s Disney">
+                <div class="container">
+                    <img src="content/abugslife.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=abugslife">
+                    <div class="text"><b>A Bug's Life</b></div>
+                    <p class="text">Directed by J. Lasseter, A. Stanton (1998)</p>
+                </a>
+                <div class="bio">A Bug's Life is an animated film that follows a misfit ant named Flik as he recruits a group of insects to save their colony from grasshoppers.</div>
+            </div>
+
             <div id="mov" class="contained Kubrick 70s Dystopian Crime Scifi">
                 <div class=container>
                     <img src=content\A-Clockwork-Orange.jpg>
@@ -145,7 +157,31 @@
                 <div class="bio">A lovelorn screenwriter becomes desperate as he tries and fails to adapt 'The Orchid Thief' by Susan Orlean for the screen.</div>
             </div>
 
-            <div id="mov" class="contained Animated 90s Williams Musical Fantasy Folk Disney Fresh Family">
+            <div id="mov" class="contained Recent 90s Animated Disney">
+                <div class="container">
+                    <img src="content/agoofymovie.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=agoofymovie">
+                    <div class="text"><b>A Goofy Movie</b></div>
+                    <p class="text">Directed by K. Lima (1995)</p>
+                </a>
+                <div class="bio">A Goofy Movie tells the story of Goofy and his teenage son Max as they embark on a road trip that strengthens their father-son bond.</div>
+            </div>
+
+            <div id="mov" class="contained Recent Comedy 80s">
+                <div class="container">
+                    <img src=content/Airplane.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=airplanemovietrailer">
+                        <div class="text"><b>Airplane</b></div>
+                        <p class="text"> Directed by J. Abrahams (1980)</p>
+                    </a>
+                <div class="bio">After the crew becomes sick with food poisoning, a neurotic ex-fighter pilot must land a commercial airplane full of passengers safely.</div>
+            </div>
+
+            <div id="mov" class="contained Animated 90s Williams Folk Disney Family">
                 <div class=container>
                     <img src=content\Aladdin.jpg>
                     <div class="overlay"></div>
@@ -157,7 +193,7 @@
                 <div class="bio">When a street urchin finds a lamp with a genie inside, he uses the lamp to turn himself into a prince in order to win the heart of a beautiful princess. But an evil vizier is after the lamp too.</div>
             </div>
            
-            <div id="mov" class="contained Animated 50s Musical Fantasy Disney Books">
+            <div id="mov" class="contained Animated 50s Disney Books">
                 <div class=container>
                     <img src=content\Alice-in-Wonderland.jpg>
                     <div class="overlay"></div>
@@ -193,17 +229,29 @@
                 <div class="bio">A high-school boy in the early 1970s is given the chance to write a story for Rolling Stone magazine about an up-and-coming rock band as he accompanies them on their concert tour.</div>
             </div>
 
-            <div id="mov" class="contained Epic Historical Action Adventure 00s">
+            <div id="mov" class="contained Recent Biography Drama 80s">
                 <div class=container>
-                    <img src=content\Apocalypto.jpg>
+                    <img src=content/Amadeus.jpg>
                     <div class="overlay"></div>
                     </div>
-                    <a target="_blank" href="https://www.youtube.com/results?search_query=Apocalypto">
-                        <div class="text"><b>Apocalypto </b></div>
-                        <p class="text"> Directed by M. Gibson (2006)</p>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=amadeus">
+                        <div class="text"><b>Amadeus</b></div>
+                        <p class="text"> Directed by M. Forman (1984)</p>
                     </a>
-                <div class="bio">As the Mayan kingdom faces its decline, a young man is taken on a perilous journey to a world ruled by fear and oppression.</div>
-           </div>
+                <div class="bio">The life, success and troubles of Wolfgang Amadeus Mozart, as told by Antonio Salieri, the contemporaneous composer who was deeply jealous of Mozart's talent and claimed to have murdered him.</div>
+            </div>
+
+            <div id="mov" class="contained Recent Comedy Drama 70s">
+                <div class=container>
+                    <img src=content/AmericanGraffiti.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=AmericanGraffiti">
+                        <div class="text"><b>American Graffiti</b></div>
+                        <p class="text"> Directed by G. Lucas (1973)</p>
+                    </a>
+                <div class="bio">A group of teenagers in California's central valley spend one final night after their 1962 high school graduation cruising the strip with their buddies before they pursue their varying goals.<br><br>Nominated for best Picture at the Academy Awards.</div>
+            </div>
 
             <div id="mov" class="contained Crime Drama Adam 90s">
                 <div class=container>
@@ -227,6 +275,54 @@
                         <p class="text"> Directed by M. Harron (2000)</p>
                     </a>
                 <div class="bio">A wealthy New York City investment banking executive, Patrick Bateman, hides his alternate psychopathic ego from his co-workers and friends as he delves deeper into his violent, hedonistic fantasies.</div>
+           </div>
+
+            <div id="mov" class="contained Recent 70s Comedy">
+                <div class=container>
+                    <img src=content/Animal-House.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=AnimalHouse">
+                        <div class="text"><b>Animal House</b></div>
+                        <p class="text"> Directed by J. Landis (1978)</p>
+                    </a>
+                <div class="bio">At a 1962 college, Dean Vernon Wormer is determined to expel the entire Delta Tau Chi Fraternity, but those troublemakers have other plans for him</div>
+            </div>
+
+            <div id="mov" class="contained Recent 10s Superhero Series">
+                <div class="container">
+                    <img src=content\Antman2.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Ant-Man-And-The-Wasp">
+                        <div class="text"><b>Ant-Man 2 And The Wasp </b></div>
+                        <p class="text"> Directed by P. Reed (2018)</p>
+                    </a>
+                <div class="bio">As Scott Lang balances being both a superhero and a father, Hope van Dyne and Dr. Hank Pym present an urgent new mission that finds the Ant-Man fighting alongside The Wasp to uncover secrets from their past.</div>
+           </div>
+
+            <div id="mov" class="contained Recent Superhero 20s">
+                <div class=container>
+                    <img src=content/Antman3.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=aAntman and the Wasp 2 Quantumania">
+                        <div class="text"><b>Antman and the Wasp 3 Quantumania</b></div>
+                        <p class="text"> Directed by P. Reed (2023)</p>
+                    </a>
+                <div class="bio">Scott Lang and Hope Van Dyne are dragged into the Quantum Realm, along with Hope's parents and Scott's daughter Cassie. Together they must find a way to escape, but what secrets is Hope's mother hiding?</div>
+            </div>
+
+            <div id="mov" class="contained Epic Historical Action Adventure 00s">
+                <div class=container>
+                    <img src=content\Apocalypto.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Apocalypto">
+                        <div class="text"><b>Apocalypto </b></div>
+                        <p class="text"> Directed by M. Gibson (2006)</p>
+                    </a>
+                <div class="bio">As the Mayan kingdom faces its decline, a young man is taken on a perilous journey to a world ruled by fear and oppression.</div>
            </div>
 
             <div id="mov" class="contained Space Drama Historical Adventure 90s">
@@ -265,6 +361,18 @@
                     </a>
                 <div class="bio">A linguist works with the military to communicate with alien lifeforms after twelve mysterious spacecraft appear around the world.<br><br>Nominated for best Picture at the Academy Awards.</div>
            </div>
+
+            <div id="mov" class="contained Recent 00s Animation Disney">
+                <div class="container">
+                    <img src="content/atlantisthelostempire.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=atlantisthelostempire">
+                    <div class="text"><b>Atlantis: The Lost Empire</b></div>
+                    <p class="text">Directed by G. Trousdale, K. Wise (2001)</p>
+                </a>
+                <div class="bio">Atlantis: The Lost Empire is an animated science fiction film that follows a young linguist on an expedition to find the lost city of Atlantis.</div>
+            </div>
         
             <div id="mov" class="contained Action Adventure Scifi Fantasy 00s Epic">
                 <div class=container>
@@ -341,6 +449,78 @@
                     </a>
                 <div class="bio">An impressionable teenage girl from a dead-end town, and her older greaser boyfriend, embark on a killing spree in the South Dakota Badlands.</div>
             </div>
+
+            <div id="mov" class="contained Recent Disney 50s Books Animated">
+                <div class="container">
+                    <img src="content/Bambi.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=Bambi">
+                    <div class="text"><b>Bambi</b></div>
+                    <p class="text">Directed by D. Hand (1942)</p>
+                </a>
+                <div class="bio">Bambi is an animated classic that follows the life of a young deer as he grows up in the forest, experiencing the joys and challenges of nature.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 90s Disney Books Animated">
+                <div class="container">
+                    <img src="content/beautyandthebeast.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=beautyandthebeast">
+                    <div class="text"><b>Beauty and the Beast</b></div>
+                    <p class="text">Directed by G. Trousdale, K. Wise (1991)</p>
+                </a>
+                <div class="bio">Beauty and the Beast is a classic animated fairy tale about Belle, who befriends a prince cursed to live as a beast until true love breaks the spell.<br><br>Nominated for best Picture at the Academy Awards.</div>
+            </div>
+            
+            <div id="mov" class="contained Recent 70s Musical Fantasy Books Disney">
+                <div class="container">
+                    <img src="content/bedknobsandbroomsticks.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=bedknobsandbroomsticks">
+                    <div class="text"><b>Bedknobs and Broomsticks</b></div>
+                    <p class="text">Directed by R. Stevenson (1971)</p>
+                </a>
+                <div class="bio">An apprentice witch, three kids and a cynical magician conman search for the missing component to a magic spell to be used in the defense of Britain in World War II.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 90s Romantic Drama Series">
+                <div class="container">
+                    <img src=content\Before-Sunrise.jpeg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Before-Sunrise">
+                        <div class="text"><b>Before Sunrise </b></div>
+                        <p class="text"> Directed by R. Linklater (1995)</p>
+                    </a>
+                <div class="bio">A young man and woman meet on a train in Europe, and wind up spending one evening together in Vienna. Unfortunately, both know that this will probably be their only night together.</div>
+           </div>
+
+            <div id="mov" class="contained Recent 00s Drama Romantic Series">
+                <div class="container">
+                    <img src=content\Before-Sunset.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Before-Sunset">
+                        <div class="text"><b>Before Sunset </b></div>
+                        <p class="text"> Directed by R. Linklater (2004)</p>
+                    </a>
+                <div class="bio">Nine years after Jesse and Celine first met, they encounter each other again on the French leg of Jesse's book tour.</div>
+           </div>
+
+            <div id="mov" class="contained Recent 10s Drama Romantic Series">
+                <div class="container">
+                    <img src=content\Before-Midnight.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Before-Midnight">
+                        <div class="text"><b>Before Midnight </b></div>
+                        <p class="text"> Directed by R. Linklater (2013)</p>
+                    </a>
+                <div class="bio">We meet Jesse and Celine nine years on in Greece. Almost two decades have passed since their first meeting on that train bound for Vienna.</div>
+           </div>
            
            <div id="mov" class="contained Crime Hoffman 00s Drama Thriller">
                 <div class=container>
@@ -426,7 +606,7 @@
                 <div class="bio">A puppeteer discovers a portal that leads literally into the head of movie star John Malkovich.</div>
            </div>
 
-            <div id="mov" class="contained Action BuddyCop 80s Crime Comedy Light Fresh">
+            <div id="mov" class="contained Action BuddyCop 80s Crime Comedy Light ">
                 <div class=container>
                     <img src=content\Beverly-Hills-Cop.jpg>
                     <div class="overlay"></div>
@@ -437,6 +617,19 @@
                     </a>
                 <div class="bio">A freewheeling Detroit cop pursuing a murder investigation finds himself dealing with the very different culture of Beverly Hills.</div>
            </div>
+
+           
+            <div id="mov" class="contained Recent 80s Comedy Drama Fantasy">
+                <div class="container">
+                    <img src=content\Big.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Big">
+                        <div class="text"><b>Big </b></div>
+                        <p class="text"> Directed by P. Marshall (1988)</p>
+                    </a>
+                <div class="bio">After wishing to be made big, a teenage boy wakes the next morning to find himself mysteriously in the body of an adult.</div>
+            </div>
            
             <div id="mov" class="contained Comedy 90s Drama">
                 <div class=container>
@@ -450,7 +643,7 @@
                 <div class="bio">A lazy law school graduate adopts a kid to impress his girlfriend, but everything doesn't go as planned and he becomes the unlikely foster father.</div>
             </div>
 
-            <div id="mov" class="contained Animated Superhero 10s Disney Marvel Fresh Family">
+            <div id="mov" class="contained Animated Superhero 10s Disney Marvel  Family">
                 <div class=container>
                     <img src=content\Big-Hero-6.jpg>
                     <div class="overlay"></div>
@@ -496,6 +689,18 @@
                         <p class="text"> Directed by S. Lee (2018)</p>
                     </a>
                 <div class="bio">Ron Stallworth, an African American police officer from Colorado Springs, Colorado, successfully infiltrates the local Ku Klux Klan branch aided by a Jewish surrogate who eventually becomes its leader.<br><br>Nominated for best Picture at the Academy Awards.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 10s Superhero Series">
+                <div class="container">
+                    <img src=content\Black-Panther1.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Black-Panther">
+                        <div class="text"><b>Black Panther </b></div>
+                        <p class="text"> Directed by R. Coogler (2018)</p>
+                    </a>
+                <div class="bio">T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.</div>
             </div>
 
             <div id="mov" class="contained Drama Thriller 10s Psychological">
@@ -557,6 +762,18 @@
                     </a>
                 <div class="bio">The story of the legendary British rock band Queen and lead singer Freddie Mercury, leading up to their famous performance at Live Aid (1985).<br><br>Nominated for best Picture at the Academy Awards.</div>
            </div>
+
+            <div id="mov" class="contained Recent Disney Animated 00s">
+                <div class="container">
+                    <img src="content/bolt.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=bolt">
+                    <div class="text"><b>Bolt</b></div>
+                    <p class="text">Directed by B. Howard, C. Williams (2008)</p>
+                </a>
+                <div class="bio">Bolt is an animated film about a dog who believes he has superpowers and embarks on a cross-country journey.</div>
+            </div>
            
             <div id="mov" class="contained Comedy Period Drama PTA Hoffman 90s">
                 <div class=container>
@@ -593,6 +810,30 @@
                     </a>
                 <div class="bio">Scottish warrior William Wallace leads his countrymen in a rebellion to free his homeland from the tyranny of King Edward I of England.<br><br>Won best Picture at the Academy Awards.</div>
            </div>
+
+            <div id="mov" class="contained Recent 10s Animated Disney">
+                <div class="container">
+                    <img src=content\Brave.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Brave">
+                        <div class="text"><b>Brave </b></div>
+                        <p class="text"> Directed by M. Andrews (2012)</p>
+                    </a>
+                <div class="bio">Determined to make her own path in life, Princess Merida defies a custom that brings chaos to her kingdom. Granted one wish, Merida must rely on her bravery and her archery skills to undo a beastly curse.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 00s Disney Animated">
+                <div class="container">
+                    <img src="content/brotherbear.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=brotherbear">
+                    <div class="text"><b>Brother Bear</b></div>
+                    <p class="text">Directed by A. Blaise, R. Walker (2003)</p>
+                </a>
+                <div class="bio">Brother Bear is an animated film that tells the story of a young Inuit boy transformed into a bear and his journey of self-discovery.</div>
+            </div>
            
             <div id="mov" class="contained Comedy 10s">
                 <div class=container>
@@ -718,7 +959,19 @@
                 <div class="bio">A cynical expatriate American cafe owner struggles to decide whether or not to help his former lover and her fugitive husband escape the Nazis in French Morocco.<br>Won best Picture at the Academy Awards. </div>
            </div>
 
-            <div id="mov" class="contained Animated 80s Ghibli Fresh Fantasy Adventure Adam Family">
+            <div id="mov" class="contained Recent 60s Comedy">
+                <div class="container">
+                    <img src=content\Casino-Royale.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Casino-Royale">
+                        <div class="text"><b>Casino Royale </b></div>
+                        <p class="text"> Directed by J. Huston (1967)</p>
+                    </a>
+                <div class="bio">In an early spy spoof, aging Sir James Bond comes out of retirement to take on SMERSH.</div>
+            </div>
+
+            <div id="mov" class="contained Animated 80s Ghibli  Fantasy Adventure Adam Family">
                 <div class=container>
                     <img src=content\Castle-in-the-Sky.jpg>
                     <div class="overlay"></div>
@@ -729,8 +982,56 @@
                     </a>
                 <div class="bio">A young boy and a girl with a magic crystal must race against pirates and foreign agents in a search for a legendary floating castle.</div>
             </div>
+
+            <div id="mov" class="contained Recent 00s Pixar Animated">
+                <div class="container">
+                    <img src="content/cars.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=cars">
+                    <div class="text"><b>Cars</b></div>
+                    <p class="text">Directed by J. Lasseter, J. Ranft (2006)</p>
+                </a>
+                <div class="bio">Cars is an animated film that explores the adventures of a race car named Lightning McQueen as he discovers the importance of friendship and community.</div>
+            </div>
+
+            <div id="mov" class="contained Recent Disney 00s Animated">
+                <div class="container">
+                    <img src="content/chickenlittle.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=chickenlittle">
+                    <div class="text"><b>Chicken Little</b></div>
+                    <p class="text">Directed by M. Dindal (2005)</p>
+                </a>
+                <div class="bio">Chicken Little is an animated comedy about a young chicken who causes panic in his town by claiming the sky is falling.</div>
+            </div>
+
+            <div id="mov" class="contained Recent Disney Animated 50s">
+                <div class="container">
+                    <img src="content/cinderella.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=cinderella">
+                    <div class="text"><b>Cinderella</b></div>
+                    <p class="text">Directed by C. Geronimi, W. Jackson, H. Luske (1950)</p>
+                </a>
+                <div class="bio">Cinderella is a classic fairy tale adaptation, telling the story of a kind and mistreated young woman who gets a chance to attend the royal ball.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 00s Animated Books">
+                <div class="container">
+                    <img src="content/coraline.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=Dumbo">
+                    <div class="text"><b>Coraline</b></div>
+                    <p class="text">Directed by H. Selick (2009)</p>
+                </a>
+                <div class="bio">An adventurous 11-year-old girl finds another world that is a strangely idealized version of her frustrating home, but it has sinister secrets.</div>
+            </div>
            
-            <div id="mov" class="contained Animated 00s Sony Books Fresh Family">
+            <div id="mov" class="contained Animated 00s Sony Books  Family">
                 <div class=container>
                     <img src=content\Cloudy-with-a-Chance.jpg>
                     <div class="overlay"></div>
@@ -758,6 +1059,30 @@
                     </a>
                 <div class="bio">In May 1940, the fate of World War II hangs on Winston Churchill, who must decide whether to negotiate with Adolf Hitler, or fight on knowing that it could mean the end of the British Empire.<br><br>Nominated for best Picture at the Academy Awards.</div>
            </div>
+
+            <div id="mov" class="contained Recent Superhero 90s">
+                <div class="container">
+                    <img src="content/darkman.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=Darkman">
+                    <div class="text"><b>Darkman</b></div>
+                    <p class="text">Directed by S. Raimi (1990)</p>
+                </a>
+                <div class="bio">A brilliant scientist left for dead returns to exact revenge on the people who burned him alive.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 70s Horror Thriller">
+                <div class="container">
+                    <img src=content\Dawn-of-the-Dead.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Dawn-of-the-Dead">
+                        <div class="text"><b>Dawn of the Dead </b></div>
+                        <p class="text"> Directed by R. Romero (1978)</p>
+                    </a>
+                <div class="bio">During an escalating zombie epidemic, two Philadelphia SWAT team members, a traffic reporter and his TV executive girlfriend seek refuge in a secluded shopping mall.</div>
+           </div>
            
            <div id="mov" class="contained Comedy Drama Williams 80s">
                 <div class=container>
@@ -783,7 +1108,19 @@
                 <div class="bio">Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool) assembles a team of fellow mutant rogues to protect a young boy with supernatural abilities from the brutal, time-traveling cyborg Cable.</div>
             </div>
 
-            <div id="mov" class="contained Action Cop Thriller Christmas 80s Fresh">
+            <div id="mov" class="contained Recent 10s Animated">
+                <div class="container">
+                    <img src=content\Despicable-Me.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Despicable-Me">
+                        <div class="text"><b>Despicable Me </b></div>
+                        <p class="text"> Directed by C. Renaud (2010)</p>
+                    </a>
+                <div class="bio">When a criminal mastermind uses a trio of orphan girls as pawns for a grand scheme, he finds their love is profoundly changing him for the better.</div>
+           </div>
+
+            <div id="mov" class="contained Action Cop Thriller Christmas 80s ">
                 <div class=container>
                     <img src=content\die-hard1.jpg>
                     <div class="overlay"></div>
@@ -915,6 +1252,19 @@
                 <div class="bio">After a woman leaves a briefcase at the airport terminal, a dumb limo driver and his dumber friend set out on a hilarious cross-country road trip to Aspen to return it.</div>
             </div>
 
+            
+            <div id="mov" class="contained Recent 50s Disney Animated">
+                <div class="container">
+                    <img src="content/Dumbo.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=Dumbo">
+                    <div class="text"><b>Dumbo</b></div>
+                    <p class="text">Directed by B. Sharpsteen (1941)</p>
+                </a>
+                <div class="bio">Dumbo is a Disney animated film that follows the story of a young elephant with large ears who learns to embrace his uniqueness.</div>
+            </div>
+
 
 
 
@@ -955,6 +1305,30 @@
                     </a>
                 <div class="bio">A high school teacher meets his match in an over-achieving student politician.</div>
            </div>
+
+            <div id="mov" class="contained Recent 20s Animated Disney New">
+                <div class="container">
+                    <img src=content\Elemental.jpeg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Elemental">
+                        <div class="text"><b>Elemental </b></div>
+                        <p class="text"> Directed by P. Sohn (2023)</p>
+                    </a>
+                <div class="bio">Follows Ember and Wade, in a city where fire-, water-, earth- and air-residents live together.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 20s Disney Animated">
+                <div class="container">
+                    <img src=content\Encanto.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Encant">
+                        <div class="text"><b>Encanto</b></div>
+                        <p class="text"> Directed by J. Bush (2021)</p>
+                    </a>
+                <div class="bio">A Colombian teenage girl has to face the frustration of being the only member of her family without magical powers.</div>
+            </div>
 
             <div id="mov" class="contained Comedy Scifi Drama 20s">
                 <div class=container>
@@ -997,7 +1371,7 @@
 
 
             <!-- F -->
-            <div id="mov" class="contained 00s Animated Books Anderson Stop-Motion Fresh Family">
+            <div id="mov" class="contained 00s Animated Books Anderson Stop-Motion  Family">
                 <div class=container>
                     <img src=content\Fantastic-Mr-Fox.jpg>
                     <div class="overlay"></div>
@@ -1008,6 +1382,18 @@
                     </a>
                 <div class="bio">An urbane fox cannot resist returning to his farm raiding ways and then must help his community survive the farmers' retaliation.</div>
            </div> 
+
+            <div id="mov" class="contained Recent Animated 50s Disney">
+                <div class="container">
+                    <img src="content/Fantasia.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=Fantasia">
+                    <div class="text"><b>Fantasia</b></div>
+                    <p class="text">Directed by Various (1940)</p>
+                </a>
+                <div class="bio">Fantasia is an animated film produced by Walt Disney, featuring a series of segments set to classical music.</div>
+            </div>
            
             <div id="mov" class="contained Crime Coen 90s Thriller McDormand">
                 <div class=container>
@@ -1021,7 +1407,19 @@
                 <div class="bio">Minnesota car salesman Jerry Lundegaard's inept crime falls apart due to his and his henchmen's bungling and the persistent police work of the quite pregnant Marge Gunderson.<br><br>Nominated for best Picture at the Academy Awards.</div>
             </div>
 
-           <div id="mov" class="contained Animated Family 00s Pixar Fresh">
+            <div id="mov" class="contained Recent 20s Biography New Historical Drama">
+                <div class="container">
+                    <img src=content\Ferrari.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Ferrari">
+                        <div class="text"><b>Ferrari </b></div>
+                        <p class="text"> Directed by M. Mann (2023)</p>
+                    </a>
+                <div class="bio">Set in the summer of 1957, with Enzo Ferrari's auto empire in crisis, the ex-racer turned entrepreneur pushes himself and his drivers to the edge as they launch into the Mille Miglia, a treacherous 1,000-mile race across Italy.</div>
+           </div>
+
+           <div id="mov" class="contained Animated Family 00s Pixar ">
                 <div class=container>
                     <img src=content\Finding-Nemo.jpg>
                     <div class="overlay"></div>
@@ -1033,7 +1431,7 @@
                 <div class="bio">After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.</div>
            </div>
            
-           <div id="mov" class="contained Animated Family Fresh Pixar 10s Sequel">
+           <div id="mov" class="contained Animated Family  Pixar 10s Sequel">
                 <div class=container>
                     <img src=content\Finding-Dory.jpg>
                     <div class="overlay"></div>
@@ -1044,6 +1442,30 @@
                     </a>
                 <div class="bio">Friendly but forgetful blue tang Dory begins a search for her long-lost parents and everyone learns a few things about the real meaning of family along the way.</div>
            </div>
+
+            <div id="mov" class="contained Recent 80s Comedy Crime Mystery">
+                <div class="container">
+                    <img src=content\Fletch.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Fletch">
+                        <div class="text"><b>Fletch </b></div>
+                        <p class="text"> Directed by M. Ritchie (1985)</p>
+                    </a>
+                <div class="bio">Irwin M. "Fletch" Fletcher is a newspaper reporter being offered a large sum to off a cancerous millionaire, but is on the run, risking his job and finding clues when it's clear the man is healthy.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 90s Comedy Drama">
+                <div class="container">
+                    <img src=content\Forrest-Gump.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Forrest-Gump">
+                        <div class="text"><b>Forrest Gump </b></div>
+                        <p class="text"> Directed by R. Zemeckis (1994)</p>
+                    </a>
+                <div class="bio">The history of the United States from the 1950s to the '70s unfolds from the perspective of an Alabama man with an IQ of 75, who yearns to be reunited with his childhood sweetheart.<br><br>Won best Picture at the Academy Awards.</div>
+            </div>
 
             <div id="mov" class="contained Comedy Romantic Rom-Com 00s">
                 <div class=container>
@@ -1057,7 +1479,7 @@
                 <div class="bio">Devastated Peter takes a Hawaiian vacation in order to deal with the recent break-up with his TV star girlfriend, Sarah. Little does he know, Sarah's traveling to the same resort.</div>
             </div>
            
-           <div id="mov" class="contained Animated Family Fresh 10s Musical Fantasy Books">
+           <div id="mov" class="contained Animated Family  10s Musical Fantasy Books">
                 <div class=container>
                     <img src=content\Frozen.jpg>
                     <div class="overlay"></div>
@@ -1068,6 +1490,18 @@
                     </a>
                 <div class="bio">When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.</div>
            </div>
+
+            <div id="mov" class="contained Recent Animated Disney 50s">
+                <div class="container">
+                    <img src="content/funandfancyfree.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=funandfancyfree">
+                    <div class="text"><b>Fun and Fancy Free</b></div>
+                    <p class="text">Directed by J. Kinney, H. Luske (1947)</p>
+                </a>
+                <div class="bio">Fun and Fancy Free is an animated anthology film featuring two stories, Bongo and Mickey and the Beanstalk, narrated by Jiminy Cricket.</div>
+            </div>
 
             <div id="mov" class="contained 00s Comedy Drama">
                 <div class=container>
@@ -1109,6 +1543,18 @@
                     </a>
                 <div class="bio">A genetically inferior man assumes the identity of a superior one in order to pursue his lifelong dream of space travel.</div>
            </div>
+
+            <div id="mov" class="contained Recent 80s Action Comedy Fantasy">
+                <div class="container">
+                    <img src=content\Ghostbusters.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Ghostbusters">
+                        <div class="text"><b>Ghostbusters </b></div>
+                        <p class="text"> Directed by I. Reitman (1984)</p>
+                    </a>
+                <div class="bio">Three parapsychologists forced out of their university funding set up shop as a unique ghost removal service in New York City, attracting frightened yet skeptical customers.</div>
+            </div>
 
             <div id="mov" class="contained Historical Epic Drama 00s">
                 <div class=container>
@@ -1205,6 +1651,10 @@
                     </a>
                 <div class="bio">The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father, the ambitious celestial being Ego.</div>
            </div>
+
+
+
+
 
 
             <!-- H -->
@@ -1316,6 +1766,18 @@
                 <div class="bio">Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.</div>
             </div>
 
+            <div id="mov" class="contained Recent Superhero 00s">
+                <div class="container">
+                    <img src="content/hellboy.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=hellboy">
+                    <div class="text"><b>Hellboy</b></div>
+                    <p class="text">Directed by G. del Toro (2004)</p>
+                </a>
+                <div class="bio">A demon raised from infancy after being conjured by and rescued from the Nazis, grows up to become a defender against the forces of darkness.</div>
+            </div>
+
             <div id="mov" class="contained 10s Drama Romance Scifi">
                 <div class=container>
                     <img src=content\Her.jpg>
@@ -1328,7 +1790,7 @@
                 <div class="bio">In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.<br><br>Nominated for best Picture at the Academy Awards.</div>
             </div>
 
-            <div id="mov" class="contained Animated Family 90s Musical Disney Fantasy Fresh">
+            <div id="mov" class="contained Animated Family 90s Musical Disney Fantasy ">
                 <div class=container>
                     <img src=content\Hercules.jpg>
                     <div class="overlay"></div>
@@ -1363,6 +1825,18 @@
                     </a>
                 <div class="bio">A smooth-talking man falls for a hardened columnist while helping a shy accountant woo a beautiful heiress.</div>
            </div>
+
+            <div id="mov" class="contained Recent 00s Animated Disney">
+                <div class="container">
+                    <img src="content/homeontherange.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=homeontherange">
+                    <div class="text"><b>Home on the Range</b></div>
+                    <p class="text">Directed by W. Finn, J. Sanford (2004)</p>
+                </a>
+                <div class="bio">Home on the Range is an animated western comedy about a group of farm animals trying to save their owner's farm from foreclosure.</div>
+            </div>
 
             <div id="mov" class="contained Fantasy Family Adventure 90s Spielberg Light Williams">
                 <div class=container>
@@ -1400,7 +1874,7 @@
                     <div class="bio">A skilled London police officer, after irritating superiors with his embarrassing effectiveness, is transferred to a village where the easygoing officers object to his fervor for regulations.</div>
             </div>
            
-           <div id="mov" class="contained Animated Family 10s Dreamworks Books Fresh">
+           <div id="mov" class="contained Animated Family 10s Dreamworks Books ">
                 <div class=container>
                     <img src=content\How-to-Train-Your-Dragon.jpg>
                     <div class="overlay"></div>
@@ -1465,7 +1939,19 @@
                 <div class="bio">Friendless Peter Klaven goes on a series of man-dates to find a Best Man for his wedding. </div>
             </div>
 
-            <div id="mov" class="contained Action Adventure 80s Series Spielberg Fresh">
+            <div id="mov" class="contained Recent 10s Action Adventure Scifi">
+                <div class="container">
+                    <img src=content\Inception.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Inception">
+                        <div class="text"><b>Inception </b></div>
+                        <p class="text"> Directed by C. Nolan (2010)</p>
+                    </a>
+                <div class="bio">A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.</div>
+           </div>
+
+            <div id="mov" class="contained Action Adventure 80s Series Spielberg ">
                 <div class=container>
                     <img src=content\Indiana-Jones-and-the-Raiders-of-the-Lost-Ark.jpg>
                     <div class="overlay"></div>
@@ -1477,7 +1963,7 @@
                 <div class="bio">In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before the Nazis can obtain its awesome powers.<br><br>Nominated for best Picture at the Academy Awards.</div>
             </div>
                
-            <div id="mov" class="contained Fresh 80s Action Adventure Spielberg Series">
+            <div id="mov" class="contained  80s Action Adventure Spielberg Series">
                 <div class=container>
                     <img src=content\Indiana-Jones-And-The-Temple-Of-Doom.jpg>
                     <div class="overlay"></div>
@@ -1489,7 +1975,7 @@
                 <div class="bio">In 1935, Indiana Jones is tasked by Indian villagers with reclaiming a rock stolen from them by a secret cult beneath the catacombs of an ancient palace.</div>
             </div>
 
-            <div id="mov" class="contained 80s Action Adventure Spielberg Series Fresh">
+            <div id="mov" class="contained 80s Action Adventure Spielberg Series ">
                 <div class=container>
                     <img src=content\Indiana-Jones-and-the-Last-Crusade.jpg>
                     <div class="overlay"></div>
@@ -1549,6 +2035,18 @@
                 <div class="bio">When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.</div>
             </div>
 
+            <div id="mov" class="contained Recent Anderson 10s Stop-Motion Animated McDormand">
+                <div class="container">
+                    <img src="content/isle-of-dogs.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=isleofdogs">
+                    <div class="text"><b>Isle of Dogs</b></div>
+                    <p class="text">Directed by W. Anderson (2018)</p>
+                </a>
+                <div class="bio">Isle of Dogs is a stop-motion animated film that tells the story of a young boy searching for his lost dog in a dystopian Japan.</div>
+            </div>
+
 
 
 
@@ -1596,7 +2094,7 @@
                 </div>
            </div>
 
-            <div id="mov" class="contained Action 00s Tarantino MA Revenge Fresh">
+            <div id="mov" class="contained Action 00s Tarantino MA Revenge ">
                 <div class=container>
                     <img src=content\kill-bill-vol1.jpg>
                     <div class="overlay"></div>
@@ -1608,7 +2106,7 @@
                 <div class="bio">After awakening from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.</div>
            </div>
            
-           <div id="mov" class="contained Action 00s Sequel Tarantino MA Revenge Fresh">
+           <div id="mov" class="contained Action 00s Sequel Tarantino MA Revenge ">
                 <div class=container>
                     <img src=content\kill-bill-vol2.jpg>
                     <div class="overlay"></div>
@@ -1709,7 +2207,7 @@
                 <div class="bio">Elle Woods, a fashionable sorority queen, is dumped by her boyfriend. She decides to follow him to law school. While she is there, she figures out that there is more to her than just looks.</div>
             </div>
        
-           <div id="mov" class="contained BuddyCop Action Light Cop 80s Comedy Fresh">
+           <div id="mov" class="contained BuddyCop Action Light Cop 80s Comedy ">
                 <div class=container>
                     <img src=content\lethal-weapon1.jpg>
                     <div class="overlay"></div>
@@ -1721,7 +2219,7 @@
                 <div class="bio">Two newly paired cops who are complete opposites must put aside their differences in order to catch a gang of drug smugglers.</div>
             </div>
         
-            <div id="mov" class="contained BuddyCop Action Light 80s Sequel Comedy Fresh">
+            <div id="mov" class="contained BuddyCop Action Light 80s Sequel Comedy ">
                 <div class=container>
                     <img src=content\lethal-weapon2.jpg>
                     <div class="overlay"></div>
@@ -1805,6 +2303,18 @@
                 <div class="bio">A faded movie star and a neglected young woman form an unlikely bond after crossing paths in Tokyo.<br><br>Nominated for best Picture at the Academy Awards.</div>
            </div>
 
+            <div id="mov" class="contained Recent 20s Disney Animated">
+                <div class="container">
+                    <img src=content\Luca.jpeg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Luca">
+                        <div class="text"><b>Luca </b></div>
+                        <p class="text"> Directed by E. Casarosa (2021)</p>
+                    </a>
+                <div class="bio">On the Italian Riviera, an unlikely but strong friendship grows between a human being and a sea monster disguised as a human.</div>
+            </div>
+
 
 
 
@@ -1833,6 +2343,18 @@
                     </a>
                 <div class="bio">A depressed uncle is asked to take care of his teenage nephew after the boy's father dies.<br><br>Nominated for best Picture at the Academy Awards.</div>
             </div>
+            
+            <div id="mov" class="contained Recent Musical Fantasy 60s Disney">
+                <div class="container">
+                    <img src="content/marypoppins.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=marypoppins">
+                    <div class="text"><b>Mary Poppins</b></div>
+                    <p class="text">Directed by R. Stevenson (1964)</p>
+                </a>
+                <div class="bio">In turn of the century London, a magical nanny employs music and adventure to help two neglected children become closer to their father.<br><br>Nominated for best Picture at the Academy Awards.</div>
+            </div>
 
             <div id="mov" class="contained Comedy 00s Rom-Com Romantic Comedy">
                 <div class=container>
@@ -1844,6 +2366,18 @@
                         <p class="text"> Directed by J. Roach (2000)</p>
                     </a>
                 <div class="bio">Male nurse Greg Focker meets his girlfriend's parents before proposing, but her suspicious father is every date's worst nightmare.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 00s Mystery Thriller Neo-Noir Psychological">
+                <div class="container">
+                    <img src=content\Memento.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Memento">
+                        <div class="text"><b>Memento </b></div>
+                        <p class="text"> Directed by C. Nolan (2000)</p>
+                    </a>
+                <div class="bio">A man with short-term memory loss attempts to track down his wife's murderer.</div>
             </div>
 
             <div id="mov" class="contained Crime Drama Thriller Coen 90s">
@@ -1905,6 +2439,18 @@
                     </a>
                 <div class="bio">A look at the relationship between Mike Wazowski (Billy Crystal) and James P. "Sully" Sullivan (John Goodman) during their days at Monsters University, when they weren't necessarily the best of friends.</div>
            </div>
+
+            <div id="mov" class="contained Recent 70s Comedy Adventure">
+                <div class="container">
+                    <img src=content\Monty-Python-And-The-Holy-Grail.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Monty-Python-And-The-Holy-Grail">
+                        <div class="text"><b>Monty Python And The Holy Grail </b></div>
+                        <p class="text"> Directed by T. Gilliam (1975)</p>
+                    </a>
+                <div class="bio">King Arthur and his Knights of the Round Table embark on a surreal, low-budget search for the Holy Grail, encountering many, very silly obstacles.</div>
+            </div>
 
             <div id="mov" class="contained 10s Adventure Comedy Drama Anderson">
                 <div class=container>
@@ -2040,6 +2586,30 @@
                 <div class="bio">In the deep south during the 1930s, three escaped convicts search for hidden treasure while a relentless lawman pursues them.</div>
             </div>
 
+            <div id="mov" class="contained Recent 50s Disney Drama Western Family">
+                <div class="container">
+                    <img src="content/oldyeller.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=oldyeller">
+                    <div class="text"><b>Old Yeller</b></div>
+                    <p class="text">Directed by R. Stevenson (1957)</p>
+                </a>
+                <div class="bio">A teenage boy grows to love a stray yellow dog while helping his mother and younger brother run their Texas homestead while their father is away on a cattle drive. First thought to be good-for-nothing mutt, Old Yeller is soon beloved by all.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 80s Disney Animated Books">
+                <div class="container">
+                    <img src="content/oliverandcompany.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=oliverandcompany">
+                    <div class="text"><b>Oliver and Company</b></div>
+                    <p class="text">Directed by G. Scribner (1988)</p>
+                </a>
+                <div class="bio">Oliver and Company is an animated musical film that reimagines Charles Dickens' novel, Oliver Twist, with animals in modern-day New York City.</div>
+            </div>
+
             <div id="mov" class="contained 80s Crime Drama">
                 <div class=container>
                     <img src=content\Once-Upon-A-Time-In-America.jpg>
@@ -2094,6 +2664,30 @@
                     </a>
                 <div class="bio">Wendy and her brothers are whisked away to the magical world of Neverland with the hero of their stories, Peter Pan.</div>
             </div>
+            
+            <div id="mov" class="contained Recent Musical Animated Disney Fantasy 70s">
+                <div class="container">
+                    <img src="content/petesdragon.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=petesdragon">
+                    <div class="text"><b>Petes Dragon</b></div>
+                    <p class="text">Directed by D. Chaffey (1977)</p>
+                </a>
+                <div class="bio">An orphan boy and his magical dragon come to town with his abusive adoptive parents in pursuit.</div>
+            </div>
+            
+            <div id="mov" class="contained Recent 00s Books Biography Animated">
+                <div class="container">
+                    <img src="content/Persepolis.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=Persepolis">
+                    <div class="text"><b>Persepolis</b></div>
+                    <p class="text">Directed by M. Satrapi, V. Paronnaud (2007)</p>
+                </a>
+                <div class="bio">Persepolis is an animated coming-of-age film based on Marjane Satrapi's autobiographical graphic novel, depicting her life during the Iranian Revolution.</div>
+            </div>
 
             <div id="mov" class="contained 10s PTA Day-Lewis Drama Romance Historical">
                 <div class=container>
@@ -2119,7 +2713,43 @@
                 <div class="bio">A process server and his marijuana dealer wind up on the run from hitmen and a corrupt police officer after he witnesses his dealer's boss murder a competitor.</div>
            </div>
 
-            <div id="mov" class="contained Pirates Action Adventure 00s Fresh Fantasy Supernatural Series Depp">
+            <div id="mov" class="contained Recent Disney 50s Animated Books">
+                <div class="container">
+                    <img src="content/pinocchio1.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=Pinocchio">
+                    <div class="text"><b>Pinocchio</b></div>
+                    <p class="text">Directed by B. Sharpsteen, H. Luske (1940)</p>
+                </a>
+                <div class="bio">Pinocchio is a classic Disney animated film that tells the story of a wooden puppet who wishes to become a real boy.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 20s Animated">
+                <div class="container">
+                    <img src=content\Pinocchio2.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Pinocchio">
+                        <div class="text"><b>Pinocchio </b></div>
+                        <p class="text"> Directed by G. del Toro (2022)</p>
+                    </a>
+                <div class="bio">A father's wish magically brings a wooden boy to life in Italy, giving him a chance to care for the child.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 00s Animated Disney">
+                <div class="container">
+                    <img src="content/pigletsbigmovie.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=pigletsbigmovie">
+                    <div class="text"><b>Piglet's Big Movie</b></div>
+                    <p class="text">Directed by F. Glebas (2003)</p>
+                </a>
+                <div class="bio">Piglet's Big Movie follows Piglet and his friends from the Hundred Acre Wood as they search for him after he goes missing.</div>
+            </div>
+
+            <div id="mov" class="contained Pirates Action Adventure 00s  Fantasy Supernatural Series Depp">
                 <div class=container>
                     <img src=content\Pirates-of-the-Caribbean-1.jpg>
                     <div class="overlay"></div>
@@ -2153,6 +2783,42 @@
                         <p class="text"> Directed by G. Verbinski (2007)</p>
                     </a>
                 <div class="bio">Captain Barbossa, Will Turner and Elizabeth Swann must sail off the edge of the map, navigate treachery and betrayal, find Jack Sparrow, and make their final alliances for one last decisive battle.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 80s Comedy Adventure Drama">
+                <div class="container">
+                    <img src=content\Planes-Trains-and-Automobiles.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Planes-Trains-and-Automobiles">
+                        <div class="text"><b>Planes Trains and Automobiles </b></div>
+                        <p class="text"> Directed by J. Hughes (1987)</p>
+                    </a>
+                <div class="bio">A Chicago advertising man must struggle to travel home from New York for Thanksgiving, with a lovable oaf of a shower-curtain-ring salesman as his only companion.</div>
+           </div>
+
+            <div id="mov" class="contained Recent 90s Animated Disney">
+                <div class="container">
+                    <img src="content/Pocahontas.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=Pocahontas">
+                    <div class="text"><b>Pocahontas</b></div>
+                    <p class="text">Directed by M. Gabriel, E. Goldberg (1995)</p>
+                </a>
+                <div class="bio">Pocahontas is an animated musical that reimagines the historical encounter between a Native American woman and English settler John Smith.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 00s Animated Disney">
+                <div class="container">
+                    <img src="content/poohsheffalumpmovie.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=poohsheffalumpmovie">
+                    <div class="text"><b>Pooh's Heffalump Movie</b></div>
+                    <p class="text">Directed by F. Nissen (2005)</p>
+                </a>
+                <div class="bio">Pooh's Heffalump Movie follows Winnie the Pooh and his friends as they set out to capture a creature they believe is a Heffalump.</div>
             </div>
 
             <div id="mov" class="contained Animated Family Ghibli 90s Adam Fantasy">
@@ -2202,6 +2868,18 @@
                     </a>
                 <div class="bio">The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.<br><br>Nominated for best Picture at the Academy Awards.</div>
            </div>
+
+            <div id="mov" class="contained Recent 10s Dreamworks Animated">
+                <div class="container">
+                    <img src="content/puss-in-boots.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=pussinboots">
+                    <div class="text"><b>Puss in Boots</b></div>
+                    <p class="text">Directed by C. Miller (2011)</p>
+                </a>
+                <div class="bio">Puss in Boots is a spin-off from the Shrek series, focusing on the adventures of the character Puss in Boots.</div>
+            </div>
 
             <div id="mov" class="contained 00s Drama Romance">
                 <div class=container>
@@ -2277,6 +2955,42 @@
                     </a>
                 <div class="bio">The life of boxer Jake LaMotta, whose violence and temper that led him to the top in the ring destroyed his life outside of it.<br><br>Nominated for best Picture at the Academy Awards.</div>
             </div>
+
+            <div id="mov" class="contained Recent Pixar 00s Animated">
+                <div class="container">
+                    <img src="content/ratatouille.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=ratatouille">
+                    <div class="text"><b>Ratatouille</b></div>
+                    <p class="text">Directed by B. Bird (2007)</p>
+                </a>
+                <div class="bio">Ratatouille follows a rat named Remy with a passion for cooking, who teams up with a young chef to create culinary masterpieces.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 20s Animated Disney">
+                <div class="container">
+                    <img src=content\Raya-and-the-Last-Dragon.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Raya-and-the-Last-Dragon">
+                        <div class="text"><b>Raya and the Last Dragon </b></div>
+                        <p class="text"> Directed by D. Hall (2021)</p>
+                    </a>
+                <div class="bio">In a realm known as Kumandra, a re-imagined Earth inhabited by an ancient civilization, a warrior named Raya is determined to find the last dragon.</div>
+           </div>
+
+            <div id="mov" class="contained Recent 50s Mystery Thriller ">
+                <div class="container">
+                    <img src=content\Rear-Window.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Rear-Window">
+                        <div class="text"><b>Rear Window </b></div>
+                        <p class="text"> Directed by A. Hitchcock (1954)</p>
+                    </a>
+                <div class="bio">A photographer in a wheelchair spies on his neighbors from his courtyard apartment window, and becomes convinced one of them has committed murder.</div>
+            </div>
            
             <div id="mov" class="contained Drama 00s">
                 <div class=container>
@@ -2324,6 +3038,18 @@
                         <p class="text"> Directed by C. Saldanha (2011)</p>
                     </a>
                 <div class="bio">When Blu, a domesticated macaw from small-town Minnesota, meets the fiercely independent Jewel, he takes off on an adventure to Rio de Janeiro with the bird of his dreams.</div>
+            </div>
+
+            <div id="mov" class="contained Recent Folk Disney Animated 70s">
+                <div class="container">
+                    <img src="content/robinhood.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=robinhood">
+                    <div class="text"><b>Robin Hood</b></div>
+                    <p class="text">Directed by W. Reitherman (1973)</p>
+                </a>
+                <div class="bio">Robin Hood is an animated film that retells the classic tale of the legendary outlaw Robin Hood and his band of Merry Men.</div>
             </div>
 
             <div id="mov" class="contained Epic Scifi Space 10s Action Adventure">
@@ -2450,6 +3176,42 @@
                     </a>
                 <div class="bio">A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.</div>
             </div>
+
+            <div id="mov" class="contained Recent Dreamworks Animated 00s">
+                <div class="container">
+                    <img src="content/Shrek2.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=Shrek2">
+                    <div class="text"><b>Shrek 2</b></div>
+                    <p class="text">Directed by A. Adamson, K. Asbury, C. Vernon (2004)</p>
+                </a>
+                <div class="bio">Shrek 2 continues the adventures of Shrek and his friends as they face new challenges in the kingdom of Far Far Away.</div>
+            </div>
+            
+            <div id="mov" class="contained Recent Dreamworks Animated 00s">
+                <div class="container">
+                    <img src="content/Shrek3.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=ShrektheThird">
+                    <div class="text"><b>Shrek the Third</b></div>
+                    <p class="text">Directed by C. Miller, R. Hui (2007)</p>
+                </a>
+                <div class="bio">Shrek the Third follows Shrek's journey to find a suitable heir to the throne of Far Far Away.</div>
+            </div>
+            
+            <div id="mov" class="contained Recent Dreamworks Animated 10s">
+                <div class="container">
+                    <img src="content/Shrek4.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=ShrekForeverAfter">
+                    <div class="text"><b>Shrek Forever After</b></div>
+                    <p class="text">Directed by Mike Mitchell (2010)</p>
+                </a>
+                <div class="bio">Shrek Forever After explores an alternate reality where Shrek makes a deal with Rumpelstiltskin and experiences life without the fame of being an ogre.</div>
+            </div>
         
             <div id="mov" class="contained Animated Family Disney Books Musical Fantasy 50s">
                 <div class=container>
@@ -2570,6 +3332,66 @@
                     </a>
                 <div class="bio">With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear.</div>
            </div>
+
+            <div id="mov" class="contained Recent Superhero 00s">
+                <div class="container">
+                    <img src="content/spiderman1.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=Spiderman1">
+                    <div class="text"><b>Spiderman 1</b></div>
+                    <p class="text">Directed by S. Raimi (2002)</p>
+                </a>
+                <div class="bio">After being bitten by a genetically-modified spider, a shy teenager gains spider-like abilities that he uses to fight injustice as a masked superhero and face a vengeful enemy.</div>
+            </div>
+            
+            <div id="mov" class="contained Recent Superhero 00s">
+                <div class="container">
+                    <img src="content/spiderman2.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=Spiderman2">
+                    <div class="text"><b>Spiderman 2</b></div>
+                    <p class="text">Directed by S. Raimi (2004)</p>
+                </a>
+                <div class="bio">Peter Parker is beset with troubles in his failing personal life as he battles a former brilliant scientist named Otto Octavius.</div>
+            </div>
+            
+            <div id="mov" class="contained Recent Superhero 00s">
+                <div class="container">
+                    <img src="content/spiderman3.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=Spiderman3">
+                    <div class="text"><b>Spiderman 3</b></div>
+                    <p class="text">Directed by S. Raimi (2007)</p>
+                </a>
+                <div class="bio">A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains, temptations, and revenge.</div>
+            </div>
+
+            <div id="mov" class="contained Recent Superhero Animated 10s">
+                <div class="container">
+                    <img src="content/spiderman-into-the-spider-verse.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=SpidermanIntotheSpiderVerse">
+                    <div class="text"><b>Spiderman: Into the Spider-Verse</b></div>
+                    <p class="text">Directed by P. Ramsey, R. Rothman, B. Persichetti (2018)</p>
+                </a>
+                <div class="bio">Miles Morales becomes the Spider-Man of his universe and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.</div>
+            </div>
+            
+            <div id="mov" class="contained Recent Superhero Animated 20s">
+                <div class="container">
+                    <img src="content/spider-man-across-the-spider-verse.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=SpidermanAcrosstheSpiderVerse">
+                    <div class="text"><b>Spiderman: Across the Spider-Verse</b></div>
+                    <p class="text">Directed by J. Dos Santos (2022)</p>
+                </a>
+                <div class="bio">Miles Morales catapults across the multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero.</div>
+            </div>
         
             <div id="mov" class="contained Animated Family Ghibli 00s Fantasy">
                 <div class=container>
@@ -2593,6 +3415,186 @@
                         <p class="text"> Directed by T. McCarthy (2015)</p>
                     </a>
                 <div class="bio">The true story of how the Boston Globe uncovered the massive scandal of child molestation and cover-up within the local Catholic Archdiocese, shaking the entire Catholic Church to its core.<br><br>Won best Picture at the Academy Awards.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 70s Space Scifi Adventure Action">
+                <div class="container">
+                    <img src=content\Star-Trek1.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Star-Trek-1-The-Motion-Picture">
+                        <div class="text"><b>Star Trek 1 The Motion Picture </b></div>
+                        <p class="text"> Directed by R. Wise (1979)</p>
+                    </a>
+                <div class="bio">Part of the original film series of Star Trek.<br><br> When an alien spacecraft of enormous power is spotted approaching Earth, Admiral James T. Kirk resumes command of the overhauled USS Enterprise in order to intercept it.</div>
+           </div>
+
+            <div id="mov" class="contained Recent 80s Space Scifi Adventure Action">
+                <div class="container">
+                    <img src=content\Star-Trek2.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Star-Trek-2-The-Wrath-of-Khan">
+                        <div class="text"><b>Star Trek 2 The Wrath of Khan </b></div>
+                        <p class="text"> Directed by N. Meyer (1982)</p>
+                    </a>
+                <div class="bio">Part of the original film series of Star Trek.<br><br> With the assistance of the Enterprise crew, Admiral Kirk must stop an old nemesis, Khan Noonien Singh, from using the life-generating Genesis Device as the ultimate weapon.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 80s Space Scifi Adventure Action">
+                <div class="container">
+                    <img src=content\Star-Trek3.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Star-Trek-3-The-Search-for-Spock">
+                        <div class="text"><b>Star Trek 3 The Search for Spock </b></div>
+                        <p class="text"> Directed by L. Nimoy (1984)</p>
+                    </a>
+                <div class="bio">Part of the original film series of Star Trek.<br><br> Admiral Kirk and his bridge crew risk their careers stealing the decommissioned U.S.S. Enterprise to return to the restricted Genesis Planet to recover Spock's body.</div>
+           </div>
+        
+            <div id="mov" class="contained Recent 80s Space Scifi Adventure Action">
+                <div class="container">
+                    <img src=content\Star-Trek4.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Star-Trek-4-The-Voyage-Home">
+                        <div class="text"><b>Star Trek 4 The Voyage Home </b></div>
+                        <p class="text"> Directed by L. Nimoy (1986)</p>
+                    </a>
+                <div class="bio">Part of the original film series of Star Trek.<br><br> To save Earth from an alien probe, Admiral James T. Kirk and his fugitive crew go back in time to San Francisco in 1986 to retrieve the only beings who can communicate with it: humpback whales.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 80s Space Scifi Adventure Action">
+                <div class="container">
+                    <img src=content\Star-Trek5.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Star-Trek-5-The-Final-Frontier">
+                        <div class="text"><b>Star Trek 5 The Final Frontier </b></div>
+                        <p class="text"> Directed by W. Shatner (1989)</p>
+                    </a>
+                <div class="bio">Part of the original film series of Star Trek.<br><br> Captain Kirk and his crew must deal with Mr. Spock's long-lost half-brother who hijacks the Enterprise for an obsessive search for God at the center of the galaxy.</div>
+           </div>
+           
+           <div id="mov" class="contained Recent 90s Space Scifi Adventure Action">
+                <div class="container">
+                    <img src=content\Star-Trek6.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Star-Trek-6-The-Undiscovered-Country">
+                        <div class="text"><b>Star Trek 6 The Undiscovered Country </b></div>
+                        <p class="text"> Directed by N. Meyer (1991)</p>
+                    </a>
+                <div class="bio">Part of the original film series of Star Trek.<br><br> On the eve of retirement, Kirk and McCoy are charged with assassinating the Klingon High Chancellor and imprisoned. The Enterprise crew must help them escape to thwart a conspiracy aimed at sabotaging the last best hope for peace.</div>
+           </div>
+
+            <div id="mov" class="contained Recent 90s Space Scifi Adventure Action">
+                <div class="container">
+                    <img src=content\Star-Trek7.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Star-Trek-7-Generations">
+                        <div class="text"><b>Star Trek 7 Generations </b></div>
+                        <p class="text"> Directed by D. Carson (1994)</p>
+                    </a>
+                <div class="bio">bPart of the next generation film series of Star Trek.<br><br> With the help of long presumed dead Captain Kirk, Captain Picard must stop a deranged scientist willing to murder on a planetary scale in order to enter a space matrix.</div>
+           </div>
+
+            <div id="mov" class="contained Recent 90s Space Scifi Adventure Action">
+                <div class="container">
+                    <img src=content\Star-Trek8.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Star-Trek-8-First-Contact">
+                        <div class="text"><b>Star Trek 8 First Contact </b></div>
+                        <p class="text"> Directed by J. Frakes (1996)</p>
+                    </a>
+                <div class="bio">Part of the next generation film series of Star Trek.<br><br> The Borg travel back in time intent on preventing Earth's first contact with an alien species. Captain Picard and his crew pursue them to ensure that Zefram Cochrane makes his maiden flight reaching warp speed.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 90s Space Scifi Adventure Action">
+                <div class="container">
+                    <img src=content\Star-Trek9.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Star-Trek-9-Insurrection">
+                        <div class="text"><b>Star Trek 9 Insurrection </b></div>
+                        <p class="text"> Directed by J. Frakes (1998)</p>
+                    </a>
+                <div class="bio">Part of the next generation film series of Star Trek.<br><br> When the crew of the Enterprise learn of a Federation conspiracy against the inhabitants of a unique planet, Captain Picard begins an open rebellion.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 00s Space Scifi Adventure Action">
+                <div class="container">
+                    <img src=content\Star-Trek10.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Star-Trek-10-Nemesis">
+                        <div class="text"><b>Star Trek 10 Nemesis </b></div>
+                        <p class="text"> Directed by S. Baird (2002)</p>
+                    </a>
+                <div class="bio">Part of the next generation film series of Star Trek.<br><br> The Enterprise is diverted to the Romulan homeworld Romulus, supposedly because they want to negotiate a peace treaty. Captain Picard and his crew discover a serious threat to the Federation once Praetor Shinzon plans to attack Earth.</div>
+            </div>
+
+            <div id="mov" class="contained Recent Scifi Action Adventure 00s Space">
+                <div class="container">
+                    <img src="content/Star-Trek.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=StarTrek">
+                    <div class="text"><b>Star Trek 11 </b></div>
+                    <p class="text">Directed by J.J. Abrams (2009)</p>
+                </a>
+                <div class="bio">Part of the reboot film series of Star Trek.<br><br> The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan tears the Federation apart one planet at a time.</div>
+            </div>
+            
+            <div id="mov" class="contained Recent Scifi Action Adventure Space 10s">
+                <div class="container">
+                    <img src="content/Into-Darkness.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=StarTrekIntoDarkness">
+                    <div class="text"><b>Star Trek 12 Into Darkness</b></div>
+                    <p class="text">Directed by J.J. Abrams (2013)</p>
+                </a>
+                <div class="bio">Part of the reboot film series of Star Trek.<br><br> Captain Kirk leads a manhunt to a war-zone world to capture a one-man weapon of mass destruction.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 10s Space Scifi Adventure Action">
+                <div class="container">
+                    <img src=content\Star-Trek13.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Star-Trek-13-Beyond">
+                        <div class="text"><b>Star Trek 13 Beyond </b></div>
+                        <p class="text"> Directed by J. Lin (2016)</p>
+                    </a>
+                <div class="bio">Part of the reboot film series of Star Trek.<br><br> The crew of the USS Enterprise explores the furthest reaches of uncharted space, where they encounter a new ruthless enemy, who puts them, and everything the Federation stands for, to the test.</div>
+           </div>
+
+            <div id="mov" class="contained Recent 20s Animated Pixar">
+                <div class="container">
+                    <img src=content\Soul.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Soul">
+                        <div class="text"><b>Soul </b></div>
+                        <p class="text"> Directed by P. Docter (2020)</p>
+                    </a>
+                <div class="bio">After landing the gig of a lifetime, a New York jazz pianist suddenly finds himself trapped in a strange land between Earth and the afterlife.</div>
+            </div>
+
+            <div id="mov" class="contained Recent Adventure Family Disney 60s Books">
+                <div class="container">
+                    <img src="content/swissfamilyrobinson.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=swissfamilyrobinson">
+                    <div class="text"><b>Swiss Family Robinson</b></div>
+                    <p class="text">Directed by K Annakin (1960)</p>
+                </a>
+                <div class="bio">A shipwrecked family must build a new life on a deserted island, encountering various challenges and adventures.</div>
             </div>
 
             <div id="mov" class="contained Comedy 00s">
@@ -2683,6 +3685,18 @@
                     </a>
                 <div class="bio">A civilian diving team is enlisted to search for a lost nuclear submarine and faces danger while encountering an alien aquatic species.</div>
            </div>
+
+            <div id="mov" class="contained Recent Disney 50s Animated">
+                <div class="container">
+                    <img src="content/ichabodandmrtoad.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=theadventuresofichabodandmrtoad">
+                    <div class="text"><b>The Adventures of Ichabod and Mr. Toad</b></div>
+                    <p class="text">Directed by J. Algar, C. Geronimi, J. Kinney (1949)</p>
+                </a>
+                <div class="bio">The Adventures of Ichabod and Mr. Toad is a package film consisting of two segments, The Wind in the Willows and The Legend of Sleepy Hollow.</div>
+            </div>
             
             <div id="mov" class="contained Animated Family 70s Musical Disney">
                 <div class=container>
@@ -2695,6 +3709,30 @@
                     </a>
                 <div class="bio">With the help of a smooth talking tomcat, a family of Parisian felines set to inherit a fortune from their owner try to make it back home after a jealous butler kidnaps them and leaves them in the country.</div>
            </div>
+
+            <div id="mov" class="contained Recent 80s Disney Animated Books">
+                <div class="container">
+                    <img src="content/theblackcauldron.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=theblackcauldron">
+                    <div class="text"><b>The Black Cauldron</b></div>
+                    <p class="text">Directed by T. Berman, R. Rich (1985)</p>
+                </a>
+                <div class="bio">The Black Cauldron is an animated dark fantasy film based on Lloyd Alexander's novel, The Chronicles of Prydain.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 80s Comedy Action Adventure">
+                <div class="container">
+                    <img src=content\The-Blues-Brothers.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Blues-Brothers">
+                        <div class="text"><b>The Blues Brothers </b></div>
+                        <p class="text"> Directed by J. Landis (1980)</p>
+                    </a>
+                <div class="bio">Jake Blues rejoins with his brother Elwood after being released from prison, but the duo has just days to reunite their old R&B band and save the Catholic home where the two were raised, outrunning the police as they tear through Chicago.</div>
+        </div>
 
             <div id="mov" class="contained 80s Spielberg Drama Epic">
                 <div class=container>
@@ -2718,6 +3756,54 @@
                         <p class="text"> Directed by W. Anderson (2007)</p>
                     </a>
                 <div class="bio">A year after their father's funeral, three brothers travel across India by train in an attempt to bond with each other.</div>
+            </div>
+
+            <div id="mov" class="contained Recent Disney Animated 00s">
+                <div class="container">
+                    <img src="content/theemperorsnewgroove.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=theemperorsnewgroove">
+                    <div class="text"><b>The Emperor's New Groove</b></div>
+                    <p class="text">Directed by M. Dindal (2000)</p>
+                </a>
+                <div class="bio">The Emperor's New Groove is an animated comedy about a selfish emperor who is transformed into a llama and learns the value of humility.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 80s Disney Animated">
+                <div class="container">
+                    <img src="content/thefoxandthehound.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=thefoxandthehound">
+                    <div class="text"><b>The Fox and the Hound</b></div>
+                    <p class="text">Directed by T. Berman, R. Rich, A. Stevens (1981)</p>
+                </a>
+                <div class="bio">The Fox and the Hound is an animated film that tells the story of the unlikely friendship between a fox named Tod and a hound named Copper.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 80s Family Adventure ">
+                <div class="container">
+                    <img src=content\The-Goonies.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Goonies">
+                        <div class="text"><b>The Goonies </b></div>
+                        <p class="text"> Directed by R. Donner (1985)</p>
+                    </a>
+                <div class="bio">A group of young misfits called The Goonies discover an ancient map and set out on an adventure to find a legendary pirate's long-lost treasure.</div>
+           </div>
+            
+            <div id="mov" class="contained Recent Animated Disney 80s">
+                <div class="container">
+                    <img src="content/thegreatmousedetective.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=thegreatmousedetective">
+                    <div class="text"><b>The Great Mouse Detective</b></div>
+                    <p class="text">Directed by R. Clements, B. Mattinson, D. Michener, J. Musker (1986)</p>
+                </a>
+                <div class="bio">The Great Mouse Detective is an animated mystery film featuring a mouse detective named Basil of Baker Street.</div>
             </div>
         
             <div id="mov" class="contained Adventure Comedy Anderson 10s">
@@ -2828,7 +3914,19 @@
                 <div class="bio">Bilbo and company are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of a rising darkness.</div>
             </div>
 
-            <div id="mov" class="contained Scifi Dystopian Adventure 10s Series Books Fresh">
+            <div id="mov" class="contained Recent Books 90s Animated Disney">
+                <div class="container">
+                    <img src="content/thehunchbackofnotredame.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=thehunchbackofnotredame">
+                    <div class="text"><b>The Hunchback of Notre Dame</b></div>
+                    <p class="text">Directed by G. Trousdale, K. Wise (1996)</p>
+                </a>
+                <div class="bio">The Hunchback of Notre Dame is an animated musical drama based on Victor Hugo's novel, exploring themes of acceptance and tolerance.</div>
+            </div>
+
+            <div id="mov" class="contained Scifi Dystopian Adventure 10s Series Books ">
                 <div class=container>
                     <img src=content\The-Hunger-Games-1.jpg>
                     <div class="overlay"></div>
@@ -2840,7 +3938,7 @@
                 <div class="bio">Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games.</div>
             </div>
         
-            <div id="mov" class="contained Scifi Dystopian Adventure 10s Series Books Fresh">
+            <div id="mov" class="contained Scifi Dystopian Adventure 10s Series Books ">
                 <div class=container>
                     <img src=content\The-Hunger-Games-2.jpg>
                     <div class="overlay"></div>
@@ -2874,6 +3972,18 @@
                         <p class="text"> Directed by F. Lawrence (2015)</p>
                     </a>
                 <div class="bio">Katniss and a team of rebels from District 13 prepare for the final battle that will decide the fate of Panem.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 00s Pixar Animated">
+                <div class="container">
+                    <img src="content/theincredibles.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=theincredibles">
+                    <div class="text"><b>The Incredibles</b></div>
+                    <p class="text">Directed by B. Bird (2004)</p>
+                </a>
+                <div class="bio">The Incredibles is a superhero animated film that follows a family with superpowers as they come out of retirement to save the world.</div>
             </div>
 
             <div id="mov" class="contained Superhero 00s">
@@ -2935,6 +4045,42 @@
                     </a>
                 <div class="bio">Three trappers protect the daughters of a British Colonel in the midst of the French and Indian War.</div>
            </div>
+
+            <div id="mov" class="contained Recent 10s Animated">
+                <div class="container">
+                    <img src="content/the-lego-movie.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=TheLegoMovie">
+                    <div class="text"><b>The Lego Movie</b></div>
+                    <p class="text">Directed by P. Lord, C. Miller (2014)</p>
+                </a>
+                <div class="bio">The Lego Movie is an animated film that follows Emmet, an ordinary Lego construction worker, as he embarks on a quest to save the Lego world from an evil tyrant.</div>
+            </div>
+
+            <div id="mov" class="contained Recent Disney 90s Animated">
+                <div class="container">
+                    <img src="content/thelionking.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=thelionking">
+                    <div class="text"><b>The Lion King</b></div>
+                    <p class="text">Directed by R. Allers, R. Minkoff (1994)</p>
+                </a>
+                <div class="bio">The Lion King is an iconic animated film that follows the journey of Simba, a young lion, as he learns about responsibility and identity.</div>
+            </div>
+
+            <div id="mov" class="contained Recent Disney Animated 00s">
+                <div class="container">
+                    <img src="content/thelionking1andahalf.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=thelionking1andahalf">
+                    <div class="text"><b>The Lion King 1 1/2</b></div>
+                    <p class="text">Directed by B. Raymond (2004)</p>
+                </a>
+                <div class="bio">The Lion King 1 1/2 is a direct-to-video film that provides a comedic perspective on the events of the original Lion King film from Timon and Pumbaa's point of view.</div>
+            </div>
                       
             <div id="mov" class="contained Animated Family Musical 80s Books">
                 <div class=container>
@@ -2984,6 +4130,31 @@
                 <div class="bio">Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.<br><br>Won best Picture at the Academy Awards.</div>
             </div>
 
+            
+            <div id="mov" class="contained Recent Family Disney Adventure Sports 60s">
+                <div class="container">
+                    <img src="content/thelovebug.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=thelovebug">
+                    <div class="text"><b>The Love Bug</b></div>
+                    <p class="text">Directed by R. Stevenson (1968)</p>
+                </a>
+                <div class="bio">Down-on-his-luck race car driver Jim Douglas teams up with a little VW Bug that has a mind of it's own, not realizing Herbie's worth until a sneaky rival plots to steal him.</div>
+            </div>
+            
+            <div id="mov" class="contained Recent 70s Disney Animated">
+                <div class="container">
+                    <img src="content/themanyadventuresofwinniethepooh.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=themanyadventuresofwinniethepooh">
+                    <div class="text"><b>The Many Adventures of Winnie the Pooh</b></div>
+                    <p class="text">Directed by J. Lounsbery, W. Reitherman (1977)</p>
+                </a>
+                <div class="bio">The Many Adventures of Winnie the Pooh is an animated film that compiles several animated shorts featuring A.A. Milne's beloved characters.</div>
+            </div>
+
             <div id="mov" class="contained Books 10s Scifi Space Adventure Drama">
                 <div class=container>
                     <img src=content\The-Martian.jpg>
@@ -3007,6 +4178,30 @@
                     </a>
                 <div class="bio">A Naval veteran arrives home from war unsettled and uncertain of his future - until he is tantalized by the Cause and its charismatic leader.</div>
            </div>
+
+            <div id="mov" class="contained Recent 10s Adventure Comedy Family Musical">
+                <div class="container">
+                    <img src=content\The-Muppets.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Muppets">
+                        <div class="text"><b>The Muppets </b></div>
+                        <p class="text"> Directed by J. Henson (2011)</p>
+                    </a>
+                <div class="bio">A Muppet fanatic with some help from his 2 human compatriots must regroup the Muppet gang to stop an avaricious oil mogul from taking down one of their precious life-longing treasures.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 80s Comedy Crime">
+                <div class="container">
+                    <img src=content\Naked-Gun1.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Naked-Gun-1-From-The-Files-Of-Police-Squad!">
+                        <div class="text"><b>The Naked Gun 1: From The Files Of Police Squad! </b></div>
+                        <p class="text"> Directed by D. Zucker (1988)</p>
+                    </a>
+                <div class="bio">Incompetent police Detective Frank Drebin must foil an attempt to assassinate Queen Elizabeth II.</div>
+            </div>
            
            <div id="mov" class="contained Adventure Thriller Drama 10s Historical Psychological">
                 <div class=container>
@@ -3068,6 +4263,30 @@
                 <div class="bio">During WWII, acclaimed Polish musician Wladyslaw faces various struggles as he loses contact with his family. As the situation worsens, he hides in the ruins of Warsaw in order to survive.<br><br>Nominated for best Picture at the Academy Awards.</div>
            </div>
 
+            <div id="mov" class="contained Recent 60s Comedy Crime Romantic">
+                <div class="container">
+                    <img src=content\The-Pink-Panther.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Pink-Panther">
+                        <div class="text"><b>The Pink Panther </b></div>
+                        <p class="text"> Directed by B. Edwards (1963)</p>
+                    </a>
+                <div class="bio">The bumbling Inspector Clouseau travels to Rome to catch a notorious jewel thief known as "The Phantom" before he conducts his most daring heist yet: a princess' priceless diamond with one slight imperfection, known as "The Pink Panther".</div>
+            </div>
+
+            <div id="mov" class="contained Recent 70s Comedy Crime">
+                <div class="container">
+                    <img src=content\The-Pink-Panther-Strikes-Again.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=The-Pink-Panther-Strikes-Again">
+                        <div class="text"><b>The Pink Panther Strikes Again </b></div>
+                        <p class="text"> Directed by B. Edwards (1976)</p>
+                    </a>
+                <div class="bio">After escaping from an insane asylum, the bonkers Charles Dreyfus sends 26 assassins on the trail of the forever bumbling Inspector Clouseau.</div>
+            </div>
+
             <div id="mov" class="contained Crime Drama Thriller 10s Epic">
                 <div class=container>
                     <img src=content\The-Place-Beyond-the-Pines.jpg>
@@ -3115,6 +4334,30 @@
                     </a>
                 <div class="bio">The eccentric members of a dysfunctional family reluctantly gather under the same roof for various reasons.</div>
             </div>
+                                
+            <div id="mov" class="contained Recent 70s Disney Animated">
+                <div class="container">
+                    <img src="content/therescuers.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=therescuers">
+                    <div class="text"><b>The Rescuers</b></div>
+                    <p class="text">Directed by W. Reitherman, J. Lounsbery (1977)</p>
+                </a>
+                <div class="bio">The Rescuers is an animated adventure film featuring a mouse organization, the Rescue Aid Society, on a mission to rescue a kidnapped orphan.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 90s Animated Disney">
+                <div class="container">
+                    <img src="content/therescuersdownunder.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=therescuersdownunder">
+                    <div class="text"><b>The Rescuers Down Under</b></div>
+                    <p class="text">Directed by H. Butoy, M. Gabriel (1990)</p>
+                </a>
+                <div class="bio">The Rescuers Down Under is an animated adventure film and a sequel to The Rescuers, following Bernard and Bianca as they rescue a boy from a poacher in the Australian Outback.</div>
+            </div>
 
             <div id="mov" class="contained Books 90s Drama">
                 <div class=container>
@@ -3138,6 +4381,42 @@
                         <p class="text"> Directed by J. Demme (1991)</p>
                     </a>
                 <div class="bio">A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.<br><br>Nominated for best Picture at the Academy Awards.</div>
+            </div>
+
+            <div id="mov" class="contained Recent Animated 90s New">
+                <div class="container">
+                    <img src="content/super-mario-bros.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=TheSuperMarioBrosMovie">
+                    <div class="text"><b>The Super Mario Bros. Movie</b></div>
+                    <p class="text">Directed by A. Jankel, R. Morton (2023)</p>
+                </a>
+                <div class="bio">A plumber named Mario travels through an underground labyrinth with his brother Luigi, trying to save a captured princess.</div>
+            </div>
+
+            <div id="mov" class="contained Recent Disney 60s Animated Books">
+                <div class="container">
+                    <img src="content/theswordandthestone.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=theswordandthestone">
+                    <div class="text"><b>The Sword in the Stone</b></div>
+                    <p class="text">Directed by W. Reitherman (1963)</p>
+                </a>
+                <div class="bio">The Sword and the Stone is an animated film that follows a young Arthur as he learns valuable lessons from the wizard Merlin, eventually becoming the legendary King Arthur.</div>
+            </div>
+
+            <div id="mov" class="contained Recent Animated Disney 00s">
+                <div class="container">
+                    <img src="content/thetiggermovie.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=thetiggermovie">
+                    <div class="text"><b>The Tigger Movie</b></div>
+                    <p class="text">Directed by J. Falkenstein (2000)</p>
+                </a>
+                <div class="bio">The Tigger Movie follows Tigger as he sets out on a journey to find his family and discovers the importance of friendship along the way.</div>
             </div>
 
             <div id="mov" class="contained Coen 20s Drama Thriller Mystery McDormand Historical">
@@ -3271,6 +4550,18 @@
                     </a>
                 <div class="bio">When the Dark Elves attempt to plunge the universe into darkness, Thor must embark on a perilous and personal journey that will reunite him with doctor Jane Foster.</div>
             </div>
+
+            <div id="mov" class="contained Recent 10s Superhero">
+                <div class="container">
+                    <img src=content\Thor3.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Thor-Ragnarok">
+                        <div class="text"><b>Thor 3 Ragnarok </b></div>
+                        <p class="text"> Directed by T. Waitit (2017)</p>
+                    </a>
+                <div class="bio">Imprisoned on the planet Sakaar, Thor must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.</div>
+           </div>
         
             <div id="mov" class="contained 20s Superhero Series">
                 <div class=container>
@@ -3331,6 +4622,30 @@
                     </a>
                 <div class="bio">When Woody is stolen by a toy collector, Buzz and his friends set out on a rescue mission to save Woody.</div>
             </div>
+
+            <div id="mov" class="contained Recent 10s Animated Pixar">
+                <div class="container">
+                    <img src=content\Toy-Story-4.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Toy-Story-4">
+                        <div class="text"><b>Toy Story 4 </b></div>
+                        <p class="text"> Directed by J. Cooley (2019)</p>
+                    </a>
+                <div class="bio">When a new toy called "Forky" joins Woody and the gang, a road trip alongside old and new friends reveals how big the world can be for a toy.</div>
+           </div>
+
+            <div id="mov" class="contained Recent 80s Comedy">
+                <div class="container">
+                    <img src=content\Trading-Places.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Trading-Places">
+                        <div class="text"><b>Trading Places </b></div>
+                        <p class="text"> Directed by J. Landis (1983)</p>
+                    </a>
+                <div class="bio">A snobbish investor and a wily street con artist find their positions reversed as part of a bet by two callous millionaires.</div>
+            </div>
        
             <div id="mov" class="contained Comedy Drama 90s">
                 <div class=container>
@@ -3342,6 +4657,18 @@
                         <p class="text"> Directed by D. Boyle (1996)</p>
                     </a>
                 <div class="bio">Renton, deeply immersed in the Edinburgh drug scene, tries to clean up and get out despite the allure of drugs and the influence of friends.</div>
+            </div>
+
+            <div id="mov" class="contained Recent 00s Animated Disney">
+                <div class="container">
+                    <img src="content/treasureplanet.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=treasureplanet">
+                    <div class="text"><b>Treasure Planet</b></div>
+                    <p class="text">Directed by R. Clements, J. Musker (2002)</p>
+                </a>
+                <div class="bio">Treasure Planet is an animated space adventure film that reimagines Robert Louis Stevenson's novel "Treasure Island" in a futuristic setting.</div>
             </div>
 
             <div id="mov" class="contained 00s Comedy War Action">
@@ -3368,6 +4695,30 @@
                 <div class="bio">An adaptation of Homer's great epic, the film follows the assault on Troy by the united Greek forces and chronicles the fates of the men involved.</div>
             </div>
 
+            <div id="mov" class="contained Recent 20s Pixar Animated">
+                <div class="container">
+                    <img src=content\Turning-Red.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Turning-Red">
+                        <div class="text"><b>Turning Red </b></div>
+                        <p class="text"> Directed by D. Shi (2022)</p>
+                    </a>
+                <div class="bio">A thirteen-year-old girl named Mei Lee is torn between staying her mother's dutiful daughter and the changes of adolescence. And as if the challenges were not enough, whenever she gets overly excited she transforms into a giant red panda.</div>
+           </div>
+
+            <div id="mov" class="contained Recent 80s Comedy Crime">
+                <div class="container">
+                    <img src=content\Twins.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Twins">
+                        <div class="text"><b>Twins </b></div>
+                        <p class="text"> Directed by I. Reitman (1988)</p>
+                    </a>
+                <div class="bio">A physically perfect but innocent man goes in search of his long-lost twin brother, who is short, a womanizer, and small-time crook.</div>
+            </div>
+
 
 
 
@@ -3375,6 +4726,18 @@
 
 
            <!-- U -->
+            <div id="mov" class="contained Recent 80s Comedy">
+                <div class="container">
+                    <img src=content\Uncle-Buck.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Uncle-Buck">
+                        <div class="text"><b>Uncle Buck </b></div>
+                        <p class="text"> Directed by J. Hughes (1989)</p>
+                    </a>
+                <div class="bio">Laid back commitment-phobe Buck babysits his brother's rebellious teenage daughter and her cute younger brother and sister.</div>
+            </div>
+
             <div id="mov" class="contained Animated Family 00s Pixar">
                 <div class=container>
                     <img src=content\Up.jpg>
@@ -3438,6 +4801,18 @@
                 <div class="bio">A chronicle of country music legend Johnny Cash's life, from his early days on an Arkansas cotton farm to his rise to fame with Sun Records in Memphis, where he recorded alongside Elvis Presley, Jerry Lee Lewis, and Carl Perkins.</div>
             </div>
 
+            <div id="mov" class="contained Recent 70s Books Animated">
+                <div class="container">
+                    <img src="content/watership-down.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=WatershipDown">
+                    <div class="text"><b>Watership Down</b></div>
+                    <p class="text">Directed by M. Rosen (1978)</p>
+                </a>
+                <div class="bio">Watership Down is an animated film adapted from Richard Adams' novel, depicting the journey of a group of rabbits seeking a new home.</div>
+            </div>
+
             <div id="mov" class="contained Comedy Romance Rom-Com 00s">
                 <div class=container>
                     <img src=content\Wedding-Crashers.jpg>
@@ -3472,6 +4847,18 @@
                         <p class="text"> Directed by D. Chazelle (2014)</p>
                     </a>
                 <div class="bio">A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student's potential.<br><br>Nominated for best Picture at the Academy Awards.</div>
+            </div>
+
+            <div id="mov" class="contained Recent Animated Disney 90s">
+                <div class="container">
+                    <img src="content/winniethepoohsmostgrandadventure.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=winniethepoohsmostgrandadventure">
+                    <div class="text"><b>Winnie the Pooh’s Most Grand Adventure</b></div>
+                    <p class="text">Directed by K. Geurs (1997)</p>
+                </a>
+                <div class="bio">Winnie the Pooh’s Most Grand Adventure follows Pooh and friends as they embark on a quest to find and rescue their missing friend Christopher Robin.</div>
             </div>
 
             <div id="mov" class="contained Crime Drama Thriller 90s">
@@ -3509,6 +4896,18 @@
                     </a>
                 <div class="bio">Diana must contend with a work colleague, and with a businessman whose desire for extreme wealth sends the world down a path of destruction</div>
            </div>
+
+            <div id="mov" class="contained Recent 20s Musical New Family Adventure Books">
+                <div class="container">
+                    <img src=content\Wonka.jpeg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Wonka">
+                        <div class="text"><b>Wonka </b></div>
+                        <p class="text"> Directed by P. King (2023)</p>
+                    </a>
+                <div class="bio">With dreams of opening a shop in a city renowned for its chocolate, a young and poor Willy Wonka discovers that the industry is run by a cartel of greedy chocolatiers.</div>
+            </div>
            
            <div id="mov" class="contained Animated Family Disney 10s">
                 <div class=container>
@@ -3529,7 +4928,17 @@
 
 
             <!-- X -->
-
+            <div id="mov" class="contained Recent 10s Superhero">
+                <div class="container">
+                    <img src=content\Xmen12.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Xmen-12-Dark-Phoenix">
+                        <div class="text"><b>Xmen 12 Dark Phoenix </b></div>
+                        <p class="text"> Directed by S. Kinberg (2019)</p>
+                    </a>
+                <div class="bio">Jean Grey begins to develop incredible powers that corrupt and turn her into a Dark Phoenix, causing the X-Men to decide if her life is worth more than all of humanity.</div>
+            </div>
 
 
 
@@ -3538,7 +4947,17 @@
 
 
             <!-- Y -->
-        
+            <div id="mov" class="contained Recent 70s Comedy">
+                <div class="container">
+                    <img src=content\Young-Frankenstein.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=Young-Frankenstein">
+                        <div class="text"><b>Young Frankenstein </b></div>
+                        <p class="text"> Directed by M. Brooks (1974)</p>
+                    </a>
+                <div class="bio">An American grandson of the infamous scientist, struggling to prove that his grandfather was not as insane as people believe, is invited to Transylvania, where he discovers the process that reanimates a dead body.</div>
+           </div>
 
 
 
@@ -3565,6 +4984,18 @@
 
 
            <!-- # -->
+            <div id="mov" class="contained Recent Animation 60s Books Disney">
+                <div class="container">
+                    <img src="content/101dalmatians.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=101dalmatians">
+                    <div class="text"><b>101 Dalmatians</b></div>
+                    <p class="text">Directed by C. Geronimi, H. Luske, W. Reitherman (1961)</p>
+                </a>
+                <div class="bio">101 Dalmatians is an animated classic that tells the story of Pongo and Perdita, two dalmatians trying to rescue their kidnapped puppies from the villainous Cruella de Vil.</div>
+            </div>
+
             <div id="mov" class="contained 60s Scifi Kubrick Adventure Space">
                 <div class=container>
                     <img src=content\2001-A-Space-Odyssey.jpg>
@@ -3575,6 +5006,18 @@
                         <p class="text"> Directed by S. Kubrick (1968)</p>
                     </a>
                 <div class="bio">After uncovering a mysterious artifact buried beneath the Lunar surface, a spacecraft is sent to Jupiter to find its origins: a spacecraft manned by two men and the supercomputer HAL 9000.</div>
+            </div>
+
+            <div id="mov" class="contained Recent Adventure Drama Family 50s Books">
+                <div class="container">
+                    <img src="content/20000leaguesunderthesea.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/results?search_query=20000leaguesunderthesea">
+                    <div class="text"><b>20,000 Leagues Under the Sea</b></div>
+                    <p class="text">Directed by R. Fleischer (1954)</p>
+                </a>
+                <div class="bio">Based on Jules Verne's novel, A ship sent to investigate a wave of mysterious sinkings encounters the advanced submarine, the Nautilus, commanded by Captain Nemo.</div>
             </div>
 
             <div id="mov" class="contained Historical 00s War Action">

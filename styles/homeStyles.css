@@ -176,9 +176,25 @@ select {
   bottom: -2px;
   height: 2px;
   width: 0;
-  background-color: #58782B;
+  /* background-color: #58782B; */
   transform: translateX(-50%); /* Move the line to the left by half of its width */
   transition: width 0.3s ease, transform 0.3s ease; /* Add transform transition */
+}
+
+.m::after {
+  background-color: #58782B;
+}
+
+.t::after {
+  background-color: #2B3F78;
+}
+
+.f::after {
+  background-color: #6A2B78;
+}
+
+.d::after {
+  background-color: #78502B;
 }
 
 .topbar:hover::after {

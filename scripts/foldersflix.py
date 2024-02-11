@@ -1,7 +1,7 @@
 import os
 import string
 
-folder = '/Volumes/External/Mov/To Add'
+folder = 'F:\WATCH DOC'
 
 def remove(string):
     return string.replace(" ", "-")

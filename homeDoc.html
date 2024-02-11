@@ -23,103 +23,591 @@
 
 <body>
 
-<div class="main">
+    <div class="sidenav">
+        <ul id="genreCat" class="category">
+            <li>By <b style="color:#78502B">Search</b></li>
+            <li><input type="text" id="searchInput" onchange="filterName(event)"></li>
 
-        <div class=contained >
-        <div class=container>
-            <img src=content\Blue-Planet.jpg>
-            <div class="overlay"></div>
-            </div>
-            <a href="https://www.youtube.com/results?search_query=Blue-Planet2">
-                <div class="text"><b>Blue Planet</b></div>
-                <p class="text"> 2017</p>
-            </a>
-            <div class="bio">Presented and narrated David Attenborough: One Ocean, The Deep, Coral Reefs, Big Blue, Green Seas, Coasts, Our Blue Planet, and Ocean of Wonder.</div>
+            <li style="margin-top: 10px;">By <b style="color:#78502B">Type</b></li>
+            <li><button class="genre" onclick="filter('Nature')">Nature</button></li>
+            <li><button class="genre" onclick="filter('Interview')">Interview</button></li>
+            <li><button class="genre" onclick="filter('Investigative')">Investigative</button></li>
+            <li><button class="genre" onclick="filter('Series')">Docu-series</button></li>
+            <li><button class="genre" onclick="filter('Historical')">Historical</button></li> 
+            <li><button class="genre" onclick="filter('Art')">Art</button></li> 
+            <li><button class="genre" onclick="filter('Sports')">Sports</button></li>   
+
+
+            <li style="margin-top: 10px;">By <b style="color:#78502B">Presenter</b></li>
+            <li><button class="genre" onclick="filter('Louis')">Louis Theroux</button></li>
+            <li><button class="genre" onclick="filter('Moore')">Michael Moore</button></li>
+
+            <li style="margin-top: 10px;">By <b style="color:#78502B;">Decade</b></li>
+            <li><button class="genre" onclick="filter('20s')">20s</button></li>
+            <li><button class="genre" onclick="filter('10s')">10s</button></li>
+            <li><button class="genre" onclick="filter('00s')">00s</button></li>
+            <li><button class="genre" onclick="filter('90s')">90s</button></li>
+            <li><button class="genre" onclick="filter('80s')">80s</button></li>
+            <li><button class="genre" onclick="filter('70s')">70s</button></li>
+            <li><button class="genre" onclick="filter('60s')">60s</button></li>
+            <li><button class="genre" onclick="filter('50s')">50s and Earlier</button></li>
+
+        </ul>
     </div>
 
-<div class=contained >
-<div class=container>
-<img src=content\Planet-Earth.jpg>
-<div class="overlay"></div>
-</div>
-<a href="https://www.youtube.com/results?search_query=Planet-Earth">
-    <div class="text"><b>Planet Earth</b></div>
-    <p class="text"> 2006</p>
-</a>
-<div class="bio">Presented and narrated David Attenborough: From Pole to Pole, Mountains, Fresh Water, Caves, Deserts, Ice Worlds, Great Plains, Jungles, Shallow Seas,Seasonal Forests, and Ocean Deep.</div>
-</div>
+    <div class="main">
 
-<div class=contained >
-<div class=container>
-<img src=content\Planet-Earth-2.jpg>
-<div class="overlay"></div>
-</div>
-<a href="https://www.youtube.com/results?search_query=Planet-Earth-2">
-    <div class="text"><b>Planet Earth 2</b></div>
-    <p class="text"> 2016</p>
-</a>
-<div class="bio">Presented and narrated David Attenborough: Islands, Mountains, Jungles, Deserts, Grasslands, and Cities.</div>
-</div>
+            <div id="mov" class="contained 00s Historical">
+                <div class="container">
+                    <img src=content\A-History-Of-Christianity.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=A-History-Of-Christianity">
+                        <div class="text"><b>A History Of Christianity </b></div>
+                        <p class="text"> Presented by BBC (2009)</p>
+                    </a>
+                <div class="bio">Diarmaid MacCulloch, an Oxford history professor, travels to historical points of interest relevant to Christianity discussing the origins and spread of Christianity in a span of 6 episodes.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Louis Interview">
+                <div class="container">
+                    <img src=content\A-Place-for-Paedophiles.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=A-Place-for-Paedophiles">
+                        <div class="text"><b>A Place for Paedophiles </b></div>
+                        <p class="text"> Presented by L. Theroux (2009)</p>
+                    </a>
+                <div class="bio">Louis visits Coalinga Mental Hospital in California, home to over 500 convicted paedophiles, and spends some time with those undergoing treatment.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Louis Interview">
+                <div class="container">
+                    <img src=content\African-Hunting-holiday.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=African-Hunting-Party">
+                        <div class="text"><b>African Hunting Holiday </b></div>
+                        <p class="text"> Presented by L. Theroux (2008)</p>
+                    </a>
+                <div class="bio">Louis goes to South Africa where American tourists pay to hunt wild animals in privately owned reserves.</div>
+        </div>
+        
+        <div id="mov" class="contained 10s Louis Interview">
+                <div class="container">
+                    <img src=content\Altered-States.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Altered-States">
+                        <div class="text"><b>Altered States </b></div>
+                        <p class="text"> Presented by L. Theroux (2018)</p>
+                    </a>
+                <div class="bio">Louis Theroux explores the unusual ways modern America deals with birth, love and death.</div>
+        </div>
+        
+        <div id="mov" class="contained 10s Louis Interview">
+                <div class="container">
+                    <img src=content\Americas-Medicated-Kids.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Americas-Medicated-Kids">
+                        <div class="text"><b>Americas Medicated Kids </b></div>
+                        <p class="text"> Presented by L. Theroux (2010)</p>
+                    </a>
+                <div class="bio">Louis meets parents who have turned to medication to keep their children under control.</div>
+        </div>
+        
+        <div id="mov" class="contained 10s Louis Interview">
+                <div class="container">
+                    <img src=content\Americas-Most-Hated-Family-in-Crisis.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Americas-Most-Hated-Family-in-Crisis">
+                        <div class="text"><b>Americas Most Hated Family in Crisis </b></div>
+                        <p class="text"> Presented by L. Theroux (2011)</p>
+                    </a>
+                <div class="bio">Louis returns to the Phelps family to find that several members have left the cult, and that they are being sued</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Louis Interview">
+                <div class="container">
+                    <img src=content\Behind-Bars.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Behind-Bars">
+                        <div class="text"><b>Behind Bars </b></div>
+                        <p class="text"> Presented by L. Theroux (2008)</p>
+                    </a>
+                <div class="bio">For two weeks, Theroux visits the San Quentin State Prison.</div>
+        </div>
+        
+        <div id="mov" class="contained 10s Nature Series">
+                <div class="container">
+                    <img src=content\Blue-Planet.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Blue-Planet">
+                        <div class="text"><b>Blue Planet II </b></div>
+                        <p class="text"> Presented by BBC (2019)</p>
+                    </a>
+                <div class="bio">David Attenborough returns to the world's oceans in this sequel to the acclaimed documentary filming rare and unusual creatures of the deep, as well as documenting the problems our oceans face.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Moore Investigative">
+                <div class="container">
+                    <img src=content\Bowling-for-Columbine.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Bowling-for-Columbine">
+                        <div class="text"><b>Bowling for Columbine </b></div>
+                        <p class="text"> Presented by M. Moore (2002)</p>
+                    </a>
+                <div class="bio">Filmmaker Michael Moore explores the roots of America's predilection for gun violence.</div>
+        </div>
+        
+        <div id="mov" class="contained 90s Moore Investigative">
+                <div class="container">
+                    <img src=content\Canadian-Bacon.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Canadian-Bacon">
+                        <div class="text"><b>Canadian Bacon </b></div>
+                        <p class="text"> Presented by M. Moore (1995)</p>
+                    </a>
+                <div class="bio">The U.S. President, low in the opinion polls, gets talked into raising his popularity by trying to start a cold war against Canada.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Moore Investigative">
+                <div class="container">
+                    <img src=content\Capitalism-A-Love-Story.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Capitalism-A-Love-Story">
+                        <div class="text"><b>Capitalism A Love Story </b></div>
+                        <p class="text"> Presented by M. Moore (2009)</p>
+                    </a>
+                <div class="bio">An examination of the social costs of corporate interests pursuing profits at the expense of the public good.</div>
+        </div>
 
-<div class=contained >
-<div class=container>
-<img src=content\Living-Planet.jpg>
-<div class="overlay"></div>
-</div>
-<a href="https://www.youtube.com/results?search_query=Living-Planet">
-    <div class="text"><b>The Living Planet</b></div>
-    <p class="text"> 1984</p>
-</a>
-<div class="bio">A portrait of Earth: written and presented by David Attenborough.</div>
-</div>
-    
-        <div class=contained >
-            <div class=container>
-                <img src=content\Altered.jpg>
+        <div id="mov" class="contained 00s Moore Investigative">
+            <div class="container">
+                <img src=content\Fahrenheit-9-11.jpg>
                 <div class="overlay"></div>
                 </div>
-                <a href="https://www.youtube.com/results?search_query=Altered-states-louis-theroux">
-                    <div class="text"><b>Altered States</b></div>
-                    <p class="text"> 2018</p>
+                <a href="https://www.youtube.com/results?search_query=Fahrenheit-9-11">
+                    <div class="text"><b>Fahrenheit 9-11 </b></div>
+                    <p class="text"> Presented by M. Moore (2004)</p>
                 </a>
-                <div class="bio"> A Three part docu-series: Love without Limits (polyamorous relationsships), Choosing Death (right to die laws), and Take my Baby (women who can't or won't keep their babies, searching for adoptive parents).</div>
+            <div class="bio">Michael Moore's view on what happened to the United States after September 11 and how the Bush Administration allegedly used the tragic event to push forward its agenda for unjust wars in Afghanistan and Iraq.</div>
         </div>
-
-        <div class=contained >
-        <div class=container>
-            <img src=content\BBC.jpg>
-            <div class="overlay"></div>
-            </div>
-            <a href="https://www.youtube.com/results?search_query=BBC">
-                <div class="text"><b>Louis Theroux's BBC Documentaries</b></div>
-                <p class="text"> 2003-2021</p>
-            </a>
-            <div class="bio">Various Louis Theroux documentaries: Louis and the Brothel, Louis and the Nazis, Medicated Kids, Most Hated Family in America, Miami Mega Jail, etc.</div>
-    </div>
-
-    <div class=contained >
-    <div class=container>
-        <img src=content\Weird-Weekends.jpg>
-        <div class="overlay"></div>
+        
+        <div id="mov" class="contained 10s Moore Investigative">
+                <div class="container">
+                    <img src=content\Fahrenheit-11-9.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Fahrenheit-11-9">
+                        <div class="text"><b>Fahrenheit 11-9 </b></div>
+                        <p class="text"> Presented by M. Moore (2018)</p>
+                    </a>
+                <div class="bio">Michael Moore examines the current state of American politics, particularly the Donald Trump presidency and gun violence, while highlighting the power of grassroots democratic movements.</div>
         </div>
-        <a href="https://www.youtube.com/results?search_query=Weird-Weekends">
-            <div class="text"><b>Louis Theroux's Weird Weekends</b></div>
-            <p class="text"> 1998-2000</p>
-        </a>
-        <div class="bio">Louis Theroux gives viewers the chance to get brief glimpses into the worlds and individuals and grounps that the would not normally come into contact with. These include Born again Christians, Survivalists, Swingers, Wrestling, White Separtists in South Africa and much much more.</div>
-</div>
-
-<div class=contained >
-<div class=container>
-    <img src=content\When-Louis-Met.jpg>
-    <div class="overlay"></div>
-    </div>
-    <a href="https://www.youtube.com/results?search_query=When-Louis-Met">
-        <div class="text"><b>When Louis Met...</b></div>
-        <p class="text"> 2000-2002</p>
-    </a>
-    <div class="bio">A series of films from the BBC where Louis Theroux accompanies different British Celebrities as they go about their day to day business, interviewing them while doing so.</div>
-</div>
+        
+        <div id="mov" class="contained 10s Nature">
+                <div class="container">
+                    <img src=content\Forces-of-Nature.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Forces-of-Nature">
+                        <div class="text"><b>Forces of Nature </b></div>
+                        <p class="text"> Presented by BBC (2016)</p>
+                    </a>
+                <div class="bio">Professor Brian Cox combines some of the most spectacular sights on Earth with our deepest understanding of the universe to reveal how the planet's beauty is created by just a handful of forces.</div>
+        </div>
+        
+        <div id="mov" class="contained 10s Sports">
+                <div class="container">
+                    <img src=content\Free-Solo.jpeg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Free-Solo">
+                        <div class="text"><b>Free Solo </b></div>
+                        <p class="text"> Presented by National Geographic (2018)</p>
+                    </a>
+                <div class="bio">Alex Honnold faces the biggest challenge of his career, climbing El Capitan in Yosemite National Park.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Louis Interview">
+                <div class="container">
+                    <img src=content\Gambling-in-Las-Vegas.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Gambling-in-Las-Vegas">
+                        <div class="text"><b>Gambling in Las Vegas </b></div>
+                        <p class="text"> Presented by L. Theroux (2007)</p>
+                    </a>
+                <div class="bio">Louis Theroux goes to the heart of gambling culture in Las Vegas.</div>
+        </div>
+        
+        <div id="mov" class="contained 10s Art">
+                <div class="container">
+                    <img src=content\Jodorowskys-Dune.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Jodorowsky's-Dune">
+                        <div class="text"><b>Jodorowsky's Dune </b></div>
+                        <p class="text"> Presented by F. Pavich (2013)</p>
+                    </a>
+                <div class="bio">The story of cult film director Alejandro Jodorowsky's ambitious but ultimately doomed film adaptation of the seminal science fiction novel.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Louis Interview">
+                <div class="container">
+                    <img src=content\Law-and-Disorder-Johannesburg.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Law-and-Disorder-Johannesburg">
+                        <div class="text"><b>Law and Disorder Johannesburg </b></div>
+                        <p class="text"> Presented by L. Theroux (2008)</p>
+                    </a>
+                <div class="bio">About the crime and private security situation in Johannesburg, South Africa.</div>
+        </div>
+        
+        <div id="mov" class="contained 10s Louis Interview">
+                <div class="container">
+                    <img src=content\Law-and-Order-in-Lagos.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Law-and-Order-in-Lagos">
+                        <div class="text"><b>Law and Order in Lagos </b></div>
+                        <p class="text"> Presented by L. Theroux (2010)</p>
+                    </a>
+                <div class="bio">Louis Theroux is in Lagos, following the local gangs and a paramilitary task force.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Louis Interview">
+                <div class="container">
+                    <img src=content\Law-and-Order-in-Philidelphia.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Law-and-Order-in-Philidelphia">
+                        <div class="text"><b>Law and Order in Philidelphia </b></div>
+                        <p class="text"> Presented by L. Theroux (2008)</p>
+                    </a>
+                <div class="bio">Theroux investigates the high crime rates in one of the United States' largest cities, Philadelphia, mainly from the perspective of the local police as well as people affected by, and possibly involved in, crime in the city's low-income neighborhoods.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Louis Interview">
+                <div class="container">
+                    <img src=content\Louis-and-the-Brothel.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Louis-and-the-Brothel">
+                        <div class="text"><b>Louis and the Brothel </b></div>
+                        <p class="text"> Presented by L. Theroux (2003)</p>
+                    </a>
+                <div class="bio">Louis stays with the residents of a soon to open brothel in Nevada for a few weeks.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Louis Interview">
+                <div class="container">
+                    <img src=content\Louis-and-the-Nazis.jpeg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Louis-and-the-Nazis">
+                        <div class="text"><b>Louis and the Nazis </b></div>
+                        <p class="text"> Presented by L. Theroux (2003)</p>
+                    </a>
+                <div class="bio">Louis Theroux travels to California to meet the man dubbed "the most dangerous racist in America"; Tom Metzger, his family and his publicity manager. Louis also meets 'Prussian Blue' an American white-nationalist preteen musical sibling duo.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Louis Interview">
+                <div class="container">
+                    <img src=content\Louis-Martin-and-Michael.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Louis-Martin-and-Michael">
+                        <div class="text"><b>Louis Martin and Michael </b></div>
+                        <p class="text"> Presented by L. Theroux (2003)</p>
+                    </a>
+                <div class="bio">Louis Theroux decides to set out on a journey to interview Michael Jackson.</div>
+        </div>
+        
+        <div id="mov" class="contained 90s Louis Interview">
+                <div class="container">
+                    <img src=content\Weird-Weekends.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Louis-Theroux's-Weird-Weekends">
+                        <div class="text"><b>Louis Theroux's Weird Weekends </b></div>
+                        <p class="text"> Presented by L. Theroux (1998)</p>
+                    </a>
+                <div class="bio">Louis Theroux documents some of the US's most bizarre happenings, events and rituals, by getting involved himself.</div>
+        </div>
+        
+        <div id="mov" class="contained 10s Louis Interview">
+                <div class="container">
+                    <img src=content\Miami-Mega-Jail.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Miami-Mega-Jail">
+                        <div class="text"><b>Miami Mega Jail </b></div>
+                        <p class="text"> Presented by L. Theroux (2011)</p>
+                    </a>
+                <div class="bio">Louis Theroux goes behind bars in one of the largest, most industrial prison complexes in the United States to take a look at the way that the prison system is run.</div>
+        </div>
+        
+        <div id="mov" class="contained 10s Moore Investigative">
+                <div class="container">
+                    <img src=content\Michael-Moore-in-Trumpland.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Michael-Moore-in-Trumpland">
+                        <div class="text"><b>Michael Moore in Trumpland </b></div>
+                        <p class="text"> Presented by M. Moore (2016)</p>
+                    </a>
+                <div class="bio">In the weeks before the 2016 general election, Oscar-winning filmmaker Michael Moore performs a pro-Hillary Clinton stand-up show deep in the heart of TrumpLand.</div>
+        </div>
+        
+        <div id="mov" class="contained 10s Nature">
+                <div class="container">
+                    <img src=content\Our-Planet.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Our-Planet">
+                        <div class="text"><b>Our Planet </b></div>
+                        <p class="text"> Presented by Netflix (2019)</p>
+                    </a>
+                <div class="bio">Explores and unravels the mystery of how and why animals migrate, showing some of the most dramatic and compelling stories in the natural world through spectacular and innovative cinematography.</div>
+        </div>
+        
+        <div id="mov" class="contained 90s Moore Investigative">
+                <div class="container">
+                    <img src=content\Pets-or-Meat.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Pets-or-Meat">
+                        <div class="text"><b>Pets or Meat: The Return to Flint </b></div>
+                        <p class="text"> Presented by M. Moore (1992)</p>
+                    </a>
+                <div class="bio">Moore briefly re-examines the economic collapse of Flint and the changes that have taken place in the earlier movies' major figures, from Roger Smith down to the evicted tenants, as well as collateral material about the celebrity status of himself and the film.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Nature">
+                <div class="container">
+                    <img src=content\Planet-Earth.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Planet-Earth-I">
+                        <div class="text"><b>Planet Earth I </b></div>
+                        <p class="text"> Presented by BBC (2006)</p>
+                    </a>
+                <div class="bio">A documentary series on the wildlife found on Earth. Each episode covers a different habitat: deserts, mountains, deep oceans, shallow seas, forests, caves, polar regions, fresh water, plains and jungles.</div>
+        </div>
+        
+        <div id="mov" class="contained 10s Nature">
+                <div class="container">
+                    <img src=content\Planet-Earth-2.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Planet-Earth-II">
+                        <div class="text"><b>Planet Earth II </b></div>
+                        <p class="text"> Presented by BBC (2016)</p>
+                    </a>
+                <div class="bio">Each episode covers a different habitat: islands, mountains, jungles, deserts, grasslands and cities.</div>
+        </div>
+        
+        <div id="mov" class="contained 80s Moore Investigative">
+                <div class="container">
+                    <img src=content\Roger-and-Me.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Roger-and-Me">
+                        <div class="text"><b>Roger and Me </b></div>
+                        <p class="text"> Presented by M. Moore (1989)</p>
+                    </a>
+                <div class="bio">After General Motors closes its factory in Flint, Michigan, eliminating 35,000 jobs, filmmaker Michael Moore undertakes a quixotic quest to interview General Motors' chairman, Roger B. Smith.</div>
+        </div>
+        
+        <div id="mov" class="contained 20s Louis Interview">
+                <div class="container">
+                    <img src=content\Shooting-Joe-Exotic.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Shooting-Joe-Exotic">
+                        <div class="text"><b>Shooting Joe Exotic </b></div>
+                        <p class="text"> Presented by L. Theroux (2021)</p>
+                    </a>
+                <div class="bio">This special sees Louis travel to America to investigate the story of a man who has become one of the most controversial and captivating icons of recent times: the gun-toting, self-described 'gay hillbilly' and 'Tiger King' Joe Exotic.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Moore Investigative">
+                <div class="container">
+                    <img src=content\Sicko.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Sicko">
+                        <div class="text"><b>Sicko </b></div>
+                        <p class="text"> Presented by M. Moore (2007)</p>
+                    </a>
+                <div class="bio">A documentary comparing the highly profitable American health care industry to other nations, and HMO horror stories including shotgun deaths.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Moore Investigative">
+                <div class="container">
+                    <img src=content\Slacker-Uprising.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Slacker-Uprising">
+                        <div class="text"><b>Slacker Uprising </b></div>
+                        <p class="text"> Presented by M. Moore (2008)</p>
+                    </a>
+                <div class="bio">Footage from Michael Moore's 60-city tour of college campuses and other venues showcases what the filmmaker calls "the birth of a new political generation".</div>
+        </div>
+        
+        <div id="mov" class="contained 90s Moore Series">
+                <div class="container">
+                    <img src=content\The-Awful-Truth.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=The-Awful-Truth">
+                        <div class="text"><b>The Awful Truth </b></div>
+                        <p class="text"> Presented by M. Moore (1999)</p>
+                    </a>
+                <div class="bio">Activist film director Michael Moore hosts a show where he continues his crusade to expose wrongdoing by the high and mighty.</div>
+        </div>
+        
+        <div id="mov" class="contained 90s Moore Investigative">
+                <div class="container">
+                    <img src=content\The-Big-One.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=The-Big-One">
+                        <div class="text"><b>The Big One </b></div>
+                        <p class="text"> Presented by M. Moore (1997)</p>
+                    </a>
+                <div class="bio">On his book tour, Michael Moore exposes more wrongdoing by greedy big businesses and callous politicians around America.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Louis Interview">
+                <div class="container">
+                    <img src=content\The-City-Addicted-to-Crystal-Meth.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=The-City-Addicted-to-Crystal-Meth">
+                        <div class="text"><b>The City Addicted to Crystal Meth </b></div>
+                        <p class="text"> Presented by L. Theroux (2009)</p>
+                    </a>
+                <div class="bio">British documentarian Louis Theroux examines the toll meth has taken on several addicts in Fresno, California.</div>
+        </div>
+        
+        <div id="mov" class="contained 80s Nature">
+                <div class="container">
+                    <img src=content\Living-Planet.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=The-Living-Planet">
+                        <div class="text"><b>The Living Planet </b></div>
+                        <p class="text"> Presented by BBC (1984)</p>
+                    </a>
+                <div class="bio">David Attenborough discusses the biomass and life in a variety of eco-systems spanning many of the environments found on Earth (from tropical to polar).</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Louis Interview">
+                <div class="container">
+                    <img src=content\The-Most-Hated-Family-in-America.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=The-Most-Hated-Family-in-America">
+                        <div class="text"><b>The Most Hated Family in America </b></div>
+                        <p class="text"> Presented by L. Theroux (2007)</p>
+                    </a>
+                <div class="bio">Louis meets the Phelps family, who protest against an America that tolerates homosexuality.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Nature Historical">
+                <div class="container">
+                    <img src=content\The-Story-of-Dick-Proenneke.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=The-Story-of-Dick-Proenneke">
+                        <div class="text"><b>The Story of Dick Proenneke </b></div>
+                        <p class="text"> Presented by B. Swerer (2004)</p>
+                    </a>
+                <div class="bio">Dick Proenneke retired at age 50 in 1967 and decided to build his own cabin on the shore of Twin Lakes.</div>
+        </div>
+        
+        <div id="mov" class="contained 10s Investigative">
+                <div class="container">
+                    <img src=content\Tickled.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Tickled">
+                        <div class="text"><b>Tickled </b></div>
+                        <p class="text"> Presented by D. Farrier (2016)</p>
+                    </a>
+                <div class="bio">Journalist David Farrier stumbles upon a mysterious tickling competition online. As he delves deeper he comes up against fierce resistance, but that doesn't stop him getting to the bottom of a story stranger than fiction.</div>
+        </div>
+        
+        <div id="mov" class="contained 10s Louis Interview">
+                <div class="container">
+                    <img src=content\Ultra-Zionists.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Ultra-Zionists">
+                        <div class="text"><b>Ultra Zionists </b></div>
+                        <p class="text"> Presented by L. Theroux (2011)</p>
+                    </a>
+                <div class="bio">Louis Theroux visits a small group of ultra-nationalist Jewish settlers.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Louis Interview">
+                <div class="container">
+                    <img src=content\Under-the-Knife.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Under-the-Knife">
+                        <div class="text"><b>Under the Knife </b></div>
+                        <p class="text"> Presented by L. Theroux (2007)</p>
+                    </a>
+                <div class="bio">About the people and doctors involved in plastic surgery operations.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Louis Interview">
+                <div class="container">
+                    <img src=content\When-Louis-Met.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=When-Louis-Met">
+                        <div class="text"><b>When Louis Met </b></div>
+                        <p class="text"> Presented by L. Theroux (2000)</p>
+                    </a>
+                <div class="bio">Theroux accompanies a different British celebrity in each programme as they go about their day-to-day business, interviewing them about their lives and experiences as he does so.</div>
+        </div>
+        
+        <div id="mov" class="contained 10s Moore Investigative">
+                <div class="container">
+                    <img src=content\Where-to-Invade-Next.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Where-to-Invade-Next">
+                        <div class="text"><b>Where to Invade Next </b></div>
+                        <p class="text"> Presented by M. Moore (2015)</p>
+                    </a>
+                <div class="bio">To learn what the USA can learn from other nations, Michael Moore playfully "invades" them to see what they have to offer.</div>
+        </div>
+        
+        <div id="mov" class="contained 00s Art">
+                <div class="container">
+                    <img src=content\Wizard-People-Dear-Reader.jpg>
+                    <div class="overlay"></div>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Wizard-People-Dear-Reader">
+                        <div class="text"><b>Wizard People Dear Reader </b></div>
+                        <p class="text"> Presented by B. Neely (2004)</p>
+                    </a>
+                <div class="bio">An unauthorized alternative soundtrack to Harry Potter and the Philosopher's Stone, written by Brad Neely, a comic book artist from Fort Smith, Arkansas.</div>
+        </div>
 
         </div>
     </body>

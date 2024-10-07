@@ -46,6 +46,7 @@ def startTemplate(movieID):
     title = movie['title']
     year = movie['year']
     director = movie.data['director'][0]['name']
+    director = director[:1]+'.'
     plot = movie.data['plot'][0]
     genres = movie.data['genres']
     youtube = plus(title)

@@ -1,5 +1,6 @@
 from imdb import Cinemagoer
 import webbrowser
+from collections import Counter
 # import string
 # import time
 ia = Cinemagoer()
@@ -7,48 +8,137 @@ ia = Cinemagoer()
 htmlFile = '/Users/adam/Documents/GitHub/family-flix/homeMov.html'
 movieList = []
 movieText = 'id="movieName"'
-castDict = {}
+movieCount = 1
+
+yearText = 'Directed by'
+yearDict = {}
+# yearCount = 0
+
+seqText = 'seq"'
+seqDict = {}
+
+linesToReplace = []
+replaceWith = []
+actorNamesArray = []
+line_list = ''
+
 
 with open(htmlFile, 'r') as file:
     line_list = file.readlines()
+
     for item in line_list:
+
         if movieText in item:
-            # movieName = item.replace(" ","")
-            movieName = item.replace('<div id="movieName" class="text"><b>','')
+            movieName = item.replace('id="movieName" class="text"><b','')
             movieName = movieName.replace('</b></div>\n','')
-            if movieName[:24] == '                        ':
-                movieName = movieName[24:]
-            elif movieName[:20] == '                    ':
-                movieName = movieName[20:]
-            else:
-                print('neither')
+            indexVal = (movieName.index('>'))+1
+            movieName = movieName[indexVal:]
             movieList.append(movieName) 
-movieCount = len(movieList)
+
+            seqIndex = item.index('seq="')
+            seqID = item[seqIndex+5:seqIndex+9]
+            seqKey = {movieName:seqID}
+            seqDict.update(seqKey)
+
+        if yearText in item:
+            # yearCount += 1
+            yearIndex = item.index('(')
+            yearItem = item[yearIndex+1:yearIndex+5]
+            yearKey = {movieName:yearItem}
+            yearDict.update(yearKey)
+
+
+
 for movie in movieList:
-    # print(movie)
+    castDict = {}
+    year = yearDict.pop(movie)
     searchedMovie = ia.search_movie(movie)
-    for i in searchedMovie[0:1]:
-        movieCode = i.movieID
-        movieData = ia.get_movie(movieCode)
-        actorNames = ''
-        try:
-            topFiveCast = movieData.data['cast'][0:5]
-            count = 0
-            for actor in topFiveCast:
-                if count == 0:
-                    actorNames = str(actor).replace(' ','_')
+    movieFound = False
+    for i in searchedMovie[0:3]:
+        if movieFound == False:
+            movieCode = i.movieID
+            movieData = ia.get_movie(movieCode)
+            actorNames = ''
+            try:
+                if i['year'] == int(year):
+                    try:
+                        topFiveCast = movieData.data['cast'][0:5]
+                        count = 0
+
+                        for actor in topFiveCast:
+                            actorNamesArray.append(actor)
+                            if count == 0:
+                                actorNames = 'a-'+str(actor).replace(' ','_')
+                            else:
+                                actorNames = actorNames+', '+'a-'+str(actor).replace(' ','_')
+                            count += 1
+                        movieDict = {movie:actorNames}
+                        castDict.update(movieDict)
+                        seq = seqDict.pop(movie)
+                        # print(seq)
+                        seqSearch = 'seq="'+seq+'" id="mov"'
+
+                        # print(line_list)
+                        for line in line_list:
+                            # print(line)
+                            if seqSearch in line:
+                                seqIndex = line.index('>') - 1
+                                # print(seqIndex)
+                                newline = line[:seqIndex]+' '+actorNames+'">\n'
+                                # print(newline)
+                                linesToReplace.append(line)
+                                replaceWith.append(newline)
+
+                        movieFound = True
+
+                    except:
+                        print(f'no cast info for {movie}')
                 else:
-                    actorNames = actorNames+', '+str(actor).replace(' ','_')
-                count += 1
-            movieDict = {movie:actorNames}
-            castDict.update(movieDict)
-            # print(castDict)
-            movieCount -= 1
+                    break
+            except:
+                print(f'no year info for {movie}')
 
-        except:
-            print(f'no cast info for {movie}')
-            movieCount -= 1
+        else:
+            break
 
-    print(movieCount)
+        print(castDict)
 
-print(castDict)
+
+htmlText = ''
+
+with open(htmlFile, 'r') as fin:
+    html = fin.readlines()
+    print(linesToReplace)
+    print(replaceWith)
+    for line in html:
+        countX = 0
+        for x in linesToReplace:
+            # print(x)
+            if linesToReplace[countX] in line:
+                swapLine = line.replace(linesToReplace[countX],replaceWith[countX])
+                # print(f'replacing: {linesToReplace[countX]} with: {replaceWith[countX]}')
+                htmlText = htmlText+swapLine
+                # print(swapLine)
+            countX += 1
+        if line in linesToReplace:
+            print('')
+        else:
+            htmlText = htmlText+line
+
+
+with open(htmlFile, 'w') as fout:
+    # print(htmlText)
+    fout.write(htmlText)
+
+
+actorDict = Counter(actorNamesArray)
+for key, value in actorDict.items():
+    if value >= 3:
+        print(key, value)
+
+dictfile = '/Users/adam/Documents/GitHub/family-flix/scripts/dictFile.txt'
+with open(dictfile, 'w') as dout:
+    dout.write(str(actorDict))
+
+
+print('done')

@@ -41,6 +41,7 @@ function filterName(event) {
       var boldElement = div.querySelector("b");
       var searchText = boldElement.textContent.toLowerCase(); 
       
+      // search movie title
       if (searchText.startsWith(searchInput)) {
           div.style.display = 'block';
       } else {

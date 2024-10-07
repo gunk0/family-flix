@@ -1,6 +1,6 @@
 htmlFile = '/Users/adam/Documents/GitHub/family-flix/homeMov.html'
 searchText = 'seq=""'
-mainCount = 1
+mainCount = 1000
 replaceText = ''
 twoCount = 1
 fileContents = ''

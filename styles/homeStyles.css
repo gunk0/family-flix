@@ -26,7 +26,7 @@ html {
 }
 
 img {
-    height:150px;
+    height:300px;
 }
 
 select {
@@ -86,11 +86,6 @@ select {
   position: relative;
   display:block;
   width: 100%;
-}
-
-.contained:hover img {
-  height:300px;
-  transition: 0.6s ease;
 }
 
 .contained:hover .overlay {

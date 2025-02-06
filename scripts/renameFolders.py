@@ -1,6 +1,6 @@
 import os
 
-folder_path = '/Users/adam/Downloads/tor'
+folder_path = 'F:/to sort'
 
 def rename(folder_path):
     for folder_name in os.listdir(folder_path):

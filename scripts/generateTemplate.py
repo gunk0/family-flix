@@ -92,7 +92,7 @@ def startTemplate(movieID):
     # print(f"{title} - {youtube} - {year} - {director} - {plot} - {genreTag}")
     print(f"<div id='mov' class='contained Recent {dec} {genre}'> \n    <div class=container> \n        <img src='content\{image}.jpg'> \n        <div class='overlay'></div> \n    </div> \n    <a target='_blank' href='https://www.youtube.com/results?search_query={youtube}'> \n        <div class='text'><b>{title}</b></div>\n <p class='text'> Directed by {director} ({year})</p>\n    </a>\n    <div class='bio'>{plot} \n    <br><br>{genreTag}</div>\n</div>")
     # time.sleep(5)
-    # webbrowser.open_new(f"https://duckduckgo.com/?q={youtube}")
+    webbrowser.open_new(f"https://duckduckgo.com/?q={youtube}")
 
 
 def main():

@@ -1,0 +1,35 @@
+htmlFile = '/Users/adam/Documents/GitHub/family-flix/homeMov.html'
+searchText = 'seq=""'
+mainCount = 1000
+replaceText = ''
+twoCount = 1
+fileContents = ''
+
+with open(htmlFile, 'r') as file:
+    line_list = file.readlines()
+    for item in line_list:
+        if searchText in item:
+            if twoCount == 1:
+                twoCount = 0
+                mainCount += 1
+                replaceText = 'seq="'+str(mainCount)+'"'
+                text = item.replace(searchText,replaceText)
+                fileContents = fileContents+text
+            elif twoCount == 0:
+                twoCount = 1
+                replaceText = 'seq="'+str(mainCount)+'"'
+                text = item.replace(searchText,replaceText)
+                fileContents = fileContents+text
+            else:
+                print('wrong')
+                exit()
+        else:
+            fileContents = fileContents+item
+
+# print(fileContents)
+
+with open(htmlFile,'w') as outFile:
+    outFile.write(fileContents)
+    outFile.close()
+
+print('done')

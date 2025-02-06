@@ -52,7 +52,7 @@ select {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
   transition: 1.2s ease;
 }
 
@@ -70,6 +70,15 @@ select {
   position: relative;
   display:block;
   width: 100%;
+  height:300px;
+}
+
+.contained:hover {
+  position: relative;
+  display:block;
+  width: 100%;
+  height:300px;
+  transition: 0.6s ease;
 }
 
 
@@ -79,25 +88,20 @@ select {
   width: 100%;
 }
 
-.contained:hover .img {
-  height:200px;
-}
-
 .contained:hover .overlay {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .contained:hover .text {
   opacity: 1;
   transition: 1s ease;
-  left:10%;    /*zip*/
+  left:40%;    /*zip*/
 }
 
 .contained:hover .bio {
   opacity: 0.9;
   transition: 1.2s ease;
 }
-
 
 .head {
   display:flex;
@@ -110,10 +114,6 @@ select {
 .head ul {
   display: flex;
   align-self: flex-start;
-}
-
-.img {
-  opacity:0.99;
 }
 
 .overlay {
@@ -129,6 +129,11 @@ select {
   background-color: black;
   /* z-index:-1; */
 }
+
+/* .overlay:hover img {
+  height: 300px;
+  transition: 0.6s ease
+} */
 
 .search {
   width:210px;
